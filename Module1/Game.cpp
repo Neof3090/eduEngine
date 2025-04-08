@@ -5,6 +5,9 @@
 #include "Log.hpp"
 #include "Game.hpp"
 
+#include "Systems.hpp"
+#include "Components.hpp"
+
 bool Game::init()
 {
     forwardRenderer = std::make_shared<eeng::ForwardRenderer>();
@@ -15,12 +18,21 @@ bool Game::init()
 
     // Do some entt stuff
     entity_registry = std::make_shared<entt::registry>();
-    auto ent1 = entity_registry->create();
+   
+   /* auto ent1 = entity_registry->create();
     struct Tfm
     {
         float x, y, z;
     };
-    entity_registry->emplace<Tfm>(ent1, Tfm{});
+    entity_registry->emplace<Tfm>(ent1, Tfm{});*/
+
+	auto ent1 = entity_registry->create();
+	entity_registry->emplace<Transform>(ent1, Transform{ 
+        { 0.0f, 0.0f, 0.0f },
+		{ 0.0f, 0.0f, 0.0f },
+		{ 1.0f, 1.0f, 1.0f }
+        });
+
 
     // Grass
     grassMesh = std::make_shared<eeng::RenderableMesh>();
@@ -351,6 +363,23 @@ void Game::updatePlayer(
     // Update camera to track the player
     camera.lookAt += movement;
     camera.pos += movement;
+}
+void MovementSystem(std::vector<std::shared_ptr<Transform>> transforms, std::vector < std::shared_ptr <LinearVelocity>> linearVelocities) {
+
+}
+void PlayerControllerSystem(std::vector<std::shared_ptr<Transform>> transforms, std::vector<std::shared_ptr<PlayerController>> playerControllers) {
+
+}
+void RenderSystem(std::vector<std::shared_ptr<Transform>> transforms, std::vector<std::shared_ptr<Mesh>> meshes) {
+
+}
+void NpcControllerSystem(std::vector<std::shared_ptr<Transform>> transforms, std::vector<std::shared_ptr<NpcController>> npcControllers) {
+
+}
+void PointLightSystem(std::vector<std::shared_ptr<Transform>> transforms, std::vector<std::shared_ptr<PointLight>> pointLights) {
+
+}
+void CameraSystem(std::vector<std::shared_ptr<Transform>> transforms, std::vector<std::shared_ptr<Camera>> cameras){
 
 }
 
