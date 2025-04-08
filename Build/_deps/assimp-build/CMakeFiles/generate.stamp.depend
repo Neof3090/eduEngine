@@ -1,0 +1,32 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-MSVC.cmake
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/3.31.6/CMakeCCompiler.cmake
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/CMakeLists.txt
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/assimp-config-version.cmake.in
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/assimp-config.cmake.in
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/assimp.pc.in
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/assimpTargets-debug.cmake.in
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/assimpTargets-release.cmake.in
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/assimpTargets.cmake.in
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/cmake-modules/FindDirectX.cmake
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/cmake-modules/FindPkgMacros.cmake
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/cmake-modules/PrecompiledHeader.cmake
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/cmake/HunterGate.cmake
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/include/assimp/config.h.in
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/revision.h.in

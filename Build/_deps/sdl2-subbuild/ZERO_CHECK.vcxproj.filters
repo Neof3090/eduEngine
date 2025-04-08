@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-subbuild\CMakeFiles\7c15b313c617cb759ccb54c9b9d10d35\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A688DB80-0CB4-3EE7-80F5-B7CA4C1C13B2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

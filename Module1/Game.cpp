@@ -353,3 +353,4 @@ void Game::updatePlayer(
     camera.pos += movement;
 
 }
+

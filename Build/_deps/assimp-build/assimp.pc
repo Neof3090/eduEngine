@@ -1,0 +1,11 @@
+prefix=C:/Program Files (x86)/DA376B_Labs
+exec_prefix=C:/Program Files (x86)/DA376B_Labs/
+libdir=C:/Program Files (x86)/DA376B_Labs/lib
+includedir=C:/Program Files (x86)/DA376B_Labs/../include/include
+
+Name: DA376B_Labs
+Description: Import various well-known 3D model formats in an uniform manner.
+Version: 5.0.0
+Libs: -L${libdir} -lassimp
+Libs.private:  
+Cflags: -I${includedir}

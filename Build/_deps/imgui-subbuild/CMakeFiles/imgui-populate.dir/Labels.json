@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/imgui-subbuild/CMakeFiles/imgui-populate"
+		},
+		{
+			"file" : "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/imgui-subbuild/CMakeFiles/b824c1ce5b6ff0a3ad519f785fa155bc/imgui-populate.rule"
+		},
+		{
+			"file" : "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/imgui-subbuild/CMakeFiles/b689c93b15ea14811571c1ccb7db1140/imgui-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/imgui-subbuild/CMakeFiles/90506506944546a43cc4118c35ac793a/imgui-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/imgui-subbuild/CMakeFiles/90506506944546a43cc4118c35ac793a/imgui-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/imgui-subbuild/CMakeFiles/90506506944546a43cc4118c35ac793a/imgui-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/imgui-subbuild/CMakeFiles/90506506944546a43cc4118c35ac793a/imgui-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/imgui-subbuild/CMakeFiles/90506506944546a43cc4118c35ac793a/imgui-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/imgui-subbuild/CMakeFiles/90506506944546a43cc4118c35ac793a/imgui-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/imgui-subbuild/CMakeFiles/90506506944546a43cc4118c35ac793a/imgui-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/imgui-subbuild/CMakeFiles/90506506944546a43cc4118c35ac793a/imgui-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"imgui-populate"
+		],
+		"name" : "imgui-populate"
+	}
+}

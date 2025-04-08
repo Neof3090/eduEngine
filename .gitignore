@@ -1,6 +1,5 @@
 ## Project specific ignores
-[Bb]uild/
-assets/
+## [Bb]uild/
 doxygen/
 .DS_Store
 

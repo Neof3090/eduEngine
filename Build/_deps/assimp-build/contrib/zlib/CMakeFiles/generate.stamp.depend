@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/contrib/zlib/CMakeLists.txt
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/contrib/zlib/zconf.h.cmakein
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/contrib/zlib/zlib.pc.cmakein

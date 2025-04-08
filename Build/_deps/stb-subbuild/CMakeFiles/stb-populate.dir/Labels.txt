@@ -1,0 +1,14 @@
+# Target labels
+ stb-populate
+# Source files and their labels
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/stb-subbuild/CMakeFiles/stb-populate
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/stb-subbuild/CMakeFiles/c6e8b3b0aa4cc39ee181c68784baf1cc/stb-populate.rule
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/stb-subbuild/CMakeFiles/b69807ad4a1a90ad24df31394e3753eb/stb-populate-complete.rule
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/stb-subbuild/CMakeFiles/ea5529085f18f41de54397ad1e6a8463/stb-populate-build.rule
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/stb-subbuild/CMakeFiles/ea5529085f18f41de54397ad1e6a8463/stb-populate-configure.rule
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/stb-subbuild/CMakeFiles/ea5529085f18f41de54397ad1e6a8463/stb-populate-download.rule
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/stb-subbuild/CMakeFiles/ea5529085f18f41de54397ad1e6a8463/stb-populate-install.rule
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/stb-subbuild/CMakeFiles/ea5529085f18f41de54397ad1e6a8463/stb-populate-mkdir.rule
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/stb-subbuild/CMakeFiles/ea5529085f18f41de54397ad1e6a8463/stb-populate-patch.rule
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/stb-subbuild/CMakeFiles/ea5529085f18f41de54397ad1e6a8463/stb-populate-test.rule
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/stb-subbuild/CMakeFiles/ea5529085f18f41de54397ad1e6a8463/stb-populate-update.rule

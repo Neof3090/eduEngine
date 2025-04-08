@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-subbuild/CMakeFiles/sdl2-populate"
+		},
+		{
+			"file" : "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-subbuild/CMakeFiles/7c15b313c617cb759ccb54c9b9d10d35/sdl2-populate.rule"
+		},
+		{
+			"file" : "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-subbuild/CMakeFiles/17aad4bf9fca038a3653593a3fa61c03/sdl2-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-subbuild/CMakeFiles/f328b9eea3e5a7bd29f2e3f0688bdf74/sdl2-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-subbuild/CMakeFiles/f328b9eea3e5a7bd29f2e3f0688bdf74/sdl2-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-subbuild/CMakeFiles/f328b9eea3e5a7bd29f2e3f0688bdf74/sdl2-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-subbuild/CMakeFiles/f328b9eea3e5a7bd29f2e3f0688bdf74/sdl2-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-subbuild/CMakeFiles/f328b9eea3e5a7bd29f2e3f0688bdf74/sdl2-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-subbuild/CMakeFiles/f328b9eea3e5a7bd29f2e3f0688bdf74/sdl2-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-subbuild/CMakeFiles/f328b9eea3e5a7bd29f2e3f0688bdf74/sdl2-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-subbuild/CMakeFiles/f328b9eea3e5a7bd29f2e3f0688bdf74/sdl2-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"sdl2-populate"
+		],
+		"name" : "sdl2-populate"
+	}
+}

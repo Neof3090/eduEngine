@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-subbuild\CMakeFiles\f328b9eea3e5a7bd29f2e3f0688bdf74\sdl2-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-subbuild\CMakeFiles\f328b9eea3e5a7bd29f2e3f0688bdf74\sdl2-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-subbuild\CMakeFiles\f328b9eea3e5a7bd29f2e3f0688bdf74\sdl2-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-subbuild\CMakeFiles\f328b9eea3e5a7bd29f2e3f0688bdf74\sdl2-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-subbuild\CMakeFiles\f328b9eea3e5a7bd29f2e3f0688bdf74\sdl2-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-subbuild\CMakeFiles\f328b9eea3e5a7bd29f2e3f0688bdf74\sdl2-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-subbuild\CMakeFiles\f328b9eea3e5a7bd29f2e3f0688bdf74\sdl2-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-subbuild\CMakeFiles\f328b9eea3e5a7bd29f2e3f0688bdf74\sdl2-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-subbuild\CMakeFiles\17aad4bf9fca038a3653593a3fa61c03\sdl2-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-subbuild\CMakeFiles\7c15b313c617cb759ccb54c9b9d10d35\sdl2-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-subbuild\CMakeFiles\sdl2-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A688DB80-0CB4-3EE7-80F5-B7CA4C1C13B2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

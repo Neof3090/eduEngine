@@ -1,0 +1,1893 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      The system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+      Build started 2025-04-08 14:04:06.
+      
+      Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\3.31.6\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\3.31.6\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\3.31.6\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:01.37
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/3.31.6/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-ayc9zb"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-ayc9zb"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-ayc9zb'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b45c9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:04:09.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ayc9zb\\cmTC_b45c9.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_b45c9.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ayc9zb\\Debug\\".
+          Creating directory "cmTC_b45c9.dir\\Debug\\cmTC_b45c9.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_b45c9.dir\\Debug\\cmTC_b45c9.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_b45c9.dir\\Debug\\cmTC_b45c9.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_b45c9.dir\\Debug\\\\" /Fd"cmTC_b45c9.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_b45c9.dir\\Debug\\\\" /Fd"cmTC_b45c9.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ayc9zb\\Debug\\cmTC_b45c9.exe" /INCREMENTAL /ILK:"cmTC_b45c9.dir\\Debug\\cmTC_b45c9.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-ayc9zb/Debug/cmTC_b45c9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-ayc9zb/Debug/cmTC_b45c9.lib" /MACHINE:X64  /machine:x64 cmTC_b45c9.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_b45c9.vcxproj -> C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ayc9zb\\Debug\\cmTC_b45c9.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_b45c9.dir\\Debug\\cmTC_b45c9.tlog\\unsuccessfulbuild".
+          Touching "cmTC_b45c9.dir\\Debug\\cmTC_b45c9.tlog\\cmTC_b45c9.lastbuildstate".
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ayc9zb\\cmTC_b45c9.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.21
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.41.34123.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:9 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+      Build started 2025-04-08 14:04:35.
+      
+      Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\3.31.6\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\3.31.6\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\3.31.6\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:01.28
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/3.31.6/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:9 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-iihcca"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-iihcca"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-iihcca'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_0eb27.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:04:37.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-iihcca\\cmTC_0eb27.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_0eb27.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-iihcca\\Debug\\".
+          Creating directory "cmTC_0eb27.dir\\Debug\\cmTC_0eb27.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_0eb27.dir\\Debug\\cmTC_0eb27.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_0eb27.dir\\Debug\\cmTC_0eb27.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0eb27.dir\\Debug\\\\" /Fd"cmTC_0eb27.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0eb27.dir\\Debug\\\\" /Fd"cmTC_0eb27.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-iihcca\\Debug\\cmTC_0eb27.exe" /INCREMENTAL /ILK:"cmTC_0eb27.dir\\Debug\\cmTC_0eb27.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-iihcca/Debug/cmTC_0eb27.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-iihcca/Debug/cmTC_0eb27.lib" /MACHINE:X64  /machine:x64 cmTC_0eb27.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_0eb27.vcxproj -> C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-iihcca\\Debug\\cmTC_0eb27.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_0eb27.dir\\Debug\\cmTC_0eb27.tlog\\unsuccessfulbuild".
+          Touching "cmTC_0eb27.dir\\Debug\\cmTC_0eb27.tlog\\cmTC_0eb27.lastbuildstate".
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-iihcca\\cmTC_0eb27.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.25
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:9 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:9 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.41.34123.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckSymbolExists.cmake:68 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:82 (check_symbol_exists)"
+    checks:
+      - "Looking for __GLIBC__"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-4lv7fa"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-4lv7fa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src/cmake"
+    buildResult:
+      variable: "LIBC_IS_GLIBC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-4lv7fa'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_fe706.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:04:39.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-4lv7fa\\cmTC_fe706.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_fe706.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-4lv7fa\\Debug\\".
+          Creating directory "cmTC_fe706.dir\\Debug\\cmTC_fe706.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_fe706.dir\\Debug\\cmTC_fe706.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_fe706.dir\\Debug\\cmTC_fe706.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fe706.dir\\Debug\\\\" /Fd"cmTC_fe706.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-4lv7fa\\CheckSymbolExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fe706.dir\\Debug\\\\" /Fd"cmTC_fe706.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-4lv7fa\\CheckSymbolExists.c"
+          CheckSymbolExists.c
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-4lv7fa\\CheckSymbolExists.c(8,19): error C2065: '__GLIBC__': undeclared identifier [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-4lv7fa\\cmTC_fe706.vcxproj]
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-4lv7fa\\cmTC_fe706.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-4lv7fa\\cmTC_fe706.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-4lv7fa\\CheckSymbolExists.c(8,19): error C2065: '__GLIBC__': undeclared identifier [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-4lv7fa\\cmTC_fe706.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.13
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "Build/_deps/sdl2-src/cmake/CheckCPUArchitecture.cmake:17 (check_c_source_compiles)"
+      - "Build/_deps/sdl2-src/cmake/CheckCPUArchitecture.cmake:28 (_internal_check_cpu_architecture)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:139 (check_cpu_architecture)"
+    checks:
+      - "Performing Test CHECK_CPU_ARCHITECTURE_X86"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-fq50xd"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-fq50xd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src/cmake"
+    buildResult:
+      variable: "CHECK_CPU_ARCHITECTURE_X86"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-fq50xd'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c056d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:04:41.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fq50xd\\cmTC_c056d.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_c056d.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fq50xd\\Debug\\".
+          Creating directory "cmTC_c056d.dir\\Debug\\cmTC_c056d.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_c056d.dir\\Debug\\cmTC_c056d.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_c056d.dir\\Debug\\cmTC_c056d.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_CPU_ARCHITECTURE_X86 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c056d.dir\\Debug\\\\" /Fd"cmTC_c056d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fq50xd\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_CPU_ARCHITECTURE_X86 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c056d.dir\\Debug\\\\" /Fd"cmTC_c056d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fq50xd\\src.c"
+          src.c
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fq50xd\\src.c(6,3): error C2065: 'choke': undeclared identifier [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fq50xd\\cmTC_c056d.vcxproj]
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fq50xd\\src.c(8,1): error C2143: syntax error: missing ';' before '}' [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fq50xd\\cmTC_c056d.vcxproj]
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fq50xd\\cmTC_c056d.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fq50xd\\cmTC_c056d.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fq50xd\\src.c(6,3): error C2065: 'choke': undeclared identifier [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fq50xd\\cmTC_c056d.vcxproj]
+          C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fq50xd\\src.c(8,1): error C2143: syntax error: missing ';' before '}' [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fq50xd\\cmTC_c056d.vcxproj]
+        
+            0 Warning(s)
+            2 Error(s)
+        
+        Time Elapsed 00:00:01.11
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "Build/_deps/sdl2-src/cmake/CheckCPUArchitecture.cmake:17 (check_c_source_compiles)"
+      - "Build/_deps/sdl2-src/cmake/CheckCPUArchitecture.cmake:30 (_internal_check_cpu_architecture)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:140 (check_cpu_architecture)"
+    checks:
+      - "Performing Test CHECK_CPU_ARCHITECTURE_X64"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-6n6tse"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-6n6tse"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src/cmake"
+    buildResult:
+      variable: "CHECK_CPU_ARCHITECTURE_X64"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-6n6tse'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_688b3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:04:42.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-6n6tse\\cmTC_688b3.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_688b3.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-6n6tse\\Debug\\".
+          Creating directory "cmTC_688b3.dir\\Debug\\cmTC_688b3.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_688b3.dir\\Debug\\cmTC_688b3.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_688b3.dir\\Debug\\cmTC_688b3.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_CPU_ARCHITECTURE_X64 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_688b3.dir\\Debug\\\\" /Fd"cmTC_688b3.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-6n6tse\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_CPU_ARCHITECTURE_X64 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_688b3.dir\\Debug\\\\" /Fd"cmTC_688b3.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-6n6tse\\src.c"
+          src.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-6n6tse\\Debug\\cmTC_688b3.exe" /INCREMENTAL /ILK:"cmTC_688b3.dir\\Debug\\cmTC_688b3.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-6n6tse/Debug/cmTC_688b3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-6n6tse/Debug/cmTC_688b3.lib" /MACHINE:X64  /machine:x64 cmTC_688b3.dir\\Debug\\src.obj
+          cmTC_688b3.vcxproj -> C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-6n6tse\\Debug\\cmTC_688b3.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_688b3.dir\\Debug\\cmTC_688b3.tlog\\unsuccessfulbuild".
+          Touching "cmTC_688b3.dir\\Debug\\cmTC_688b3.tlog\\cmTC_688b3.lastbuildstate".
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-6n6tse\\cmTC_688b3.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.21
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "Build/_deps/sdl2-src/cmake/CheckCPUArchitecture.cmake:17 (check_c_source_compiles)"
+      - "Build/_deps/sdl2-src/cmake/CheckCPUArchitecture.cmake:32 (_internal_check_cpu_architecture)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:141 (check_cpu_architecture)"
+    checks:
+      - "Performing Test CHECK_CPU_ARCHITECTURE_ARM32"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-x8zrvd"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-x8zrvd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src/cmake"
+    buildResult:
+      variable: "CHECK_CPU_ARCHITECTURE_ARM32"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-x8zrvd'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_145ff.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:04:44.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-x8zrvd\\cmTC_145ff.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_145ff.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-x8zrvd\\Debug\\".
+          Creating directory "cmTC_145ff.dir\\Debug\\cmTC_145ff.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_145ff.dir\\Debug\\cmTC_145ff.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_145ff.dir\\Debug\\cmTC_145ff.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_CPU_ARCHITECTURE_ARM32 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_145ff.dir\\Debug\\\\" /Fd"cmTC_145ff.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-x8zrvd\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_CPU_ARCHITECTURE_ARM32 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_145ff.dir\\Debug\\\\" /Fd"cmTC_145ff.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-x8zrvd\\src.c"
+          src.c
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-x8zrvd\\src.c(6,3): error C2065: 'choke': undeclared identifier [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-x8zrvd\\cmTC_145ff.vcxproj]
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-x8zrvd\\src.c(8,1): error C2143: syntax error: missing ';' before '}' [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-x8zrvd\\cmTC_145ff.vcxproj]
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-x8zrvd\\cmTC_145ff.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-x8zrvd\\cmTC_145ff.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-x8zrvd\\src.c(6,3): error C2065: 'choke': undeclared identifier [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-x8zrvd\\cmTC_145ff.vcxproj]
+          C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-x8zrvd\\src.c(8,1): error C2143: syntax error: missing ';' before '}' [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-x8zrvd\\cmTC_145ff.vcxproj]
+        
+            0 Warning(s)
+            2 Error(s)
+        
+        Time Elapsed 00:00:01.08
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "Build/_deps/sdl2-src/cmake/CheckCPUArchitecture.cmake:17 (check_c_source_compiles)"
+      - "Build/_deps/sdl2-src/cmake/CheckCPUArchitecture.cmake:34 (_internal_check_cpu_architecture)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:142 (check_cpu_architecture)"
+    checks:
+      - "Performing Test CHECK_CPU_ARCHITECTURE_ARM64"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-wonr0g"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-wonr0g"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src/cmake"
+    buildResult:
+      variable: "CHECK_CPU_ARCHITECTURE_ARM64"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-wonr0g'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_97eae.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:04:46.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-wonr0g\\cmTC_97eae.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_97eae.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-wonr0g\\Debug\\".
+          Creating directory "cmTC_97eae.dir\\Debug\\cmTC_97eae.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_97eae.dir\\Debug\\cmTC_97eae.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_97eae.dir\\Debug\\cmTC_97eae.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_CPU_ARCHITECTURE_ARM64 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_97eae.dir\\Debug\\\\" /Fd"cmTC_97eae.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-wonr0g\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_CPU_ARCHITECTURE_ARM64 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_97eae.dir\\Debug\\\\" /Fd"cmTC_97eae.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-wonr0g\\src.c"
+          src.c
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-wonr0g\\src.c(6,3): error C2065: 'choke': undeclared identifier [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-wonr0g\\cmTC_97eae.vcxproj]
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-wonr0g\\src.c(8,1): error C2143: syntax error: missing ';' before '}' [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-wonr0g\\cmTC_97eae.vcxproj]
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-wonr0g\\cmTC_97eae.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-wonr0g\\cmTC_97eae.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-wonr0g\\src.c(6,3): error C2065: 'choke': undeclared identifier [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-wonr0g\\cmTC_97eae.vcxproj]
+          C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-wonr0g\\src.c(8,1): error C2143: syntax error: missing ';' before '}' [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-wonr0g\\cmTC_97eae.vcxproj]
+        
+            0 Warning(s)
+            2 Error(s)
+        
+        Time Elapsed 00:00:01.12
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "Build/_deps/sdl2-src/cmake/CheckCPUArchitecture.cmake:17 (check_c_source_compiles)"
+      - "Build/_deps/sdl2-src/cmake/CheckCPUArchitecture.cmake:36 (_internal_check_cpu_architecture)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:143 (check_cpu_architecture)"
+    checks:
+      - "Performing Test CHECK_CPU_ARCHITECTURE_LOONGARCH64"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-qk8eus"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-qk8eus"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src/cmake"
+    buildResult:
+      variable: "CHECK_CPU_ARCHITECTURE_LOONGARCH64"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-qk8eus'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_6e742.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:04:47.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-qk8eus\\cmTC_6e742.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_6e742.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-qk8eus\\Debug\\".
+          Creating directory "cmTC_6e742.dir\\Debug\\cmTC_6e742.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_6e742.dir\\Debug\\cmTC_6e742.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_6e742.dir\\Debug\\cmTC_6e742.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_CPU_ARCHITECTURE_LOONGARCH64 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6e742.dir\\Debug\\\\" /Fd"cmTC_6e742.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-qk8eus\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_CPU_ARCHITECTURE_LOONGARCH64 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6e742.dir\\Debug\\\\" /Fd"cmTC_6e742.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-qk8eus\\src.c"
+          src.c
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-qk8eus\\src.c(6,3): error C2065: 'choke': undeclared identifier [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-qk8eus\\cmTC_6e742.vcxproj]
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-qk8eus\\src.c(8,1): error C2143: syntax error: missing ';' before '}' [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-qk8eus\\cmTC_6e742.vcxproj]
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-qk8eus\\cmTC_6e742.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-qk8eus\\cmTC_6e742.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-qk8eus\\src.c(6,3): error C2065: 'choke': undeclared identifier [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-qk8eus\\cmTC_6e742.vcxproj]
+          C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-qk8eus\\src.c(8,1): error C2143: syntax error: missing ';' before '}' [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-qk8eus\\cmTC_6e742.vcxproj]
+        
+            0 Warning(s)
+            2 Error(s)
+        
+        Time Elapsed 00:00:01.10
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:1019 (check_include_file)"
+    checks:
+      - "Looking for immintrin.h"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-se5qar"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-se5qar"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src/cmake"
+    buildResult:
+      variable: "HAVE_IMMINTRIN_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-se5qar'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9660a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:04:49.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-se5qar\\cmTC_9660a.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_9660a.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-se5qar\\Debug\\".
+          Creating directory "cmTC_9660a.dir\\Debug\\cmTC_9660a.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_9660a.dir\\Debug\\cmTC_9660a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_9660a.dir\\Debug\\cmTC_9660a.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9660a.dir\\Debug\\\\" /Fd"cmTC_9660a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-se5qar\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9660a.dir\\Debug\\\\" /Fd"cmTC_9660a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-se5qar\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-se5qar\\Debug\\cmTC_9660a.exe" /INCREMENTAL /ILK:"cmTC_9660a.dir\\Debug\\cmTC_9660a.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-se5qar/Debug/cmTC_9660a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-se5qar/Debug/cmTC_9660a.lib" /MACHINE:X64  /machine:x64 cmTC_9660a.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_9660a.vcxproj -> C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-se5qar\\Debug\\cmTC_9660a.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_9660a.dir\\Debug\\cmTC_9660a.tlog\\unsuccessfulbuild".
+          Touching "cmTC_9660a.dir\\Debug\\cmTC_9660a.tlog\\cmTC_9660a.lastbuildstate".
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-se5qar\\cmTC_9660a.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.24
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:1182 (check_include_file)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-j3467s"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-j3467s"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src/cmake"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-j3467s'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_40e43.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:04:51.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-j3467s\\cmTC_40e43.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_40e43.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-j3467s\\Debug\\".
+          Creating directory "cmTC_40e43.dir\\Debug\\cmTC_40e43.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_40e43.dir\\Debug\\cmTC_40e43.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_40e43.dir\\Debug\\cmTC_40e43.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_40e43.dir\\Debug\\\\" /Fd"cmTC_40e43.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-j3467s\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_40e43.dir\\Debug\\\\" /Fd"cmTC_40e43.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-j3467s\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-j3467s\\Debug\\cmTC_40e43.exe" /INCREMENTAL /ILK:"cmTC_40e43.dir\\Debug\\cmTC_40e43.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-j3467s/Debug/cmTC_40e43.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-j3467s/Debug/cmTC_40e43.lib" /MACHINE:X64  /machine:x64 cmTC_40e43.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_40e43.vcxproj -> C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-j3467s\\Debug\\cmTC_40e43.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_40e43.dir\\Debug\\cmTC_40e43.tlog\\unsuccessfulbuild".
+          Touching "cmTC_40e43.dir\\Debug\\cmTC_40e43.tlog\\cmTC_40e43.lastbuildstate".
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-j3467s\\cmTC_40e43.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.23
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:1784 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_WIN32_CC"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-i71hzy"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-i71hzy"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src/cmake"
+    buildResult:
+      variable: "HAVE_WIN32_CC"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-i71hzy'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3c6f4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:04:52.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-i71hzy\\cmTC_3c6f4.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_3c6f4.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-i71hzy\\Debug\\".
+          Creating directory "cmTC_3c6f4.dir\\Debug\\cmTC_3c6f4.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_3c6f4.dir\\Debug\\cmTC_3c6f4.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_3c6f4.dir\\Debug\\cmTC_3c6f4.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D HAVE_WIN32_CC /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3c6f4.dir\\Debug\\\\" /Fd"cmTC_3c6f4.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-i71hzy\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D HAVE_WIN32_CC /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3c6f4.dir\\Debug\\\\" /Fd"cmTC_3c6f4.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-i71hzy\\src.c"
+          src.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-i71hzy\\Debug\\cmTC_3c6f4.exe" /INCREMENTAL /ILK:"cmTC_3c6f4.dir\\Debug\\cmTC_3c6f4.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-i71hzy/Debug/cmTC_3c6f4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-i71hzy/Debug/cmTC_3c6f4.lib" /MACHINE:X64  /machine:x64 cmTC_3c6f4.dir\\Debug\\src.obj
+          cmTC_3c6f4.vcxproj -> C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-i71hzy\\Debug\\cmTC_3c6f4.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_3c6f4.dir\\Debug\\cmTC_3c6f4.tlog\\unsuccessfulbuild".
+          Touching "cmTC_3c6f4.dir\\Debug\\cmTC_3c6f4.tlog\\cmTC_3c6f4.lastbuildstate".
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-i71hzy\\cmTC_3c6f4.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.35
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:1826 (check_include_file)"
+    checks:
+      - "Looking for d3d9.h"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-fnibac"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-fnibac"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src/cmake"
+    buildResult:
+      variable: "HAVE_D3D_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-fnibac'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5441a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:04:54.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fnibac\\cmTC_5441a.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_5441a.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fnibac\\Debug\\".
+          Creating directory "cmTC_5441a.dir\\Debug\\cmTC_5441a.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_5441a.dir\\Debug\\cmTC_5441a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_5441a.dir\\Debug\\cmTC_5441a.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5441a.dir\\Debug\\\\" /Fd"cmTC_5441a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fnibac\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5441a.dir\\Debug\\\\" /Fd"cmTC_5441a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fnibac\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fnibac\\Debug\\cmTC_5441a.exe" /INCREMENTAL /ILK:"cmTC_5441a.dir\\Debug\\cmTC_5441a.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-fnibac/Debug/cmTC_5441a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-fnibac/Debug/cmTC_5441a.lib" /MACHINE:X64  /machine:x64 cmTC_5441a.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_5441a.vcxproj -> C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fnibac\\Debug\\cmTC_5441a.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_5441a.dir\\Debug\\cmTC_5441a.tlog\\unsuccessfulbuild".
+          Touching "cmTC_5441a.dir\\Debug\\cmTC_5441a.tlog\\cmTC_5441a.lastbuildstate".
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fnibac\\cmTC_5441a.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.43
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:1827 (check_include_file)"
+    checks:
+      - "Looking for d3d11_1.h"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-x6e0oc"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-x6e0oc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src/cmake"
+    buildResult:
+      variable: "HAVE_D3D11_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-x6e0oc'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d9c4f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:04:56.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-x6e0oc\\cmTC_d9c4f.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_d9c4f.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-x6e0oc\\Debug\\".
+          Creating directory "cmTC_d9c4f.dir\\Debug\\cmTC_d9c4f.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_d9c4f.dir\\Debug\\cmTC_d9c4f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_d9c4f.dir\\Debug\\cmTC_d9c4f.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d9c4f.dir\\Debug\\\\" /Fd"cmTC_d9c4f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-x6e0oc\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d9c4f.dir\\Debug\\\\" /Fd"cmTC_d9c4f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-x6e0oc\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-x6e0oc\\Debug\\cmTC_d9c4f.exe" /INCREMENTAL /ILK:"cmTC_d9c4f.dir\\Debug\\cmTC_d9c4f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-x6e0oc/Debug/cmTC_d9c4f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-x6e0oc/Debug/cmTC_d9c4f.lib" /MACHINE:X64  /machine:x64 cmTC_d9c4f.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_d9c4f.vcxproj -> C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-x6e0oc\\Debug\\cmTC_d9c4f.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_d9c4f.dir\\Debug\\cmTC_d9c4f.tlog\\unsuccessfulbuild".
+          Touching "cmTC_d9c4f.dir\\Debug\\cmTC_d9c4f.tlog\\cmTC_d9c4f.lastbuildstate".
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-x6e0oc\\cmTC_d9c4f.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.46
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:1828 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_D3D12_H"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-s2amky"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-s2amky"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src/cmake"
+    buildResult:
+      variable: "HAVE_D3D12_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-s2amky'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_35362.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:04:58.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-s2amky\\cmTC_35362.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_35362.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-s2amky\\Debug\\".
+          Creating directory "cmTC_35362.dir\\Debug\\cmTC_35362.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_35362.dir\\Debug\\cmTC_35362.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_35362.dir\\Debug\\cmTC_35362.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D HAVE_D3D12_H /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_35362.dir\\Debug\\\\" /Fd"cmTC_35362.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-s2amky\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D HAVE_D3D12_H /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_35362.dir\\Debug\\\\" /Fd"cmTC_35362.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-s2amky\\src.c"
+          src.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-s2amky\\Debug\\cmTC_35362.exe" /INCREMENTAL /ILK:"cmTC_35362.dir\\Debug\\cmTC_35362.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-s2amky/Debug/cmTC_35362.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-s2amky/Debug/cmTC_35362.lib" /MACHINE:X64  /machine:x64 cmTC_35362.dir\\Debug\\src.obj
+          cmTC_35362.vcxproj -> C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-s2amky\\Debug\\cmTC_35362.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_35362.dir\\Debug\\cmTC_35362.tlog\\unsuccessfulbuild".
+          Touching "cmTC_35362.dir\\Debug\\cmTC_35362.tlog\\cmTC_35362.lastbuildstate".
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-s2amky\\cmTC_35362.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.43
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:1836 (check_include_file)"
+    checks:
+      - "Looking for ddraw.h"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-oezov8"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-oezov8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src/cmake"
+    buildResult:
+      variable: "HAVE_DDRAW_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-oezov8'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_515ed.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:05:00.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-oezov8\\cmTC_515ed.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_515ed.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-oezov8\\Debug\\".
+          Creating directory "cmTC_515ed.dir\\Debug\\cmTC_515ed.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_515ed.dir\\Debug\\cmTC_515ed.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_515ed.dir\\Debug\\cmTC_515ed.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_515ed.dir\\Debug\\\\" /Fd"cmTC_515ed.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-oezov8\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_515ed.dir\\Debug\\\\" /Fd"cmTC_515ed.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-oezov8\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-oezov8\\Debug\\cmTC_515ed.exe" /INCREMENTAL /ILK:"cmTC_515ed.dir\\Debug\\cmTC_515ed.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-oezov8/Debug/cmTC_515ed.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-oezov8/Debug/cmTC_515ed.lib" /MACHINE:X64  /machine:x64 cmTC_515ed.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_515ed.vcxproj -> C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-oezov8\\Debug\\cmTC_515ed.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_515ed.dir\\Debug\\cmTC_515ed.tlog\\unsuccessfulbuild".
+          Touching "cmTC_515ed.dir\\Debug\\cmTC_515ed.tlog\\cmTC_515ed.lastbuildstate".
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-oezov8\\cmTC_515ed.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.38
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:1837 (check_include_file)"
+    checks:
+      - "Looking for dsound.h"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-ayh5iq"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-ayh5iq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src/cmake"
+    buildResult:
+      variable: "HAVE_DSOUND_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-ayh5iq'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1c1dd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:05:02.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ayh5iq\\cmTC_1c1dd.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_1c1dd.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ayh5iq\\Debug\\".
+          Creating directory "cmTC_1c1dd.dir\\Debug\\cmTC_1c1dd.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_1c1dd.dir\\Debug\\cmTC_1c1dd.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_1c1dd.dir\\Debug\\cmTC_1c1dd.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1c1dd.dir\\Debug\\\\" /Fd"cmTC_1c1dd.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ayh5iq\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1c1dd.dir\\Debug\\\\" /Fd"cmTC_1c1dd.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ayh5iq\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ayh5iq\\Debug\\cmTC_1c1dd.exe" /INCREMENTAL /ILK:"cmTC_1c1dd.dir\\Debug\\cmTC_1c1dd.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-ayh5iq/Debug/cmTC_1c1dd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-ayh5iq/Debug/cmTC_1c1dd.lib" /MACHINE:X64  /machine:x64 cmTC_1c1dd.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_1c1dd.vcxproj -> C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ayh5iq\\Debug\\cmTC_1c1dd.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_1c1dd.dir\\Debug\\cmTC_1c1dd.tlog\\unsuccessfulbuild".
+          Touching "cmTC_1c1dd.dir\\Debug\\cmTC_1c1dd.tlog\\cmTC_1c1dd.lastbuildstate".
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ayh5iq\\cmTC_1c1dd.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.41
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:1838 (check_include_file)"
+    checks:
+      - "Looking for dinput.h"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-kwl9dm"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-kwl9dm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src/cmake"
+    buildResult:
+      variable: "HAVE_DINPUT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-kwl9dm'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_16d8f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:05:04.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-kwl9dm\\cmTC_16d8f.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_16d8f.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-kwl9dm\\Debug\\".
+          Creating directory "cmTC_16d8f.dir\\Debug\\cmTC_16d8f.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_16d8f.dir\\Debug\\cmTC_16d8f.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_16d8f.dir\\Debug\\cmTC_16d8f.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_16d8f.dir\\Debug\\\\" /Fd"cmTC_16d8f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-kwl9dm\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_16d8f.dir\\Debug\\\\" /Fd"cmTC_16d8f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-kwl9dm\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+          C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-kwl9dm\\Debug\\cmTC_16d8f.exe" /INCREMENTAL /ILK:"cmTC_16d8f.dir\\Debug\\cmTC_16d8f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-kwl9dm/Debug/cmTC_16d8f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-kwl9dm/Debug/cmTC_16d8f.lib" /MACHINE:X64  /machine:x64 cmTC_16d8f.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_16d8f.vcxproj -> C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-kwl9dm\\Debug\\cmTC_16d8f.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_16d8f.dir\\Debug\\cmTC_16d8f.tlog\\unsuccessfulbuild".
+          Touching "cmTC_16d8f.dir\\Debug\\cmTC_16d8f.tlog\\cmTC_16d8f.lastbuildstate".
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-kwl9dm\\cmTC_16d8f.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.37
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:1842 (check_include_file)"
+    checks:
+      - "Looking for dxgi.h"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-dcduy4"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-dcduy4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src/cmake"
+    buildResult:
+      variable: "HAVE_DXGI_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-dcduy4'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b351b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:05:06.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-dcduy4\\cmTC_b351b.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_b351b.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-dcduy4\\Debug\\".
+          Creating directory "cmTC_b351b.dir\\Debug\\cmTC_b351b.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_b351b.dir\\Debug\\cmTC_b351b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_b351b.dir\\Debug\\cmTC_b351b.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b351b.dir\\Debug\\\\" /Fd"cmTC_b351b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-dcduy4\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b351b.dir\\Debug\\\\" /Fd"cmTC_b351b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-dcduy4\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-dcduy4\\Debug\\cmTC_b351b.exe" /INCREMENTAL /ILK:"cmTC_b351b.dir\\Debug\\cmTC_b351b.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-dcduy4/Debug/cmTC_b351b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-dcduy4/Debug/cmTC_b351b.lib" /MACHINE:X64  /machine:x64 cmTC_b351b.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_b351b.vcxproj -> C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-dcduy4\\Debug\\cmTC_b351b.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_b351b.dir\\Debug\\cmTC_b351b.tlog\\unsuccessfulbuild".
+          Touching "cmTC_b351b.dir\\Debug\\cmTC_b351b.tlog\\cmTC_b351b.lastbuildstate".
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-dcduy4\\cmTC_b351b.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.41
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:1856 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_XINPUT_H"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-63wgcu"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-63wgcu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src/cmake"
+    buildResult:
+      variable: "HAVE_XINPUT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-63wgcu'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_fc4c3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:05:08.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-63wgcu\\cmTC_fc4c3.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_fc4c3.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-63wgcu\\Debug\\".
+          Creating directory "cmTC_fc4c3.dir\\Debug\\cmTC_fc4c3.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_fc4c3.dir\\Debug\\cmTC_fc4c3.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_fc4c3.dir\\Debug\\cmTC_fc4c3.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D HAVE_XINPUT_H /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fc4c3.dir\\Debug\\\\" /Fd"cmTC_fc4c3.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-63wgcu\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D HAVE_XINPUT_H /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fc4c3.dir\\Debug\\\\" /Fd"cmTC_fc4c3.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-63wgcu\\src.c"
+          src.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-63wgcu\\Debug\\cmTC_fc4c3.exe" /INCREMENTAL /ILK:"cmTC_fc4c3.dir\\Debug\\cmTC_fc4c3.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-63wgcu/Debug/cmTC_fc4c3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-63wgcu/Debug/cmTC_fc4c3.lib" /MACHINE:X64  /machine:x64 cmTC_fc4c3.dir\\Debug\\src.obj
+          cmTC_fc4c3.vcxproj -> C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-63wgcu\\Debug\\cmTC_fc4c3.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_fc4c3.dir\\Debug\\cmTC_fc4c3.tlog\\unsuccessfulbuild".
+          Touching "cmTC_fc4c3.dir\\Debug\\cmTC_fc4c3.tlog\\cmTC_fc4c3.lastbuildstate".
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-63wgcu\\cmTC_fc4c3.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.38
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:1860 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_WINDOWS_GAMING_INPUT_H"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-n7iybt"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-n7iybt"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src/cmake"
+    buildResult:
+      variable: "HAVE_WINDOWS_GAMING_INPUT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-n7iybt'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_76d69.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:05:10.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-n7iybt\\cmTC_76d69.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_76d69.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-n7iybt\\Debug\\".
+          Creating directory "cmTC_76d69.dir\\Debug\\cmTC_76d69.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_76d69.dir\\Debug\\cmTC_76d69.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_76d69.dir\\Debug\\cmTC_76d69.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D HAVE_WINDOWS_GAMING_INPUT_H /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_76d69.dir\\Debug\\\\" /Fd"cmTC_76d69.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-n7iybt\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D HAVE_WINDOWS_GAMING_INPUT_H /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_76d69.dir\\Debug\\\\" /Fd"cmTC_76d69.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-n7iybt\\src.c"
+          src.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-n7iybt\\Debug\\cmTC_76d69.exe" /INCREMENTAL /ILK:"cmTC_76d69.dir\\Debug\\cmTC_76d69.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-n7iybt/Debug/cmTC_76d69.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-n7iybt/Debug/cmTC_76d69.lib" /MACHINE:X64  /machine:x64 cmTC_76d69.dir\\Debug\\src.obj
+          cmTC_76d69.vcxproj -> C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-n7iybt\\Debug\\cmTC_76d69.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_76d69.dir\\Debug\\cmTC_76d69.tlog\\unsuccessfulbuild".
+          Touching "cmTC_76d69.dir\\Debug\\cmTC_76d69.tlog\\cmTC_76d69.lastbuildstate".
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-n7iybt\\cmTC_76d69.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.89
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:1868 (check_include_file)"
+    checks:
+      - "Looking for tpcshrd.h"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-2n41kg"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-2n41kg"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src/cmake"
+    buildResult:
+      variable: "HAVE_TPCSHRD_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-2n41kg'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_6f8cd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:05:12.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-2n41kg\\cmTC_6f8cd.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_6f8cd.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-2n41kg\\Debug\\".
+          Creating directory "cmTC_6f8cd.dir\\Debug\\cmTC_6f8cd.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_6f8cd.dir\\Debug\\cmTC_6f8cd.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_6f8cd.dir\\Debug\\cmTC_6f8cd.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6f8cd.dir\\Debug\\\\" /Fd"cmTC_6f8cd.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-2n41kg\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6f8cd.dir\\Debug\\\\" /Fd"cmTC_6f8cd.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-2n41kg\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-2n41kg\\Debug\\cmTC_6f8cd.exe" /INCREMENTAL /ILK:"cmTC_6f8cd.dir\\Debug\\cmTC_6f8cd.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-2n41kg/Debug/cmTC_6f8cd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-2n41kg/Debug/cmTC_6f8cd.lib" /MACHINE:X64  /machine:x64 cmTC_6f8cd.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_6f8cd.vcxproj -> C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-2n41kg\\Debug\\cmTC_6f8cd.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_6f8cd.dir\\Debug\\cmTC_6f8cd.tlog\\unsuccessfulbuild".
+          Touching "cmTC_6f8cd.dir\\Debug\\cmTC_6f8cd.tlog\\cmTC_6f8cd.lastbuildstate".
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-2n41kg\\cmTC_6f8cd.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.40
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:1869 (check_include_file)"
+    checks:
+      - "Looking for roapi.h"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-z89nfn"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-z89nfn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src/cmake"
+    buildResult:
+      variable: "HAVE_ROAPI_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-z89nfn'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_cdb1e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:05:14.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-z89nfn\\cmTC_cdb1e.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_cdb1e.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-z89nfn\\Debug\\".
+          Creating directory "cmTC_cdb1e.dir\\Debug\\cmTC_cdb1e.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_cdb1e.dir\\Debug\\cmTC_cdb1e.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_cdb1e.dir\\Debug\\cmTC_cdb1e.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cdb1e.dir\\Debug\\\\" /Fd"cmTC_cdb1e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-z89nfn\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cdb1e.dir\\Debug\\\\" /Fd"cmTC_cdb1e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-z89nfn\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-z89nfn\\Debug\\cmTC_cdb1e.exe" /INCREMENTAL /ILK:"cmTC_cdb1e.dir\\Debug\\cmTC_cdb1e.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-z89nfn/Debug/cmTC_cdb1e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-z89nfn/Debug/cmTC_cdb1e.lib" /MACHINE:X64  /machine:x64 cmTC_cdb1e.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_cdb1e.vcxproj -> C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-z89nfn\\Debug\\cmTC_cdb1e.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_cdb1e.dir\\Debug\\cmTC_cdb1e.tlog\\unsuccessfulbuild".
+          Touching "cmTC_cdb1e.dir\\Debug\\cmTC_cdb1e.tlog\\cmTC_cdb1e.lastbuildstate".
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-z89nfn\\cmTC_cdb1e.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.39
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:1870 (check_include_file)"
+    checks:
+      - "Looking for mmdeviceapi.h"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-8nujpm"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-8nujpm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src/cmake"
+    buildResult:
+      variable: "HAVE_MMDEVICEAPI_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-8nujpm'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_7f0ae.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:05:16.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-8nujpm\\cmTC_7f0ae.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_7f0ae.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-8nujpm\\Debug\\".
+          Creating directory "cmTC_7f0ae.dir\\Debug\\cmTC_7f0ae.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_7f0ae.dir\\Debug\\cmTC_7f0ae.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_7f0ae.dir\\Debug\\cmTC_7f0ae.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7f0ae.dir\\Debug\\\\" /Fd"cmTC_7f0ae.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-8nujpm\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7f0ae.dir\\Debug\\\\" /Fd"cmTC_7f0ae.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-8nujpm\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-8nujpm\\Debug\\cmTC_7f0ae.exe" /INCREMENTAL /ILK:"cmTC_7f0ae.dir\\Debug\\cmTC_7f0ae.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-8nujpm/Debug/cmTC_7f0ae.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-8nujpm/Debug/cmTC_7f0ae.lib" /MACHINE:X64  /machine:x64 cmTC_7f0ae.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_7f0ae.vcxproj -> C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-8nujpm\\Debug\\cmTC_7f0ae.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_7f0ae.dir\\Debug\\cmTC_7f0ae.tlog\\unsuccessfulbuild".
+          Touching "cmTC_7f0ae.dir\\Debug\\cmTC_7f0ae.tlog\\cmTC_7f0ae.lastbuildstate".
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-8nujpm\\cmTC_7f0ae.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.43
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:1871 (check_include_file)"
+    checks:
+      - "Looking for audioclient.h"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-kjno7x"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-kjno7x"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src/cmake"
+    buildResult:
+      variable: "HAVE_AUDIOCLIENT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-kjno7x'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_550ae.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:05:18.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-kjno7x\\cmTC_550ae.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_550ae.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-kjno7x\\Debug\\".
+          Creating directory "cmTC_550ae.dir\\Debug\\cmTC_550ae.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_550ae.dir\\Debug\\cmTC_550ae.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_550ae.dir\\Debug\\cmTC_550ae.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_550ae.dir\\Debug\\\\" /Fd"cmTC_550ae.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-kjno7x\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_550ae.dir\\Debug\\\\" /Fd"cmTC_550ae.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-kjno7x\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-kjno7x\\Debug\\cmTC_550ae.exe" /INCREMENTAL /ILK:"cmTC_550ae.dir\\Debug\\cmTC_550ae.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-kjno7x/Debug/cmTC_550ae.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-kjno7x/Debug/cmTC_550ae.lib" /MACHINE:X64  /machine:x64 cmTC_550ae.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_550ae.vcxproj -> C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-kjno7x\\Debug\\cmTC_550ae.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_550ae.dir\\Debug\\cmTC_550ae.tlog\\unsuccessfulbuild".
+          Touching "cmTC_550ae.dir\\Debug\\cmTC_550ae.tlog\\cmTC_550ae.lastbuildstate".
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-kjno7x\\cmTC_550ae.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.38
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:1872 (check_include_file)"
+    checks:
+      - "Looking for sensorsapi.h"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-egzfw4"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-egzfw4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src/cmake"
+    buildResult:
+      variable: "HAVE_SENSORSAPI_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-egzfw4'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3f096.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:05:20.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-egzfw4\\cmTC_3f096.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_3f096.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-egzfw4\\Debug\\".
+          Creating directory "cmTC_3f096.dir\\Debug\\cmTC_3f096.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_3f096.dir\\Debug\\cmTC_3f096.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_3f096.dir\\Debug\\cmTC_3f096.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3f096.dir\\Debug\\\\" /Fd"cmTC_3f096.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-egzfw4\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3f096.dir\\Debug\\\\" /Fd"cmTC_3f096.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-egzfw4\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-egzfw4\\Debug\\cmTC_3f096.exe" /INCREMENTAL /ILK:"cmTC_3f096.dir\\Debug\\cmTC_3f096.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-egzfw4/Debug/cmTC_3f096.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-egzfw4/Debug/cmTC_3f096.lib" /MACHINE:X64  /machine:x64 cmTC_3f096.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_3f096.vcxproj -> C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-egzfw4\\Debug\\cmTC_3f096.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_3f096.dir\\Debug\\cmTC_3f096.tlog\\unsuccessfulbuild".
+          Touching "cmTC_3f096.dir\\Debug\\cmTC_3f096.tlog\\cmTC_3f096.lastbuildstate".
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-egzfw4\\cmTC_3f096.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.41
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "Build/_deps/sdl2-src/CMakeLists.txt:1873 (check_include_file)"
+    checks:
+      - "Looking for shellscalingapi.h"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-s0fdvx"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-s0fdvx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src/cmake"
+    buildResult:
+      variable: "HAVE_SHELLSCALINGAPI_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-s0fdvx'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_90e08.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:05:22.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-s0fdvx\\cmTC_90e08.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_90e08.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-s0fdvx\\Debug\\".
+          Creating directory "cmTC_90e08.dir\\Debug\\cmTC_90e08.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_90e08.dir\\Debug\\cmTC_90e08.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_90e08.dir\\Debug\\cmTC_90e08.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_90e08.dir\\Debug\\\\" /Fd"cmTC_90e08.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-s0fdvx\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _GNU_SOURCE=1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_90e08.dir\\Debug\\\\" /Fd"cmTC_90e08.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-s0fdvx\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-s0fdvx\\Debug\\cmTC_90e08.exe" /INCREMENTAL /ILK:"cmTC_90e08.dir\\Debug\\cmTC_90e08.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-s0fdvx/Debug/cmTC_90e08.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-s0fdvx/Debug/cmTC_90e08.lib" /MACHINE:X64  /machine:x64 cmTC_90e08.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_90e08.vcxproj -> C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-s0fdvx\\Debug\\cmTC_90e08.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_90e08.dir\\Debug\\cmTC_90e08.tlog\\unsuccessfulbuild".
+          Touching "cmTC_90e08.dir\\Debug\\cmTC_90e08.tlog\\cmTC_90e08.lastbuildstate".
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-s0fdvx\\cmTC_90e08.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.35
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "Build/_deps/assimp-src/contrib/zlib/CMakeLists.txt:35 (check_include_file)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-vrr9gq"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-vrr9gq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/cmake-modules"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-vrr9gq'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_12a74.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:06:07.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-vrr9gq\\cmTC_12a74.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_12a74.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-vrr9gq\\Debug\\".
+          Creating directory "cmTC_12a74.dir\\Debug\\cmTC_12a74.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_12a74.dir\\Debug\\cmTC_12a74.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_12a74.dir\\Debug\\cmTC_12a74.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_12a74.dir\\Debug\\\\" /Fd"cmTC_12a74.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-vrr9gq\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_12a74.dir\\Debug\\\\" /Fd"cmTC_12a74.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-vrr9gq\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-vrr9gq\\Debug\\cmTC_12a74.exe" /INCREMENTAL /ILK:"cmTC_12a74.dir\\Debug\\cmTC_12a74.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-vrr9gq/Debug/cmTC_12a74.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-vrr9gq/Debug/cmTC_12a74.lib" /MACHINE:X64  /machine:x64 cmTC_12a74.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_12a74.vcxproj -> C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-vrr9gq\\Debug\\cmTC_12a74.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_12a74.dir\\Debug\\cmTC_12a74.tlog\\unsuccessfulbuild".
+          Touching "cmTC_12a74.dir\\Debug\\cmTC_12a74.tlog\\cmTC_12a74.lastbuildstate".
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-vrr9gq\\cmTC_12a74.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.23
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "Build/_deps/assimp-src/contrib/zlib/CMakeLists.txt:37 (check_include_file)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-twvg2k"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-twvg2k"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/cmake-modules"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-twvg2k'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5ec20.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:06:09.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-twvg2k\\cmTC_5ec20.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_5ec20.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-twvg2k\\Debug\\".
+          Creating directory "cmTC_5ec20.dir\\Debug\\cmTC_5ec20.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_5ec20.dir\\Debug\\cmTC_5ec20.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_5ec20.dir\\Debug\\cmTC_5ec20.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5ec20.dir\\Debug\\\\" /Fd"cmTC_5ec20.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-twvg2k\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5ec20.dir\\Debug\\\\" /Fd"cmTC_5ec20.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-twvg2k\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-twvg2k\\Debug\\cmTC_5ec20.exe" /INCREMENTAL /ILK:"cmTC_5ec20.dir\\Debug\\cmTC_5ec20.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-twvg2k/Debug/cmTC_5ec20.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-twvg2k/Debug/cmTC_5ec20.lib" /MACHINE:X64  /machine:x64 cmTC_5ec20.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_5ec20.vcxproj -> C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-twvg2k\\Debug\\cmTC_5ec20.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_5ec20.dir\\Debug\\cmTC_5ec20.tlog\\unsuccessfulbuild".
+          Touching "cmTC_5ec20.dir\\Debug\\cmTC_5ec20.tlog\\cmTC_5ec20.lastbuildstate".
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-twvg2k\\cmTC_5ec20.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:01.25
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "Build/_deps/assimp-src/contrib/zlib/CMakeLists.txt:55 (check_type_size)"
+    checks:
+      - "Check size of off64_t"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-ki6pp1"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-ki6pp1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/cmake-modules"
+    buildResult:
+      variable: "HAVE_OFF64_T"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-ki6pp1'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b225b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:06:11.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\cmTC_b225b.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_b225b.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\Debug\\".
+          Creating directory "cmTC_b225b.dir\\Debug\\cmTC_b225b.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_b225b.dir\\Debug\\cmTC_b225b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_b225b.dir\\Debug\\cmTC_b225b.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b225b.dir\\Debug\\\\" /Fd"cmTC_b225b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\OFF64_T.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b225b.dir\\Debug\\\\" /Fd"cmTC_b225b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\OFF64_T.c"
+          OFF64_T.c
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\OFF64_T.c(29,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\cmTC_b225b.vcxproj]
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\OFF64_T.c(30,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\cmTC_b225b.vcxproj]
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\OFF64_T.c(31,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\cmTC_b225b.vcxproj]
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\OFF64_T.c(32,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\cmTC_b225b.vcxproj]
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\OFF64_T.c(33,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\cmTC_b225b.vcxproj]
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\cmTC_b225b.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\cmTC_b225b.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\OFF64_T.c(29,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\cmTC_b225b.vcxproj]
+          C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\OFF64_T.c(30,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\cmTC_b225b.vcxproj]
+          C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\OFF64_T.c(31,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\cmTC_b225b.vcxproj]
+          C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\OFF64_T.c(32,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\cmTC_b225b.vcxproj]
+          C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\OFF64_T.c(33,12): error C2065: 'off64_t': undeclared identifier [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ki6pp1\\cmTC_b225b.vcxproj]
+        
+            0 Warning(s)
+            5 Error(s)
+        
+        Time Elapsed 00:00:01.20
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "Build/_deps/assimp-src/contrib/zlib/CMakeLists.txt:64 (check_function_exists)"
+    checks:
+      - "Looking for fseeko"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-sw1yr7"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-sw1yr7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/cmake-modules"
+    buildResult:
+      variable: "HAVE_FSEEKO"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-sw1yr7'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_26151.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:06:12.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-sw1yr7\\cmTC_26151.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_26151.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-sw1yr7\\Debug\\".
+          Creating directory "cmTC_26151.dir\\Debug\\cmTC_26151.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_26151.dir\\Debug\\cmTC_26151.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_26151.dir\\Debug\\cmTC_26151.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_26151.dir\\Debug\\\\" /Fd"cmTC_26151.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-sw1yr7\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_26151.dir\\Debug\\\\" /Fd"cmTC_26151.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-sw1yr7\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-sw1yr7\\Debug\\cmTC_26151.exe" /INCREMENTAL /ILK:"cmTC_26151.dir\\Debug\\cmTC_26151.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-sw1yr7/Debug/cmTC_26151.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-sw1yr7/Debug/cmTC_26151.lib" /MACHINE:X64  /machine:x64 cmTC_26151.dir\\Debug\\CheckFunctionExists.obj
+        CheckFunctionExists.obj : error LNK2019: unresolved external symbol fseeko referenced in function main [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-sw1yr7\\cmTC_26151.vcxproj]
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-sw1yr7\\Debug\\cmTC_26151.exe : fatal error LNK1120: 1 unresolved externals [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-sw1yr7\\cmTC_26151.vcxproj]
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-sw1yr7\\cmTC_26151.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-sw1yr7\\cmTC_26151.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          CheckFunctionExists.obj : error LNK2019: unresolved external symbol fseeko referenced in function main [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-sw1yr7\\cmTC_26151.vcxproj]
+          C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-sw1yr7\\Debug\\cmTC_26151.exe : fatal error LNK1120: 1 unresolved externals [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-sw1yr7\\cmTC_26151.vcxproj]
+        
+            0 Warning(s)
+            2 Error(s)
+        
+        Time Elapsed 00:00:01.17
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "Build/_deps/assimp-src/contrib/zlib/CMakeLists.txt:72 (check_include_file)"
+    checks:
+      - "Looking for unistd.h"
+    directories:
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-aj054b"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-aj054b"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/cmake-modules"
+    buildResult:
+      variable: "Z_HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/CMakeScratch/TryCompile-aj054b'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_599ad.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.11.9+a69bbaaf5 for .NET Framework
+        Build started 2025-04-08 14:06:14.
+        
+        Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-aj054b\\cmTC_599ad.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_599ad.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-aj054b\\Debug\\".
+          Creating directory "cmTC_599ad.dir\\Debug\\cmTC_599ad.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_599ad.dir\\Debug\\cmTC_599ad.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_599ad.dir\\Debug\\cmTC_599ad.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_599ad.dir\\Debug\\\\" /Fd"cmTC_599ad.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-aj054b\\CheckIncludeFile.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.41.34123 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_599ad.dir\\Debug\\\\" /Fd"cmTC_599ad.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-aj054b\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-aj054b\\CheckIncludeFile.c(1,10): error C1083: Cannot open include file: 'unistd.h': No such file or directory [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-aj054b\\cmTC_599ad.vcxproj]
+        Done Building Project "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-aj054b\\cmTC_599ad.vcxproj" (default targets) -- FAILED.
+        
+        Build FAILED.
+        
+        "C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-aj054b\\cmTC_599ad.vcxproj" (default target) (1) ->
+        (ClCompile target) -> 
+          C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-aj054b\\CheckIncludeFile.c(1,10): error C1083: Cannot open include file: 'unistd.h': No such file or directory [C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-aj054b\\cmTC_599ad.vcxproj]
+        
+            0 Warning(s)
+            1 Error(s)
+        
+        Time Elapsed 00:00:01.16
+        
+      exitCode: 1
+...
