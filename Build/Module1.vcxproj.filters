@@ -64,13 +64,4 @@
       <UniqueIdentifier>{56135D44-5458-3032-BEBB-49E9D936ED23}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Systems.hpp" />
-    <ClInclude Include="..\Module1\Components.hpp">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Module1\Systems.hpp">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-  </ItemGroup>
 </Project>

@@ -90,18 +90,14 @@
       <AdditionalIncludeDirectories>C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\neofe\source\repos\Neof3090\eduEngine\src;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code\..\contrib\rapidjson\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code\..\contrib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code\..\contrib\unzip;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\irrXML;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code\..\contrib\openddlparser\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code\..\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\code\..\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <MinimalRebuild></MinimalRebuild>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <Optimization></Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_DEBUG;EBUG:FULL;GL_SILENCE_DEPRECATION=0;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;ASSIMP_BUILD_NO_C4D_IMPORTER;MINIZ_USE_UNALIGNED_LOADS_AND_STORES=0;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR="Debug";assimp_EXPORTS</PreprocessorDefinitions>
@@ -139,17 +135,14 @@
       <AdditionalIncludeDirectories>C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\neofe\source\repos\Neof3090\eduEngine\src;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code\..\contrib\rapidjson\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code\..\contrib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code\..\contrib\unzip;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\irrXML;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code\..\contrib\openddlparser\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code\..\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\code\..\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) -O3 /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <MinimalRebuild></MinimalRebuild>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GL_SILENCE_DEPRECATION=0;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;ASSIMP_BUILD_NO_C4D_IMPORTER;MINIZ_USE_UNALIGNED_LOADS_AND_STORES=0;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR="Release";assimp_EXPORTS</PreprocessorDefinitions>
@@ -189,17 +182,14 @@
       <AdditionalIncludeDirectories>C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\neofe\source\repos\Neof3090\eduEngine\src;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code\..\contrib\rapidjson\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code\..\contrib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code\..\contrib\unzip;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\irrXML;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code\..\contrib\openddlparser\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code\..\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\code\..\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <MinimalRebuild></MinimalRebuild>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <Optimization>MinSpace</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GL_SILENCE_DEPRECATION=0;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;ASSIMP_BUILD_NO_C4D_IMPORTER;MINIZ_USE_UNALIGNED_LOADS_AND_STORES=0;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR="MinSizeRel";assimp_EXPORTS</PreprocessorDefinitions>
@@ -239,18 +229,15 @@
       <AdditionalIncludeDirectories>C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\neofe\source\repos\Neof3090\eduEngine\src;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code\..\contrib\rapidjson\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code\..\contrib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code\..\contrib\unzip;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\irrXML;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code\..\contrib\openddlparser\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code\..\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\code\..\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <MinimalRebuild></MinimalRebuild>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <SupportJustMyCode></SupportJustMyCode>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GL_SILENCE_DEPRECATION=0;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;ASSIMP_BUILD_NO_C4D_IMPORTER;MINIZ_USE_UNALIGNED_LOADS_AND_STORES=0;ASSIMP_IMPORTER_GLTF_USE_OPEN3DGC=1;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR="RelWithDebInfo";assimp_EXPORTS</PreprocessorDefinitions>
@@ -288,7 +275,7 @@
       <UseUtf8Encoding>Always</UseUtf8Encoding>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/code/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/neofe/source/repos/Neof3090/eduEngine -BC:/Users/neofe/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/code/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/neofe/source/repos/Neof3090/eduEngine -BC:/Users/neofe/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/code/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -296,12 +283,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\FindRT.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\FindRT.cmake;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\code\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/code/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/neofe/source/repos/Neof3090/eduEngine -BC:/Users/neofe/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/code/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/neofe/source/repos/Neof3090/eduEngine -BC:/Users/neofe/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/code/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -309,12 +296,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\FindRT.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\FindRT.cmake;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\code\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/code/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/neofe/source/repos/Neof3090/eduEngine -BC:/Users/neofe/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/code/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/neofe/source/repos/Neof3090/eduEngine -BC:/Users/neofe/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/code/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -322,12 +309,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\FindRT.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\FindRT.cmake;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\code\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/code/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/neofe/source/repos/Neof3090/eduEngine -BC:/Users/neofe/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/code/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/neofe/source/repos/Neof3090/eduEngine -BC:/Users/neofe/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/code/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -335,7 +322,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\FindRT.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\FindRT.cmake;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\code\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
@@ -877,7 +864,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include\assimp\Compiler\poppack1.h" />
     <ClInclude Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include\assimp\Compiler\pstdint.h" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\ZERO_CHECK.vcxproj">
       <Project>{18513923-AEC0-39E3-9546-788120D3758A}</Project>

@@ -1,22 +1,18 @@
 # CMake generation dependency list for this directory.
-C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCInformation.cmake
-C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake
-C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeLanguageInformation.cmake
-C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeParseArguments.cmake
-C:/Program Files/CMake/share/cmake-3.31/Modules/CheckFunctionExists.cmake
-C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake
-C:/Program Files/CMake/share/cmake-3.31/Modules/CheckIncludeFileCXX.cmake
-C:/Program Files/CMake/share/cmake-3.31/Modules/CheckTypeSize.cmake
-C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake
-C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/MSVC-C.cmake
-C:/Program Files/CMake/share/cmake-3.31/Modules/Compiler/MSVC.cmake
-C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake
-C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake
-C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-MSVC-C.cmake
-C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-MSVC.cmake
-C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-MSVC-C.cmake
-C:/Program Files/CMake/share/cmake-3.31/Modules/Platform/Windows-MSVC.cmake
-C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/3.31.6/CMakeCCompiler.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeParseArguments.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckFunctionExists.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckTypeSize.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Compiler/MSVC.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Platform/Windows-MSVC.cmake
+C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/CMakeFiles/3.28.3-msvc11/CMakeCCompiler.cmake
 C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/CMakeLists.txt
 C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/assimp-config-version.cmake.in
 C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/assimp-config.cmake.in

@@ -27,11 +27,12 @@ bool Game::init()
     entity_registry->emplace<Tfm>(ent1, Tfm{});*/
 
 	auto ent1 = entity_registry->create();
+    entity_registry->emplace<Mesh>(ent1, Mesh {characterMesh});
 	entity_registry->emplace<Transform>(ent1, Transform{ 
         { 0.0f, 0.0f, 0.0f },
 		{ 0.0f, 0.0f, 0.0f },
 		{ 1.0f, 1.0f, 1.0f }
-        });
+    });
 
 
     // Grass
@@ -106,6 +107,8 @@ void Game::update(
         glm_aux::R(time * 0.1f, { 0.0f, 1.0f, 0.0f }) *
         glm::vec4(100.0f, 100.0f, 100.0f, 1.0f));
 
+
+
     characterWorldMatrix1 = glm_aux::TRS(
         player.pos,
         0.0f, { 0, 1, 0 },
@@ -160,6 +163,15 @@ void Game::render(
 
     // Begin rendering pass
     forwardRenderer->beginPass(matrices.P, matrices.V, pointlight.pos, pointlight.color, camera.pos);
+
+    // 
+    auto view = entity_registry->view<Transform, Mesh>();
+    for (auto entity : view) {
+		auto& transform = view.get<Transform>(entity);
+		auto& mesh = view.get<Mesh>(entity);
+
+        RenderSystem(forwardRenderer, transform, mesh);
+    }
 
     // Grass
     forwardRenderer->renderMesh(grassMesh, grassWorldMatrix);
@@ -364,22 +376,29 @@ void Game::updatePlayer(
     camera.lookAt += movement;
     camera.pos += movement;
 }
-void MovementSystem(std::vector<std::shared_ptr<Transform>> transforms, std::vector < std::shared_ptr <LinearVelocity>> linearVelocities) {
+
+void MovementSystem(std::shared_ptr<Transform> transform, std::shared_ptr<LinearVelocity> linearVelocity) {
+    // Update the position of the transform based on the linear velocity
+	transform->position += linearVelocity->velocity;
+}
+void PlayerControllerSystem(std::shared_ptr<Transform> transform, std::shared_ptr<PlayerController> playerController) {
+    transform->position += playerController->direction;
+}
+void RenderSystem(eeng::ForwardRendererPtr forwardRenderer, const Transform& transform, const Mesh& mesh) {
+    glm::mat4 modelMatrix = glm_aux::TRS(
+        transform.position,
+        transform.rotation.y, { 0, 1, 0 },
+        transform.scale);
+
+    forwardRenderer->renderMesh(mesh.mesh, modelMatrix);
+}
+void NpcControllerSystem(std::shared_ptr<Transform> transform, std::shared_ptr<NpcController> npcController) {
 
 }
-void PlayerControllerSystem(std::vector<std::shared_ptr<Transform>> transforms, std::vector<std::shared_ptr<PlayerController>> playerControllers) {
+void PointLightSystem(std::shared_ptr<Transform> transform, std::shared_ptr<PointLight> pointLight) {
 
 }
-void RenderSystem(std::vector<std::shared_ptr<Transform>> transforms, std::vector<std::shared_ptr<Mesh>> meshes) {
-
-}
-void NpcControllerSystem(std::vector<std::shared_ptr<Transform>> transforms, std::vector<std::shared_ptr<NpcController>> npcControllers) {
-
-}
-void PointLightSystem(std::vector<std::shared_ptr<Transform>> transforms, std::vector<std::shared_ptr<PointLight>> pointLights) {
-
-}
-void CameraSystem(std::vector<std::shared_ptr<Transform>> transforms, std::vector<std::shared_ptr<Camera>> cameras){
+void CameraSystem(std::shared_ptr<Transform> transforms, std::vector<std::shared_ptr<Camera>> cameras){
 
 }
 
