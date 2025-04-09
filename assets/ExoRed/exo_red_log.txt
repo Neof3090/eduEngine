@@ -1,0 +1,1171 @@
+Assimp version: 5.0.2399955716
+Assimp about to open file:
+assets/ExoRed/exo_red.fbx
+Assimp supported formats: 
+*.3d;*.3ds;*.3mf;*.ac;*.ac3d;*.acc;*.amf;*.ase;*.ask;*.assbin;*.b3d;*.blend;*.bvh;*.cob;*.csm;*.dae;*.dxf;*.enff;*.fbx;*.glb;*.gltf;*.hmp;*.ifc;*.ifczip;*.irr;*.irrmesh;*.lwo;*.lws;*.lxo;*.md2;*.md3;*.md5anim;*.md5camera;*.md5mesh;*.mdc;*.mdl;*.mesh;*.mesh.xml;*.mot;*.ms3d;*.ndo;*.nff;*.obj;*.off;*.ogex;*.pk3;*.ply;*.pmx;*.prj;*.q3o;*.q3s;*.raw;*.scn;*.sib;*.smd;*.stl;*.stp;*.ter;*.uc;*.vta;*.x;*.x3d;*.x3db;*.xgl;*.xml;*.zae;*.zgl
+Format fbx supported: YES
+Assimp load OK
+Scene overview
+	8 meshes
+	5 materials
+	7 embedded textures
+	1 animations
+	0 lights
+	0 cameras
+Animations:
+	mixamo.com, channels 27, duration in ticks 1, tps 30
+Loading mesh EXO_EyesSpec
+	544 vertices
+	920 faces
+	112 bones
+	0 anim-meshes*
+	has tangents and bitangents: YES
+	has vertex colors: NO
+112 bones (nbr weights):
+	mixamorig:Hips (0)
+	mixamorig:Spine (0)
+	mixamorig:Spine1 (0)
+	mixamorig:Spine2 (0)
+	mixamorig:Neck (0)
+	mixamorig:Head (0)
+	mixamorig:HeadTop_End (0)
+	mixamorig:L_Ear (0)
+	mixamorig:Jaw (0)
+	mixamorig:TongueBack (0)
+	mixamorig:TongueMid (0)
+	mixamorig:TongueTip (0)
+	mixamorig:Chin (0)
+	mixamorig:LowerChin (0)
+	mixamorig:L_Temple (0)
+	mixamorig:L_IOuterBrow (0)
+	mixamorig:L_MidBrow (0)
+	mixamorig:L_InnerBrow (0)
+	mixamorig:L_Eye (272)
+	mixamorig:L_EyelidLower (0)
+	mixamorig:L_EyelidUpper (0)
+	mixamorig:L_InnerCheek (0)
+	mixamorig:L_LowerCheek (0)
+	mixamorig:L_LipCorner (0)
+	mixamorig:L_LipCornerLowTweak (0)
+	mixamorig:L_LipCornerUpTweak (0)
+	mixamorig:L_LipLower (0)
+	mixamorig:L_LipUpper (0)
+	mixamorig:LipMidLower (0)
+	mixamorig:LipMidUpper (0)
+	mixamorig:L_CheekFold (0)
+	mixamorig:L_Nostril (0)
+	mixamorig:Scalp (0)
+	mixamorig:L_OuterCheek (0)
+	mixamorig:R_LipLower (0)
+	mixamorig:RightNostril (0)
+	mixamorig:R_CheekFold (0)
+	mixamorig:R_LowerCheek (0)
+	mixamorig:R_gLipCorner (0)
+	mixamorig:R_gLipCornerLowTweak (0)
+	mixamorig:R_gLipCornerUpTweak (0)
+	mixamorig:R_LipUpper (0)
+	mixamorig:R_OuterCheek (0)
+	mixamorig:MidBrows (0)
+	mixamorig:R_InnerBrow (0)
+	mixamorig:R_MidBrow (0)
+	mixamorig:R_IOuterBrow (0)
+	mixamorig:R_Eye (272)
+	mixamorig:R_EyelidLower (0)
+	mixamorig:R_EyelidUpper (0)
+	mixamorig:R_Temple (0)
+	mixamorig:R_Ear (0)
+	mixamorig:R_InnerCheek (0)
+	mixamorig:Throat (0)
+	mixamorig:LeftShoulder (0)
+	mixamorig:LeftArm (0)
+	mixamorig:LeftForeArm (0)
+	mixamorig:LeftHand (0)
+	mixamorig:LeftHandThumb1 (0)
+	mixamorig:LeftHandThumb2 (0)
+	mixamorig:LeftHandThumb3 (0)
+	mixamorig:LeftHandThumb4 (0)
+	mixamorig:LeftHandIndex1 (0)
+	mixamorig:LeftHandIndex2 (0)
+	mixamorig:LeftHandIndex3 (0)
+	mixamorig:LeftHandIndex4 (0)
+	mixamorig:LeftHandMiddle1 (0)
+	mixamorig:LeftHandMiddle2 (0)
+	mixamorig:LeftHandMiddle3 (0)
+	mixamorig:LeftHandMiddle4 (0)
+	mixamorig:LeftHandRing1 (0)
+	mixamorig:LeftHandRing2 (0)
+	mixamorig:LeftHandRing3 (0)
+	mixamorig:LeftHandRing4 (0)
+	mixamorig:LeftHandPinky1 (0)
+	mixamorig:LeftHandPinky2 (0)
+	mixamorig:LeftHandPinky3 (0)
+	mixamorig:LeftHandPinky4 (0)
+	mixamorig:RightShoulder (0)
+	mixamorig:RightArm (0)
+	mixamorig:RightForeArm (0)
+	mixamorig:RightHand (0)
+	mixamorig:RightHandThumb1 (0)
+	mixamorig:RightHandThumb2 (0)
+	mixamorig:RightHandThumb3 (0)
+	mixamorig:RightHandThumb4 (0)
+	mixamorig:RightHandIndex1 (0)
+	mixamorig:RightHandIndex2 (0)
+	mixamorig:RightHandIndex3 (0)
+	mixamorig:RightHandIndex4 (0)
+	mixamorig:RightHandMiddle1 (0)
+	mixamorig:RightHandMiddle2 (0)
+	mixamorig:RightHandMiddle3 (0)
+	mixamorig:RightHandMiddle4 (0)
+	mixamorig:RightHandRing1 (0)
+	mixamorig:RightHandRing2 (0)
+	mixamorig:RightHandRing3 (0)
+	mixamorig:RightHandRing4 (0)
+	mixamorig:RightHandPinky1 (0)
+	mixamorig:RightHandPinky2 (0)
+	mixamorig:RightHandPinky3 (0)
+	mixamorig:RightHandPinky4 (0)
+	mixamorig:LeftUpLeg (0)
+	mixamorig:LeftLeg (0)
+	mixamorig:LeftFoot (0)
+	mixamorig:LeftToeBase (0)
+	mixamorig:LeftToe_End (0)
+	mixamorig:RightUpLeg (0)
+	mixamorig:RightLeg (0)
+	mixamorig:RightFoot (0)
+	mixamorig:RightToeBase (0)
+	mixamorig:RightToe_End (0)
+Loading mesh EXO_Teeth
+	852 vertices
+	1520 faces
+	112 bones
+	0 anim-meshes*
+	has tangents and bitangents: YES
+	has vertex colors: NO
+112 bones (nbr weights):
+	mixamorig:Hips (0)
+	mixamorig:Spine (0)
+	mixamorig:Spine1 (0)
+	mixamorig:Spine2 (0)
+	mixamorig:Neck (0)
+	mixamorig:Head (0)
+	mixamorig:HeadTop_End (0)
+	mixamorig:L_Ear (0)
+	mixamorig:Jaw (0)
+	mixamorig:TongueBack (0)
+	mixamorig:TongueMid (0)
+	mixamorig:TongueTip (0)
+	mixamorig:Chin (0)
+	mixamorig:LowerChin (0)
+	mixamorig:L_Temple (0)
+	mixamorig:L_IOuterBrow (0)
+	mixamorig:L_MidBrow (0)
+	mixamorig:L_InnerBrow (0)
+	mixamorig:L_Eye (426)
+	mixamorig:L_EyelidLower (0)
+	mixamorig:L_EyelidUpper (0)
+	mixamorig:L_InnerCheek (0)
+	mixamorig:L_LowerCheek (0)
+	mixamorig:L_LipCorner (0)
+	mixamorig:L_LipCornerLowTweak (0)
+	mixamorig:L_LipCornerUpTweak (0)
+	mixamorig:L_LipLower (0)
+	mixamorig:L_LipUpper (0)
+	mixamorig:LipMidLower (0)
+	mixamorig:LipMidUpper (0)
+	mixamorig:L_CheekFold (0)
+	mixamorig:L_Nostril (0)
+	mixamorig:Scalp (0)
+	mixamorig:L_OuterCheek (0)
+	mixamorig:R_LipLower (0)
+	mixamorig:RightNostril (0)
+	mixamorig:R_CheekFold (0)
+	mixamorig:R_LowerCheek (0)
+	mixamorig:R_gLipCorner (0)
+	mixamorig:R_gLipCornerLowTweak (0)
+	mixamorig:R_gLipCornerUpTweak (0)
+	mixamorig:R_LipUpper (0)
+	mixamorig:R_OuterCheek (0)
+	mixamorig:MidBrows (0)
+	mixamorig:R_InnerBrow (0)
+	mixamorig:R_MidBrow (0)
+	mixamorig:R_IOuterBrow (0)
+	mixamorig:R_Eye (426)
+	mixamorig:R_EyelidLower (0)
+	mixamorig:R_EyelidUpper (0)
+	mixamorig:R_Temple (0)
+	mixamorig:R_Ear (0)
+	mixamorig:R_InnerCheek (0)
+	mixamorig:Throat (0)
+	mixamorig:LeftShoulder (0)
+	mixamorig:LeftArm (0)
+	mixamorig:LeftForeArm (0)
+	mixamorig:LeftHand (0)
+	mixamorig:LeftHandThumb1 (0)
+	mixamorig:LeftHandThumb2 (0)
+	mixamorig:LeftHandThumb3 (0)
+	mixamorig:LeftHandThumb4 (0)
+	mixamorig:LeftHandIndex1 (0)
+	mixamorig:LeftHandIndex2 (0)
+	mixamorig:LeftHandIndex3 (0)
+	mixamorig:LeftHandIndex4 (0)
+	mixamorig:LeftHandMiddle1 (0)
+	mixamorig:LeftHandMiddle2 (0)
+	mixamorig:LeftHandMiddle3 (0)
+	mixamorig:LeftHandMiddle4 (0)
+	mixamorig:LeftHandRing1 (0)
+	mixamorig:LeftHandRing2 (0)
+	mixamorig:LeftHandRing3 (0)
+	mixamorig:LeftHandRing4 (0)
+	mixamorig:LeftHandPinky1 (0)
+	mixamorig:LeftHandPinky2 (0)
+	mixamorig:LeftHandPinky3 (0)
+	mixamorig:LeftHandPinky4 (0)
+	mixamorig:RightShoulder (0)
+	mixamorig:RightArm (0)
+	mixamorig:RightForeArm (0)
+	mixamorig:RightHand (0)
+	mixamorig:RightHandThumb1 (0)
+	mixamorig:RightHandThumb2 (0)
+	mixamorig:RightHandThumb3 (0)
+	mixamorig:RightHandThumb4 (0)
+	mixamorig:RightHandIndex1 (0)
+	mixamorig:RightHandIndex2 (0)
+	mixamorig:RightHandIndex3 (0)
+	mixamorig:RightHandIndex4 (0)
+	mixamorig:RightHandMiddle1 (0)
+	mixamorig:RightHandMiddle2 (0)
+	mixamorig:RightHandMiddle3 (0)
+	mixamorig:RightHandMiddle4 (0)
+	mixamorig:RightHandRing1 (0)
+	mixamorig:RightHandRing2 (0)
+	mixamorig:RightHandRing3 (0)
+	mixamorig:RightHandRing4 (0)
+	mixamorig:RightHandPinky1 (0)
+	mixamorig:RightHandPinky2 (0)
+	mixamorig:RightHandPinky3 (0)
+	mixamorig:RightHandPinky4 (0)
+	mixamorig:LeftUpLeg (0)
+	mixamorig:LeftLeg (0)
+	mixamorig:LeftFoot (0)
+	mixamorig:LeftToeBase (0)
+	mixamorig:LeftToe_End (0)
+	mixamorig:RightUpLeg (0)
+	mixamorig:RightLeg (0)
+	mixamorig:RightFoot (0)
+	mixamorig:RightToeBase (0)
+	mixamorig:RightToe_End (0)
+Loading mesh EXO_Body
+	72 vertices
+	40 faces
+	112 bones
+	0 anim-meshes*
+	has tangents and bitangents: YES
+	has vertex colors: NO
+112 bones (nbr weights):
+	mixamorig:Hips (0)
+	mixamorig:Spine (0)
+	mixamorig:Spine1 (0)
+	mixamorig:Spine2 (0)
+	mixamorig:Neck (0)
+	mixamorig:Head (72)
+	mixamorig:HeadTop_End (0)
+	mixamorig:L_Ear (0)
+	mixamorig:Jaw (0)
+	mixamorig:TongueBack (0)
+	mixamorig:TongueMid (0)
+	mixamorig:TongueTip (0)
+	mixamorig:Chin (0)
+	mixamorig:LowerChin (0)
+	mixamorig:L_Temple (0)
+	mixamorig:L_IOuterBrow (0)
+	mixamorig:L_MidBrow (0)
+	mixamorig:L_InnerBrow (0)
+	mixamorig:L_Eye (0)
+	mixamorig:L_EyelidLower (0)
+	mixamorig:L_EyelidUpper (0)
+	mixamorig:L_InnerCheek (0)
+	mixamorig:L_LowerCheek (0)
+	mixamorig:L_LipCorner (0)
+	mixamorig:L_LipCornerLowTweak (0)
+	mixamorig:L_LipCornerUpTweak (0)
+	mixamorig:L_LipLower (0)
+	mixamorig:L_LipUpper (0)
+	mixamorig:LipMidLower (0)
+	mixamorig:LipMidUpper (0)
+	mixamorig:L_CheekFold (0)
+	mixamorig:L_Nostril (0)
+	mixamorig:Scalp (0)
+	mixamorig:L_OuterCheek (0)
+	mixamorig:R_LipLower (0)
+	mixamorig:RightNostril (0)
+	mixamorig:R_CheekFold (0)
+	mixamorig:R_LowerCheek (0)
+	mixamorig:R_gLipCorner (0)
+	mixamorig:R_gLipCornerLowTweak (0)
+	mixamorig:R_gLipCornerUpTweak (0)
+	mixamorig:R_LipUpper (0)
+	mixamorig:R_OuterCheek (0)
+	mixamorig:MidBrows (0)
+	mixamorig:R_InnerBrow (0)
+	mixamorig:R_MidBrow (0)
+	mixamorig:R_IOuterBrow (0)
+	mixamorig:R_Eye (0)
+	mixamorig:R_EyelidLower (0)
+	mixamorig:R_EyelidUpper (0)
+	mixamorig:R_Temple (0)
+	mixamorig:R_Ear (0)
+	mixamorig:R_InnerCheek (0)
+	mixamorig:Throat (0)
+	mixamorig:LeftShoulder (0)
+	mixamorig:LeftArm (0)
+	mixamorig:LeftForeArm (0)
+	mixamorig:LeftHand (0)
+	mixamorig:LeftHandThumb1 (0)
+	mixamorig:LeftHandThumb2 (0)
+	mixamorig:LeftHandThumb3 (0)
+	mixamorig:LeftHandThumb4 (0)
+	mixamorig:LeftHandIndex1 (0)
+	mixamorig:LeftHandIndex2 (0)
+	mixamorig:LeftHandIndex3 (0)
+	mixamorig:LeftHandIndex4 (0)
+	mixamorig:LeftHandMiddle1 (0)
+	mixamorig:LeftHandMiddle2 (0)
+	mixamorig:LeftHandMiddle3 (0)
+	mixamorig:LeftHandMiddle4 (0)
+	mixamorig:LeftHandRing1 (0)
+	mixamorig:LeftHandRing2 (0)
+	mixamorig:LeftHandRing3 (0)
+	mixamorig:LeftHandRing4 (0)
+	mixamorig:LeftHandPinky1 (0)
+	mixamorig:LeftHandPinky2 (0)
+	mixamorig:LeftHandPinky3 (0)
+	mixamorig:LeftHandPinky4 (0)
+	mixamorig:RightShoulder (0)
+	mixamorig:RightArm (0)
+	mixamorig:RightForeArm (0)
+	mixamorig:RightHand (0)
+	mixamorig:RightHandThumb1 (0)
+	mixamorig:RightHandThumb2 (0)
+	mixamorig:RightHandThumb3 (0)
+	mixamorig:RightHandThumb4 (0)
+	mixamorig:RightHandIndex1 (0)
+	mixamorig:RightHandIndex2 (0)
+	mixamorig:RightHandIndex3 (0)
+	mixamorig:RightHandIndex4 (0)
+	mixamorig:RightHandMiddle1 (0)
+	mixamorig:RightHandMiddle2 (0)
+	mixamorig:RightHandMiddle3 (0)
+	mixamorig:RightHandMiddle4 (0)
+	mixamorig:RightHandRing1 (0)
+	mixamorig:RightHandRing2 (0)
+	mixamorig:RightHandRing3 (0)
+	mixamorig:RightHandRing4 (0)
+	mixamorig:RightHandPinky1 (0)
+	mixamorig:RightHandPinky2 (0)
+	mixamorig:RightHandPinky3 (0)
+	mixamorig:RightHandPinky4 (0)
+	mixamorig:LeftUpLeg (0)
+	mixamorig:LeftLeg (0)
+	mixamorig:LeftFoot (0)
+	mixamorig:LeftToeBase (0)
+	mixamorig:LeftToe_End (0)
+	mixamorig:RightUpLeg (0)
+	mixamorig:RightLeg (0)
+	mixamorig:RightFoot (0)
+	mixamorig:RightToeBase (0)
+	mixamorig:RightToe_End (0)
+Loading mesh Exo_Suit
+	6108 vertices
+	10204 faces
+	112 bones
+	0 anim-meshes*
+	has tangents and bitangents: YES
+	has vertex colors: NO
+112 bones (nbr weights):
+	mixamorig:Hips (612)
+	mixamorig:Spine (250)
+	mixamorig:Spine1 (298)
+	mixamorig:Spine2 (660)
+	mixamorig:Neck (244)
+	mixamorig:Head (2042)
+	mixamorig:HeadTop_End (0)
+	mixamorig:L_Ear (277)
+	mixamorig:Jaw (235)
+	mixamorig:TongueBack (0)
+	mixamorig:TongueMid (0)
+	mixamorig:TongueTip (0)
+	mixamorig:Chin (74)
+	mixamorig:LowerChin (74)
+	mixamorig:L_Temple (52)
+	mixamorig:L_IOuterBrow (36)
+	mixamorig:L_MidBrow (30)
+	mixamorig:L_InnerBrow (33)
+	mixamorig:L_Eye (94)
+	mixamorig:L_EyelidLower (0)
+	mixamorig:L_EyelidUpper (0)
+	mixamorig:L_InnerCheek (33)
+	mixamorig:L_LowerCheek (39)
+	mixamorig:L_LipCorner (86)
+	mixamorig:L_LipCornerLowTweak (59)
+	mixamorig:L_LipCornerUpTweak (48)
+	mixamorig:L_LipLower (49)
+	mixamorig:L_LipUpper (55)
+	mixamorig:LipMidLower (56)
+	mixamorig:LipMidUpper (95)
+	mixamorig:L_CheekFold (26)
+	mixamorig:L_Nostril (82)
+	mixamorig:Scalp (173)
+	mixamorig:L_OuterCheek (39)
+	mixamorig:R_LipLower (41)
+	mixamorig:RightNostril (80)
+	mixamorig:R_CheekFold (26)
+	mixamorig:R_LowerCheek (39)
+	mixamorig:R_gLipCorner (86)
+	mixamorig:R_gLipCornerLowTweak (61)
+	mixamorig:R_gLipCornerUpTweak (46)
+	mixamorig:R_LipUpper (49)
+	mixamorig:R_OuterCheek (38)
+	mixamorig:MidBrows (19)
+	mixamorig:R_InnerBrow (31)
+	mixamorig:R_MidBrow (30)
+	mixamorig:R_IOuterBrow (36)
+	mixamorig:R_Eye (95)
+	mixamorig:R_EyelidLower (0)
+	mixamorig:R_EyelidUpper (0)
+	mixamorig:R_Temple (52)
+	mixamorig:R_Ear (275)
+	mixamorig:R_InnerCheek (32)
+	mixamorig:Throat (0)
+	mixamorig:LeftShoulder (287)
+	mixamorig:LeftArm (266)
+	mixamorig:LeftForeArm (216)
+	mixamorig:LeftHand (206)
+	mixamorig:LeftHandThumb1 (92)
+	mixamorig:LeftHandThumb2 (88)
+	mixamorig:LeftHandThumb3 (65)
+	mixamorig:LeftHandThumb4 (0)
+	mixamorig:LeftHandIndex1 (84)
+	mixamorig:LeftHandIndex2 (60)
+	mixamorig:LeftHandIndex3 (65)
+	mixamorig:LeftHandIndex4 (0)
+	mixamorig:LeftHandMiddle1 (83)
+	mixamorig:LeftHandMiddle2 (62)
+	mixamorig:LeftHandMiddle3 (62)
+	mixamorig:LeftHandMiddle4 (0)
+	mixamorig:LeftHandRing1 (84)
+	mixamorig:LeftHandRing2 (60)
+	mixamorig:LeftHandRing3 (64)
+	mixamorig:LeftHandRing4 (0)
+	mixamorig:LeftHandPinky1 (82)
+	mixamorig:LeftHandPinky2 (60)
+	mixamorig:LeftHandPinky3 (64)
+	mixamorig:LeftHandPinky4 (0)
+	mixamorig:RightShoulder (285)
+	mixamorig:RightArm (265)
+	mixamorig:RightForeArm (217)
+	mixamorig:RightHand (261)
+	mixamorig:RightHandThumb1 (106)
+	mixamorig:RightHandThumb2 (97)
+	mixamorig:RightHandThumb3 (62)
+	mixamorig:RightHandThumb4 (0)
+	mixamorig:RightHandIndex1 (106)
+	mixamorig:RightHandIndex2 (70)
+	mixamorig:RightHandIndex3 (62)
+	mixamorig:RightHandIndex4 (0)
+	mixamorig:RightHandMiddle1 (100)
+	mixamorig:RightHandMiddle2 (72)
+	mixamorig:RightHandMiddle3 (62)
+	mixamorig:RightHandMiddle4 (0)
+	mixamorig:RightHandRing1 (99)
+	mixamorig:RightHandRing2 (66)
+	mixamorig:RightHandRing3 (69)
+	mixamorig:RightHandRing4 (0)
+	mixamorig:RightHandPinky1 (86)
+	mixamorig:RightHandPinky2 (65)
+	mixamorig:RightHandPinky3 (72)
+	mixamorig:RightHandPinky4 (0)
+	mixamorig:LeftUpLeg (401)
+	mixamorig:LeftLeg (225)
+	mixamorig:LeftFoot (171)
+	mixamorig:LeftToeBase (75)
+	mixamorig:LeftToe_End (0)
+	mixamorig:RightUpLeg (403)
+	mixamorig:RightLeg (225)
+	mixamorig:RightFoot (170)
+	mixamorig:RightToeBase (75)
+	mixamorig:RightToe_End (0)
+Loading mesh EXO_Eyes
+	2039 vertices
+	2416 faces
+	112 bones
+	0 anim-meshes*
+	has tangents and bitangents: YES
+	has vertex colors: NO
+112 bones (nbr weights):
+	mixamorig:Hips (0)
+	mixamorig:Spine (0)
+	mixamorig:Spine1 (0)
+	mixamorig:Spine2 (0)
+	mixamorig:Neck (0)
+	mixamorig:Head (989)
+	mixamorig:HeadTop_End (0)
+	mixamorig:L_Ear (0)
+	mixamorig:Jaw (1031)
+	mixamorig:TongueBack (79)
+	mixamorig:TongueMid (83)
+	mixamorig:TongueTip (79)
+	mixamorig:Chin (0)
+	mixamorig:LowerChin (0)
+	mixamorig:L_Temple (0)
+	mixamorig:L_IOuterBrow (0)
+	mixamorig:L_MidBrow (0)
+	mixamorig:L_InnerBrow (0)
+	mixamorig:L_Eye (0)
+	mixamorig:L_EyelidLower (0)
+	mixamorig:L_EyelidUpper (0)
+	mixamorig:L_InnerCheek (0)
+	mixamorig:L_LowerCheek (0)
+	mixamorig:L_LipCorner (0)
+	mixamorig:L_LipCornerLowTweak (0)
+	mixamorig:L_LipCornerUpTweak (0)
+	mixamorig:L_LipLower (0)
+	mixamorig:L_LipUpper (0)
+	mixamorig:LipMidLower (0)
+	mixamorig:LipMidUpper (0)
+	mixamorig:L_CheekFold (0)
+	mixamorig:L_Nostril (0)
+	mixamorig:Scalp (0)
+	mixamorig:L_OuterCheek (0)
+	mixamorig:R_LipLower (0)
+	mixamorig:RightNostril (0)
+	mixamorig:R_CheekFold (0)
+	mixamorig:R_LowerCheek (0)
+	mixamorig:R_gLipCorner (0)
+	mixamorig:R_gLipCornerLowTweak (0)
+	mixamorig:R_gLipCornerUpTweak (0)
+	mixamorig:R_LipUpper (0)
+	mixamorig:R_OuterCheek (0)
+	mixamorig:MidBrows (0)
+	mixamorig:R_InnerBrow (0)
+	mixamorig:R_MidBrow (0)
+	mixamorig:R_IOuterBrow (0)
+	mixamorig:R_Eye (0)
+	mixamorig:R_EyelidLower (0)
+	mixamorig:R_EyelidUpper (0)
+	mixamorig:R_Temple (0)
+	mixamorig:R_Ear (0)
+	mixamorig:R_InnerCheek (0)
+	mixamorig:Throat (0)
+	mixamorig:LeftShoulder (0)
+	mixamorig:LeftArm (0)
+	mixamorig:LeftForeArm (0)
+	mixamorig:LeftHand (0)
+	mixamorig:LeftHandThumb1 (0)
+	mixamorig:LeftHandThumb2 (0)
+	mixamorig:LeftHandThumb3 (0)
+	mixamorig:LeftHandThumb4 (0)
+	mixamorig:LeftHandIndex1 (0)
+	mixamorig:LeftHandIndex2 (0)
+	mixamorig:LeftHandIndex3 (0)
+	mixamorig:LeftHandIndex4 (0)
+	mixamorig:LeftHandMiddle1 (0)
+	mixamorig:LeftHandMiddle2 (0)
+	mixamorig:LeftHandMiddle3 (0)
+	mixamorig:LeftHandMiddle4 (0)
+	mixamorig:LeftHandRing1 (0)
+	mixamorig:LeftHandRing2 (0)
+	mixamorig:LeftHandRing3 (0)
+	mixamorig:LeftHandRing4 (0)
+	mixamorig:LeftHandPinky1 (0)
+	mixamorig:LeftHandPinky2 (0)
+	mixamorig:LeftHandPinky3 (0)
+	mixamorig:LeftHandPinky4 (0)
+	mixamorig:RightShoulder (0)
+	mixamorig:RightArm (0)
+	mixamorig:RightForeArm (0)
+	mixamorig:RightHand (0)
+	mixamorig:RightHandThumb1 (0)
+	mixamorig:RightHandThumb2 (0)
+	mixamorig:RightHandThumb3 (0)
+	mixamorig:RightHandThumb4 (0)
+	mixamorig:RightHandIndex1 (0)
+	mixamorig:RightHandIndex2 (0)
+	mixamorig:RightHandIndex3 (0)
+	mixamorig:RightHandIndex4 (0)
+	mixamorig:RightHandMiddle1 (0)
+	mixamorig:RightHandMiddle2 (0)
+	mixamorig:RightHandMiddle3 (0)
+	mixamorig:RightHandMiddle4 (0)
+	mixamorig:RightHandRing1 (0)
+	mixamorig:RightHandRing2 (0)
+	mixamorig:RightHandRing3 (0)
+	mixamorig:RightHandRing4 (0)
+	mixamorig:RightHandPinky1 (0)
+	mixamorig:RightHandPinky2 (0)
+	mixamorig:RightHandPinky3 (0)
+	mixamorig:RightHandPinky4 (0)
+	mixamorig:LeftUpLeg (0)
+	mixamorig:LeftLeg (0)
+	mixamorig:LeftFoot (0)
+	mixamorig:LeftToeBase (0)
+	mixamorig:LeftToe_End (0)
+	mixamorig:RightUpLeg (0)
+	mixamorig:RightLeg (0)
+	mixamorig:RightFoot (0)
+	mixamorig:RightToeBase (0)
+	mixamorig:RightToe_End (0)
+Loading mesh EXO_Caruncula
+	699 vertices
+	1128 faces
+	112 bones
+	0 anim-meshes*
+	has tangents and bitangents: YES
+	has vertex colors: NO
+112 bones (nbr weights):
+	mixamorig:Hips (0)
+	mixamorig:Spine (0)
+	mixamorig:Spine1 (8)
+	mixamorig:Spine2 (249)
+	mixamorig:Neck (246)
+	mixamorig:Head (484)
+	mixamorig:HeadTop_End (0)
+	mixamorig:L_Ear (0)
+	mixamorig:Jaw (137)
+	mixamorig:TongueBack (0)
+	mixamorig:TongueMid (0)
+	mixamorig:TongueTip (0)
+	mixamorig:Chin (57)
+	mixamorig:LowerChin (74)
+	mixamorig:L_Temple (0)
+	mixamorig:L_IOuterBrow (0)
+	mixamorig:L_MidBrow (0)
+	mixamorig:L_InnerBrow (0)
+	mixamorig:L_Eye (0)
+	mixamorig:L_EyelidLower (0)
+	mixamorig:L_EyelidUpper (0)
+	mixamorig:L_InnerCheek (0)
+	mixamorig:L_LowerCheek (9)
+	mixamorig:L_LipCorner (2)
+	mixamorig:L_LipCornerLowTweak (0)
+	mixamorig:L_LipCornerUpTweak (0)
+	mixamorig:L_LipLower (0)
+	mixamorig:L_LipUpper (0)
+	mixamorig:LipMidLower (0)
+	mixamorig:LipMidUpper (0)
+	mixamorig:L_CheekFold (0)
+	mixamorig:L_Nostril (0)
+	mixamorig:Scalp (106)
+	mixamorig:L_OuterCheek (0)
+	mixamorig:R_LipLower (0)
+	mixamorig:RightNostril (0)
+	mixamorig:R_CheekFold (0)
+	mixamorig:R_LowerCheek (9)
+	mixamorig:R_gLipCorner (2)
+	mixamorig:R_gLipCornerLowTweak (0)
+	mixamorig:R_gLipCornerUpTweak (0)
+	mixamorig:R_LipUpper (0)
+	mixamorig:R_OuterCheek (0)
+	mixamorig:MidBrows (0)
+	mixamorig:R_InnerBrow (0)
+	mixamorig:R_MidBrow (0)
+	mixamorig:R_IOuterBrow (0)
+	mixamorig:R_Eye (0)
+	mixamorig:R_EyelidLower (0)
+	mixamorig:R_EyelidUpper (0)
+	mixamorig:R_Temple (0)
+	mixamorig:R_Ear (0)
+	mixamorig:R_InnerCheek (0)
+	mixamorig:Throat (0)
+	mixamorig:LeftShoulder (60)
+	mixamorig:LeftArm (4)
+	mixamorig:LeftForeArm (0)
+	mixamorig:LeftHand (0)
+	mixamorig:LeftHandThumb1 (0)
+	mixamorig:LeftHandThumb2 (0)
+	mixamorig:LeftHandThumb3 (0)
+	mixamorig:LeftHandThumb4 (0)
+	mixamorig:LeftHandIndex1 (0)
+	mixamorig:LeftHandIndex2 (0)
+	mixamorig:LeftHandIndex3 (0)
+	mixamorig:LeftHandIndex4 (0)
+	mixamorig:LeftHandMiddle1 (0)
+	mixamorig:LeftHandMiddle2 (0)
+	mixamorig:LeftHandMiddle3 (0)
+	mixamorig:LeftHandMiddle4 (0)
+	mixamorig:LeftHandRing1 (0)
+	mixamorig:LeftHandRing2 (0)
+	mixamorig:LeftHandRing3 (0)
+	mixamorig:LeftHandRing4 (0)
+	mixamorig:LeftHandPinky1 (0)
+	mixamorig:LeftHandPinky2 (0)
+	mixamorig:LeftHandPinky3 (0)
+	mixamorig:LeftHandPinky4 (0)
+	mixamorig:RightShoulder (60)
+	mixamorig:RightArm (4)
+	mixamorig:RightForeArm (0)
+	mixamorig:RightHand (0)
+	mixamorig:RightHandThumb1 (0)
+	mixamorig:RightHandThumb2 (0)
+	mixamorig:RightHandThumb3 (0)
+	mixamorig:RightHandThumb4 (0)
+	mixamorig:RightHandIndex1 (0)
+	mixamorig:RightHandIndex2 (0)
+	mixamorig:RightHandIndex3 (0)
+	mixamorig:RightHandIndex4 (0)
+	mixamorig:RightHandMiddle1 (0)
+	mixamorig:RightHandMiddle2 (0)
+	mixamorig:RightHandMiddle3 (0)
+	mixamorig:RightHandMiddle4 (0)
+	mixamorig:RightHandRing1 (0)
+	mixamorig:RightHandRing2 (0)
+	mixamorig:RightHandRing3 (0)
+	mixamorig:RightHandRing4 (0)
+	mixamorig:RightHandPinky1 (0)
+	mixamorig:RightHandPinky2 (0)
+	mixamorig:RightHandPinky3 (0)
+	mixamorig:RightHandPinky4 (0)
+	mixamorig:LeftUpLeg (0)
+	mixamorig:LeftLeg (0)
+	mixamorig:LeftFoot (0)
+	mixamorig:LeftToeBase (0)
+	mixamorig:LeftToe_End (0)
+	mixamorig:RightUpLeg (0)
+	mixamorig:RightLeg (0)
+	mixamorig:RightFoot (0)
+	mixamorig:RightToeBase (0)
+	mixamorig:RightToe_End (0)
+Loading mesh EXO_HeadMask
+	28 vertices
+	24 faces
+	112 bones
+	0 anim-meshes*
+	has tangents and bitangents: YES
+	has vertex colors: NO
+112 bones (nbr weights):
+	mixamorig:Hips (0)
+	mixamorig:Spine (0)
+	mixamorig:Spine1 (0)
+	mixamorig:Spine2 (0)
+	mixamorig:Neck (0)
+	mixamorig:Head (28)
+	mixamorig:HeadTop_End (0)
+	mixamorig:L_Ear (0)
+	mixamorig:Jaw (0)
+	mixamorig:TongueBack (0)
+	mixamorig:TongueMid (0)
+	mixamorig:TongueTip (0)
+	mixamorig:Chin (0)
+	mixamorig:LowerChin (0)
+	mixamorig:L_Temple (0)
+	mixamorig:L_IOuterBrow (0)
+	mixamorig:L_MidBrow (0)
+	mixamorig:L_InnerBrow (0)
+	mixamorig:L_Eye (14)
+	mixamorig:L_EyelidLower (0)
+	mixamorig:L_EyelidUpper (0)
+	mixamorig:L_InnerCheek (0)
+	mixamorig:L_LowerCheek (0)
+	mixamorig:L_LipCorner (0)
+	mixamorig:L_LipCornerLowTweak (0)
+	mixamorig:L_LipCornerUpTweak (0)
+	mixamorig:L_LipLower (0)
+	mixamorig:L_LipUpper (0)
+	mixamorig:LipMidLower (0)
+	mixamorig:LipMidUpper (0)
+	mixamorig:L_CheekFold (0)
+	mixamorig:L_Nostril (0)
+	mixamorig:Scalp (0)
+	mixamorig:L_OuterCheek (0)
+	mixamorig:R_LipLower (0)
+	mixamorig:RightNostril (0)
+	mixamorig:R_CheekFold (0)
+	mixamorig:R_LowerCheek (0)
+	mixamorig:R_gLipCorner (0)
+	mixamorig:R_gLipCornerLowTweak (0)
+	mixamorig:R_gLipCornerUpTweak (0)
+	mixamorig:R_LipUpper (0)
+	mixamorig:R_OuterCheek (0)
+	mixamorig:MidBrows (0)
+	mixamorig:R_InnerBrow (0)
+	mixamorig:R_MidBrow (0)
+	mixamorig:R_IOuterBrow (0)
+	mixamorig:R_Eye (14)
+	mixamorig:R_EyelidLower (0)
+	mixamorig:R_EyelidUpper (0)
+	mixamorig:R_Temple (0)
+	mixamorig:R_Ear (0)
+	mixamorig:R_InnerCheek (0)
+	mixamorig:Throat (0)
+	mixamorig:LeftShoulder (0)
+	mixamorig:LeftArm (0)
+	mixamorig:LeftForeArm (0)
+	mixamorig:LeftHand (0)
+	mixamorig:LeftHandThumb1 (0)
+	mixamorig:LeftHandThumb2 (0)
+	mixamorig:LeftHandThumb3 (0)
+	mixamorig:LeftHandThumb4 (0)
+	mixamorig:LeftHandIndex1 (0)
+	mixamorig:LeftHandIndex2 (0)
+	mixamorig:LeftHandIndex3 (0)
+	mixamorig:LeftHandIndex4 (0)
+	mixamorig:LeftHandMiddle1 (0)
+	mixamorig:LeftHandMiddle2 (0)
+	mixamorig:LeftHandMiddle3 (0)
+	mixamorig:LeftHandMiddle4 (0)
+	mixamorig:LeftHandRing1 (0)
+	mixamorig:LeftHandRing2 (0)
+	mixamorig:LeftHandRing3 (0)
+	mixamorig:LeftHandRing4 (0)
+	mixamorig:LeftHandPinky1 (0)
+	mixamorig:LeftHandPinky2 (0)
+	mixamorig:LeftHandPinky3 (0)
+	mixamorig:LeftHandPinky4 (0)
+	mixamorig:RightShoulder (0)
+	mixamorig:RightArm (0)
+	mixamorig:RightForeArm (0)
+	mixamorig:RightHand (0)
+	mixamorig:RightHandThumb1 (0)
+	mixamorig:RightHandThumb2 (0)
+	mixamorig:RightHandThumb3 (0)
+	mixamorig:RightHandThumb4 (0)
+	mixamorig:RightHandIndex1 (0)
+	mixamorig:RightHandIndex2 (0)
+	mixamorig:RightHandIndex3 (0)
+	mixamorig:RightHandIndex4 (0)
+	mixamorig:RightHandMiddle1 (0)
+	mixamorig:RightHandMiddle2 (0)
+	mixamorig:RightHandMiddle3 (0)
+	mixamorig:RightHandMiddle4 (0)
+	mixamorig:RightHandRing1 (0)
+	mixamorig:RightHandRing2 (0)
+	mixamorig:RightHandRing3 (0)
+	mixamorig:RightHandRing4 (0)
+	mixamorig:RightHandPinky1 (0)
+	mixamorig:RightHandPinky2 (0)
+	mixamorig:RightHandPinky3 (0)
+	mixamorig:RightHandPinky4 (0)
+	mixamorig:LeftUpLeg (0)
+	mixamorig:LeftLeg (0)
+	mixamorig:LeftFoot (0)
+	mixamorig:LeftToeBase (0)
+	mixamorig:LeftToe_End (0)
+	mixamorig:RightUpLeg (0)
+	mixamorig:RightLeg (0)
+	mixamorig:RightFoot (0)
+	mixamorig:RightToeBase (0)
+	mixamorig:RightToe_End (0)
+Loading mesh EXO_BrowsLashes
+	10191 vertices
+	15444 faces
+	112 bones
+	0 anim-meshes*
+	has tangents and bitangents: YES
+	has vertex colors: NO
+112 bones (nbr weights):
+	mixamorig:Hips (1533)
+	mixamorig:Spine (1604)
+	mixamorig:Spine1 (2413)
+	mixamorig:Spine2 (3219)
+	mixamorig:Neck (90)
+	mixamorig:Head (0)
+	mixamorig:HeadTop_End (0)
+	mixamorig:L_Ear (0)
+	mixamorig:Jaw (0)
+	mixamorig:TongueBack (0)
+	mixamorig:TongueMid (0)
+	mixamorig:TongueTip (0)
+	mixamorig:Chin (0)
+	mixamorig:LowerChin (0)
+	mixamorig:L_Temple (0)
+	mixamorig:L_IOuterBrow (0)
+	mixamorig:L_MidBrow (0)
+	mixamorig:L_InnerBrow (0)
+	mixamorig:L_Eye (0)
+	mixamorig:L_EyelidLower (0)
+	mixamorig:L_EyelidUpper (0)
+	mixamorig:L_InnerCheek (0)
+	mixamorig:L_LowerCheek (0)
+	mixamorig:L_LipCorner (0)
+	mixamorig:L_LipCornerLowTweak (0)
+	mixamorig:L_LipCornerUpTweak (0)
+	mixamorig:L_LipLower (0)
+	mixamorig:L_LipUpper (0)
+	mixamorig:LipMidLower (0)
+	mixamorig:LipMidUpper (0)
+	mixamorig:L_CheekFold (0)
+	mixamorig:L_Nostril (0)
+	mixamorig:Scalp (0)
+	mixamorig:L_OuterCheek (0)
+	mixamorig:R_LipLower (0)
+	mixamorig:RightNostril (0)
+	mixamorig:R_CheekFold (0)
+	mixamorig:R_LowerCheek (0)
+	mixamorig:R_gLipCorner (0)
+	mixamorig:R_gLipCornerLowTweak (0)
+	mixamorig:R_gLipCornerUpTweak (0)
+	mixamorig:R_LipUpper (0)
+	mixamorig:R_OuterCheek (0)
+	mixamorig:MidBrows (0)
+	mixamorig:R_InnerBrow (0)
+	mixamorig:R_MidBrow (0)
+	mixamorig:R_IOuterBrow (0)
+	mixamorig:R_Eye (0)
+	mixamorig:R_EyelidLower (0)
+	mixamorig:R_EyelidUpper (0)
+	mixamorig:R_Temple (0)
+	mixamorig:R_Ear (0)
+	mixamorig:R_InnerCheek (0)
+	mixamorig:Throat (0)
+	mixamorig:LeftShoulder (1524)
+	mixamorig:LeftArm (1375)
+	mixamorig:LeftForeArm (979)
+	mixamorig:LeftHand (421)
+	mixamorig:LeftHandThumb1 (166)
+	mixamorig:LeftHandThumb2 (58)
+	mixamorig:LeftHandThumb3 (0)
+	mixamorig:LeftHandThumb4 (0)
+	mixamorig:LeftHandIndex1 (95)
+	mixamorig:LeftHandIndex2 (0)
+	mixamorig:LeftHandIndex3 (0)
+	mixamorig:LeftHandIndex4 (0)
+	mixamorig:LeftHandMiddle1 (59)
+	mixamorig:LeftHandMiddle2 (0)
+	mixamorig:LeftHandMiddle3 (0)
+	mixamorig:LeftHandMiddle4 (0)
+	mixamorig:LeftHandRing1 (52)
+	mixamorig:LeftHandRing2 (0)
+	mixamorig:LeftHandRing3 (0)
+	mixamorig:LeftHandRing4 (0)
+	mixamorig:LeftHandPinky1 (42)
+	mixamorig:LeftHandPinky2 (0)
+	mixamorig:LeftHandPinky3 (0)
+	mixamorig:LeftHandPinky4 (0)
+	mixamorig:RightShoulder (1513)
+	mixamorig:RightArm (1360)
+	mixamorig:RightForeArm (993)
+	mixamorig:RightHand (440)
+	mixamorig:RightHandThumb1 (171)
+	mixamorig:RightHandThumb2 (58)
+	mixamorig:RightHandThumb3 (0)
+	mixamorig:RightHandThumb4 (0)
+	mixamorig:RightHandIndex1 (97)
+	mixamorig:RightHandIndex2 (0)
+	mixamorig:RightHandIndex3 (0)
+	mixamorig:RightHandIndex4 (0)
+	mixamorig:RightHandMiddle1 (61)
+	mixamorig:RightHandMiddle2 (0)
+	mixamorig:RightHandMiddle3 (0)
+	mixamorig:RightHandMiddle4 (0)
+	mixamorig:RightHandRing1 (53)
+	mixamorig:RightHandRing2 (0)
+	mixamorig:RightHandRing3 (0)
+	mixamorig:RightHandRing4 (0)
+	mixamorig:RightHandPinky1 (44)
+	mixamorig:RightHandPinky2 (0)
+	mixamorig:RightHandPinky3 (0)
+	mixamorig:RightHandPinky4 (0)
+	mixamorig:LeftUpLeg (898)
+	mixamorig:LeftLeg (953)
+	mixamorig:LeftFoot (409)
+	mixamorig:LeftToeBase (153)
+	mixamorig:LeftToe_End (0)
+	mixamorig:RightUpLeg (892)
+	mixamorig:RightLeg (946)
+	mixamorig:RightFoot (407)
+	mixamorig:RightToeBase (152)
+	mixamorig:RightToe_End (0)
+Scene total vertices 20533, triangles 31696
+Bone mapping contains 112 bones in total
+Loading materials...
+	Num materials 5
+	Parent dir: assets/ExoRed/
+Embedded textures: 7
+Loaded compressed embedded texture BROW_diffuse.png, 2048x2048, chan 4
+Loaded compressed embedded texture BODY_diffuse.png, 2048x2048, chan 3
+Loaded compressed embedded texture BODY_normal.png, 2048x2048, chan 3
+Loaded compressed embedded texture BODY_specular.png, 2048x2048, chan 4
+Loaded compressed embedded texture EXO_diffuse.png, 2048x2048, chan 3
+Loaded compressed embedded texture EXO_normal.png, 2048x2048, chan 3
+Loaded compressed embedded texture EXO_specular.png, 1024x1024, chan 3
+Loaded 7 embedded textures
+Loading material 'Eye_Spec_MAT', index 0...
+Available textures:
+	None 0
+	diffuse 1
+	Specular 0
+	Ambient 0
+	Emissive 0
+	Height 0
+	Normals 0
+	Shininess 0
+	Opacity 1
+	Displacement 0
+	Lightmap 0
+	Reflection 0
+	Base color 0
+	Normal camera 0
+	Emission color 0
+	Metalness 0
+	Diffuse roughness 0
+	AO 0
+	Unknown 0
+Loading textures...
+	raw path: ../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/BROW_diffuse.png
+	local file: assets/ExoRed/../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/BROW_diffuse.png
+	raw path: ../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/BROW_diffuse.png
+	local file: assets/ExoRed/../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/BROW_diffuse.png
+Done loading textures
+Loading material 'Eye_MAT', index 1...
+Available textures:
+	None 0
+	diffuse 1
+	Specular 0
+	Ambient 0
+	Emissive 0
+	Height 0
+	Normals 0
+	Shininess 0
+	Opacity 0
+	Displacement 0
+	Lightmap 0
+	Reflection 0
+	Base color 0
+	Normal camera 0
+	Emission color 0
+	Metalness 0
+	Diffuse roughness 0
+	AO 0
+	Unknown 0
+Loading textures...
+	raw path: ../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/BODY_diffuse.png
+	local file: assets/ExoRed/../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/BODY_diffuse.png
+Done loading textures
+Loading material 'Body_MAT', index 2...
+Available textures:
+	None 0
+	diffuse 1
+	Specular 1
+	Ambient 0
+	Emissive 0
+	Height 0
+	Normals 1
+	Shininess 0
+	Opacity 0
+	Displacement 0
+	Lightmap 0
+	Reflection 0
+	Base color 0
+	Normal camera 0
+	Emission color 0
+	Metalness 0
+	Diffuse roughness 0
+	AO 0
+	Unknown 0
+Loading textures...
+	raw path: ../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/BODY_diffuse.png
+	local file: assets/ExoRed/../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/BODY_diffuse.png
+	raw path: ../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/BODY_normal.png
+	local file: assets/ExoRed/../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/BODY_normal.png
+	raw path: ../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/BODY_specular.png
+	local file: assets/ExoRed/../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/BODY_specular.png
+Done loading textures
+Loading material 'Brows_MAT', index 3...
+Available textures:
+	None 0
+	diffuse 1
+	Specular 1
+	Ambient 0
+	Emissive 0
+	Height 0
+	Normals 1
+	Shininess 0
+	Opacity 1
+	Displacement 0
+	Lightmap 0
+	Reflection 0
+	Base color 0
+	Normal camera 0
+	Emission color 0
+	Metalness 0
+	Diffuse roughness 0
+	AO 0
+	Unknown 0
+Loading textures...
+	raw path: ../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/BROW_diffuse.png
+	local file: assets/ExoRed/../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/BROW_diffuse.png
+	raw path: ../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/BODY_normal.png
+	local file: assets/ExoRed/../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/BODY_normal.png
+	raw path: ../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/BODY_specular.png
+	local file: assets/ExoRed/../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/BODY_specular.png
+	raw path: ../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/BODY_diffuse.png
+	local file: assets/ExoRed/../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/BODY_diffuse.png
+Done loading textures
+Loading material 'Exo_MAT', index 4...
+Available textures:
+	None 0
+	diffuse 1
+	Specular 1
+	Ambient 0
+	Emissive 0
+	Height 0
+	Normals 1
+	Shininess 0
+	Opacity 0
+	Displacement 0
+	Lightmap 0
+	Reflection 0
+	Base color 0
+	Normal camera 0
+	Emission color 0
+	Metalness 0
+	Diffuse roughness 0
+	AO 0
+	Unknown 0
+Loading textures...
+	raw path: ../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/EXO_diffuse.png
+	local file: assets/ExoRed/../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/EXO_diffuse.png
+	raw path: ../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/EXO_normal.png
+	local file: assets/ExoRed/../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/EXO_normal.png
+	raw path: ../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/EXO_specular.png
+	local file: assets/ExoRed/../../../../home/app/mixamo-mini/tmp/skins_dc7e9e95-4acf-44c7-95ef-24db8c68d703.fbm/EXO_specular.png
+Done loading textures
+Done loading materials
+Num materials 5
+Num textures 7
+	BROW_diffuse.png
+	BODY_diffuse.png
+	BODY_normal.png
+	BODY_specular.png
+	EXO_diffuse.png
+	EXO_normal.png
+	EXO_specular.png
+Loading animations...
+Loading animation 'mixamo.com', dur in ticks 1, tps 30, nbr channels 27
+	Loading channel mixamorig:Hips, nbr pos keys  2, nbr scale keys  2, nbr rot keys  2
+	Loading channel mixamorig:LeftArm_$AssimpFbx$_Rotation, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+	Loading channel mixamorig:LeftFoot_$AssimpFbx$_Rotation, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+	Loading channel mixamorig:LeftForeArm, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+	Loading channel mixamorig:LeftHand, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+	Loading channel mixamorig:LeftHandIndex1, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+	Loading channel mixamorig:LeftHandMiddle1, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+	Loading channel mixamorig:LeftHandPinky1, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+	Loading channel mixamorig:LeftHandRing1, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+	Loading channel mixamorig:LeftHandThumb1_$AssimpFbx$_Rotation, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+	Loading channel mixamorig:LeftLeg_$AssimpFbx$_Rotation, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+	Loading channel mixamorig:LeftShoulder_$AssimpFbx$_Rotation, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+	Loading channel mixamorig:LeftUpLeg_$AssimpFbx$_Rotation, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+	Loading channel mixamorig:RightArm_$AssimpFbx$_Rotation, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+	Loading channel mixamorig:RightFoot_$AssimpFbx$_Rotation, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+	Loading channel mixamorig:RightForeArm, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+	Loading channel mixamorig:RightHand, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+	Loading channel mixamorig:RightHandIndex1, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+	Loading channel mixamorig:RightHandMiddle1, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+	Loading channel mixamorig:RightHandPinky1, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+	Loading channel mixamorig:RightHandRing1, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+	Loading channel mixamorig:RightHandThumb1_$AssimpFbx$_Rotation, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+	Loading channel mixamorig:RightHandThumb2, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+	Loading channel mixamorig:RightHandThumb3, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+	Loading channel mixamorig:RightLeg_$AssimpFbx$_Rotation, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+	Loading channel mixamorig:RightShoulder_$AssimpFbx$_Rotation, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+	Loading channel mixamorig:RightUpLeg_$AssimpFbx$_Rotation, nbr pos keys  1, nbr scale keys  1, nbr rot keys  1
+Animations in total 1

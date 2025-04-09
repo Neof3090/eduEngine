@@ -1,7 +1,5 @@
 #pragma once
-#include <glm/glm.hpp>
-#include <glm/gtc/matrix_transform.hpp>
-#include <glm/gtc/type_ptr.hpp>
+#include <glmcommon.hpp>
 #include <RenderableMesh.hpp>
 #include <memory>
 
@@ -15,29 +13,28 @@ struct LinearVelocity {
 	glm::vec3 velocity;
 };
 
-struct Mesh {
+struct MeshComponent {
 	std::shared_ptr<eeng::RenderableMesh> mesh;
 };
 
 struct PlayerController {
-	glm::vec3 direction;
-	float speed;
+	float speed = 2;
+	glm::vec3 forward, right;
+	glm_aux::Ray viewRay;
 };
 
 struct NpcController {
-	glm::vec3 direction;
+	std::vector<glm::vec3> patrolPoints;
+	int currentPoint = 0;
 	float speed;
 };
 
-struct PointLight {
-	glm::vec3 color;
-	float intensity;
-};
-
-struct Camera
+// Basic camera structure
+struct CameraComponent 
 {
-	glm::vec3 lookAt = glm_aux::vec3_000;   // Point of interest
-	glm::vec3 up = glm_aux::vec3_010;       // Local up-vector
+	glm::vec3 pos;                          // Camera position
+	glm::vec3 lookAt = glm::vec3(0,0,0);   // Point of interest
+	glm::vec3 up = glm::vec3(0,1,0);       // Local up-vector
 	float distance = 15.0f;                 // Distance to point-of-interest
 	float sensitivity = 0.005f;             // Mouse sensitivity
 	const float nearPlane = 1.0f;           // Rendering near plane
@@ -46,8 +43,12 @@ struct Camera
 	// Position and view angles (computed when camera is updated)
 	float yaw = 0.0f;                       // Horizontal angle (radians)
 	float pitch = -glm::pi<float>() / 8;    // Vertical angle (radians)
-	glm::vec3 pos;                          // Camera position
 
 	// Previous mouse position
 	glm::ivec2 mouse_xy_prev{ -1, -1 };
+};
+
+struct PointLight {
+	glm::vec3 pos;
+	glm::vec3 color{ 1.0f, 1.0f, 0.8f };
 };

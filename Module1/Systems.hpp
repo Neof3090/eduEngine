@@ -2,14 +2,25 @@
 
 #include "Components.hpp"
 
-void MovementSystem(std::shared_ptr<Transform> transforms, std::shared_ptr <LinearVelocity> linearVelocities);
+#include <memory>
 
-void PlayerControllerSystem(std::shared_ptr<Transform> transforms, std::shared_ptr<PlayerController> playerControllers);
+#include <glmcommon.hpp>
 
-void RenderSystem(eeng::ForwardRendererPtr forwardRenderer, const Transform& transform, const Mesh& mesh);
+#include <ForwardRenderer.hpp>
+#include <InputManager.hpp>
 
-void NpcControllerSystem(std::shared_ptr<Transform> transforms, std::shared_ptr<NpcController> npcControllers);
 
-void PointLightSystem(std::shared_ptr<Transform> transforms, std::shared_ptr<PointLight> pointLights);
+struct Systems {
 
-void CameraSystem(std::shared_ptr<Transform> transforms, std::shared_ptr<Camera> cameras);
+	void MovementSystem(Transform& transforms, LinearVelocity& linearVelocities, float& deltaTime);
+
+	void PlayerControllerSystem(Transform& transform, PlayerController& playerController, LinearVelocity& linearVelocity, InputManagerPtr& input, CameraComponent& camera);
+
+	void RenderSystem(eeng::ForwardRendererPtr& forwardRenderer, const Transform& transform, const MeshComponent& mesh);
+
+	void NpcControllerSystem(Transform& transform, LinearVelocity& linearVelocity, NpcController& npcCtrl);
+
+	void CameraSystem(CameraComponent& camera, InputManagerPtr& input);
+
+	void PointLightSystem(Transform& transforms, PointLight& pointLights);
+};

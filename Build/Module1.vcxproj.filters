@@ -55,6 +55,9 @@
     <ClCompile Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\src\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\Module1\Systems.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\CMakeLists.txt" />

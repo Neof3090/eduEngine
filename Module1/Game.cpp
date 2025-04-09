@@ -5,8 +5,12 @@
 #include "Log.hpp"
 #include "Game.hpp"
 
-#include "Systems.hpp"
-#include "Components.hpp"
+std::shared_ptr<eeng::RenderableMesh> InitializeMesh(std::string filePath) 
+{
+	auto mesh = std::make_shared<eeng::RenderableMesh>();
+	mesh->load(filePath, false);
+	return mesh;
+}
 
 bool Game::init()
 {
@@ -18,22 +22,6 @@ bool Game::init()
 
     // Do some entt stuff
     entity_registry = std::make_shared<entt::registry>();
-   
-   /* auto ent1 = entity_registry->create();
-    struct Tfm
-    {
-        float x, y, z;
-    };
-    entity_registry->emplace<Tfm>(ent1, Tfm{});*/
-
-	auto ent1 = entity_registry->create();
-    entity_registry->emplace<Mesh>(ent1, Mesh {characterMesh});
-	entity_registry->emplace<Transform>(ent1, Transform{ 
-        { 0.0f, 0.0f, 0.0f },
-		{ 0.0f, 0.0f, 0.0f },
-		{ 1.0f, 1.0f, 1.0f }
-    });
-
 
     // Grass
     grassMesh = std::make_shared<eeng::RenderableMesh>();
@@ -64,7 +52,7 @@ bool Game::init()
 #if 1
     // Amy 5.0.1 PACK FBX
     characterMesh->load("assets/Amy/Ch46_nonPBR.fbx");
-    characterMesh->load("assets/Amy/idle.fbx", true);
+    characterMesh->load("assets/Amy/idle.fbx", true) ;
     characterMesh->load("assets/Amy/walking.fbx", true);
     // Remove root motion
     characterMesh->removeTranslationKeys("mixamorig:Hips");
@@ -74,12 +62,69 @@ bool Game::init()
     // Fix for assimp 5.0.1 (https://github.com/assimp/assimp/issues/4486)
     // FBXConverter.cpp, line 648: 
     //      const float zero_epsilon = 1e-6f; => const float zero_epsilon = Math::getEpsilon<float>();
-    characterMesh->load("assets/Eve/Eve By J.Gonzales.fbx");
-    characterMesh->load("assets/Eve/idle.fbx", true);
-    characterMesh->load("assets/Eve/walking.fbx", true);
+    playerMesh->load("assets/Eve/Eve By J.Gonzales.fbx");
+    playerMesh->load("assets/Eve/idle.fbx", true);
+    playerMesh->load("assets/Eve/walking.fbx", true);
     // Remove root motion
-    characterMesh->removeTranslationKeys("mixamorig:Hips");
+    playerMesh->removeTranslationKeys("mixamorig:Hips");
 #endif
+
+   
+
+    // Fox 
+    foxMesh = InitializeMesh("assets/Animals/Fox.fbx");
+
+    // Player
+    playerMesh = InitializeMesh("assets/ExoRed/exo_red.fbx");
+
+    /*auto cameraEntity = entity_registry->create();
+    entity_registry->emplace<CameraComponent>(cameraEntity, CameraComponent{});
+    camera = std::make_shared<CameraComponent>(entity_registry->get<CameraComponent>(cameraEntity));*/
+
+    auto foxEntity = entity_registry->create();
+    entity_registry->emplace<MeshComponent>(foxEntity, MeshComponent{ foxMesh });
+    entity_registry->emplace<LinearVelocity>(foxEntity, LinearVelocity{ {0, 0, 0} });
+    entity_registry->emplace<Transform>(foxEntity, Transform{
+        { 10.0f, 0.0f, 0.0f },      // position
+        { 0.0f, 0.0f, 0.0f },       // rotation
+        { 0.01f, 0.01f, 0.01f }     // scale
+    });
+    entity_registry->emplace<NpcController>(foxEntity, NpcController{ 
+        { { 0, 0, 0 }, { 5, 0, 0 }, { 5, 0, 5 }, { 0, 0, 5 } }, // patrol points
+        0, // current point
+        2.0f // speed
+    });
+
+    auto playerEntity = entity_registry->create();
+    entity_registry->emplace<MeshComponent>(playerEntity, MeshComponent{ playerMesh });
+    entity_registry->emplace<LinearVelocity>(playerEntity, LinearVelocity{ {0, 0, 0} });
+    entity_registry->emplace<Transform>(playerEntity, Transform{
+		{ 0.0f, 0.0f, 0.0f },      // position
+		{ 0.0f, 0.0f, 0.0f },       // rotation
+        { 0.03f, 0.03f, 0.03f }     // scale
+	});
+    entity_registry->emplace<PlayerController>(playerEntity, PlayerController{
+		6.0f,                           // speed
+		glm::vec3(0.0f, 0.0f, -1.0f),   // forward
+		glm::vec3(1.0f, 0.0f, 0.0f),    // right
+		glm_aux::Ray{ glm::vec3(0.0f, 2.0f, 0.0f), glm::vec3(0.0f, 0.0f, -1.0f) } // view ray
+	});
+
+
+ //   auto characterEntity2 = entity_registry->create();
+ //   entity_registry->emplace<MeshComponent>(characterEntity2, MeshComponent{ characterMesh });
+ //   entity_registry->emplace<Transform>(characterEntity2, Transform{
+ //       { -3.0f, 0.0f, 0.0f },      // position
+ //       { 0.0f, 0.0f, 0.0f },       // rotation
+ //       { 0.03f, 0.03f, 0.03f }     // scale
+ //   });
+ //   auto characterEntity3 = entity_registry->create();
+ //   entity_registry->emplace<MeshComponent>(characterEntity3, MeshComponent{ characterMesh });
+ //   entity_registry->emplace<Transform>(characterEntity3, Transform{
+	//	{ 3.0f, 0.0f, 0.0f },      // position
+	//	{ 0.0f, 0.0f, 0.0f },       // rotation
+ //       { 0.03f, 0.03f, 0.03f }     // scale
+	//});
 
     grassWorldMatrix = glm_aux::TRS(
         { 0.0f, 0.0f, 0.0f },
@@ -99,20 +144,51 @@ void Game::update(
     float deltaTime,
     InputManagerPtr input)
 {
+
+    // Update the player controller
+    auto playerView = entity_registry->view<Transform, PlayerController, LinearVelocity>();
+    for (auto entity : playerView) {
+        auto& transform = playerView.get<Transform>(entity);
+        auto& playerController = playerView.get<PlayerController>(entity);
+        auto& linearVelocity = playerView.get<LinearVelocity>(entity);
+        
+        //updatePlayer(transform, playerController, deltaTime, input);
+        systems.PlayerControllerSystem(transform, playerController, linearVelocity, input, camera);
+    }
+
+    // Update NPC controllers
+    auto npcView = entity_registry->view<Transform, NpcController, LinearVelocity>();
+    for (auto entity : npcView) {
+        auto& transform = npcView.get<Transform>(entity);
+        auto& npcController = npcView.get<NpcController>(entity);
+        auto& linearVelocity = npcView.get<LinearVelocity>(entity);
+
+        systems.NpcControllerSystem(transform, linearVelocity, npcController);
+    }
+
+    // Update movement for entities
+    auto movementView = entity_registry->view<Transform, LinearVelocity>();
+    for (auto entity : movementView) {
+		auto& transform = movementView.get<Transform>(entity);
+		auto& linearVelocity = movementView.get<LinearVelocity>(entity);
+
+		// Update the position of the transform based on the linear velocity
+        systems.MovementSystem(transform, linearVelocity, deltaTime);
+	}
+
+    // Update Camera
     updateCamera(input);
 
-    updatePlayer(deltaTime, input);
+    //auto cameraView = entity_registry->view<CameraComponent>();
+    //for (auto entity : cameraView) {
+	//	auto& camera = cameraView.get<CameraComponent>(entity);
+
+	//	systems.CameraSystem(camera, input);
+	//}
 
     pointlight.pos = glm::vec3(
         glm_aux::R(time * 0.1f, { 0.0f, 1.0f, 0.0f }) *
         glm::vec4(100.0f, 100.0f, 100.0f, 1.0f));
-
-
-
-    characterWorldMatrix1 = glm_aux::TRS(
-        player.pos,
-        0.0f, { 0, 1, 0 },
-        { 0.03f, 0.03f, 0.03f });
 
     characterWorldMatrix2 = glm_aux::TRS(
         { -3, 0, 0 },
@@ -125,9 +201,14 @@ void Game::update(
         { 0.03f, 0.03f, 0.03f });
 
     // Intersect player view ray with AABBs of other objects 
-    glm_aux::intersect_ray_AABB(player.viewRay, character_aabb2.min, character_aabb2.max);
-    glm_aux::intersect_ray_AABB(player.viewRay, character_aabb3.min, character_aabb3.max);
-    glm_aux::intersect_ray_AABB(player.viewRay, horse_aabb.min, horse_aabb.max);
+    /* auto rayView = entity_registry->view<PlayerController>();
+    for (auto entity : rayView) {
+        auto& player = rayView.get<PlayerController>(entity);
+
+        glm_aux::intersect_ray_AABB(player.viewRay, character_aabb2.min, character_aabb2.max);
+        glm_aux::intersect_ray_AABB(player.viewRay, character_aabb3.min, character_aabb3.max);
+        glm_aux::intersect_ray_AABB(player.viewRay, horse_aabb.min, horse_aabb.max);
+    }*/
 
     // We can also compute a ray from the current mouse position,
     // to use for object picking and such ...
@@ -148,6 +229,7 @@ void Game::render(
     int windowWidth,
     int windowHeight)
 {
+    gameTime = time;
     renderUI();
 
     matrices.windowSize = glm::ivec2(windowWidth, windowHeight);
@@ -164,13 +246,13 @@ void Game::render(
     // Begin rendering pass
     forwardRenderer->beginPass(matrices.P, matrices.V, pointlight.pos, pointlight.color, camera.pos);
 
-    // 
-    auto view = entity_registry->view<Transform, Mesh>();
-    for (auto entity : view) {
-		auto& transform = view.get<Transform>(entity);
-		auto& mesh = view.get<Mesh>(entity);
+    // Rendering entities
+    auto meshView = entity_registry->view<Transform, MeshComponent>();
+    for (auto entity : meshView) {
+		auto& transform = meshView.get<Transform>(entity);
+		auto& mesh = meshView.get<MeshComponent>(entity);
 
-        RenderSystem(forwardRenderer, transform, mesh);
+        systems.RenderSystem(forwardRenderer, transform, mesh);
     }
 
     // Grass
@@ -183,9 +265,9 @@ void Game::render(
     horse_aabb = horseMesh->m_model_aabb.post_transform(horseWorldMatrix);
 
     // Character, instance 1
-    characterMesh->animate(characterAnimIndex, time * characterAnimSpeed);
+    /*characterMesh->animate(characterAnimIndex, time * characterAnimSpeed);
     forwardRenderer->renderMesh(characterMesh, characterWorldMatrix1);
-    character_aabb1 = characterMesh->m_model_aabb.post_transform(characterWorldMatrix1);
+    character_aabb1 = characterMesh->m_model_aabb.post_transform(characterWorldMatrix1);*/
 
     // Character, instance 2
     characterMesh->animate(1, time * characterAnimSpeed);
@@ -201,17 +283,22 @@ void Game::render(
     drawcallCount = forwardRenderer->endPass();
 
     // Draw player view ray
-    if (player.viewRay)
-    {
-        shapeRenderer->push_states(ShapeRendering::Color4u{ 0xff00ff00 });
-        shapeRenderer->push_line(player.viewRay.origin, player.viewRay.point_of_contact());
-    }
-    else
-    {
-        shapeRenderer->push_states(ShapeRendering::Color4u{ 0xffffffff });
-        shapeRenderer->push_line(player.viewRay.origin, player.viewRay.origin + player.viewRay.dir * 100.0f);
-    }
-    shapeRenderer->pop_states<ShapeRendering::Color4u>();
+    /*auto rayView = entity_registry->view<PlayerController>();
+    for (auto entity : rayView) {
+		auto& player = rayView.get<PlayerController>(entity);
+
+        if (player.viewRay)
+        {
+            shapeRenderer->push_states(ShapeRendering::Color4u{ 0xff00ff00 });
+            shapeRenderer->push_line(player.viewRay.origin, player.viewRay.point_of_contact());
+        }
+        else
+        {
+            shapeRenderer->push_states(ShapeRendering::Color4u{ 0xffffffff });
+            shapeRenderer->push_line(player.viewRay.origin, player.viewRay.origin + player.viewRay.dir * 100.0f);
+        }
+        shapeRenderer->pop_states<ShapeRendering::Color4u>();
+	}*/
 
     // Draw object bases
     {
@@ -320,6 +407,37 @@ void Game::renderUI()
     ImGui::SliderFloat("Animation speed", &characterAnimSpeed, 0.1f, 5.0f);
 
     ImGui::End(); // end info window
+
+    ImGui::Begin("Misc");
+
+    ImGui::Text("Camera misc:");
+    ImGui::SliderFloat("Camera distance", &camera.distance, 1.0f, 100.0f);
+
+    ImGui::Text("Player misc:");
+    auto playerView = entity_registry->view<Transform, PlayerController>();
+    for (auto entity : playerView) {
+		auto& playerController = playerView.get<PlayerController>(entity);
+		ImGui::SliderFloat("Player speed", &playerController.speed, 0.1f, 10.0f);
+        break;
+	}
+
+    ImGui::Text("NPC (fox) Misc:");
+    auto npcView = entity_registry->view<Transform, NpcController>();
+    for (auto entity : npcView) {
+		auto& transform = npcView.get<Transform>(entity);
+		auto& npcController = npcView.get<NpcController>(entity);
+        ImGui::SliderFloat("NPC speed", &npcController.speed, 0.1f, 10.0f);
+
+        float scale = transform.scale.x;
+        ImGui::SliderFloat("NPC scale", &scale, 0.01f, 0.05f);
+        transform.scale = { scale, scale, scale };
+        break;
+	}
+
+    ImGui::Text("Miscellaneous info:");
+    ImGui::Text("Game time: %1.1f", gameTime);
+
+    ImGui::End(); // end misc window
 }
 
 void Game::destroy()
@@ -347,58 +465,3 @@ void Game::updateCamera(
     const glm::vec4 rotatedPos = glm_aux::R(camera.yaw, camera.pitch) * glm::vec4(0.0f, 0.0f, camera.distance, 1.0f);
     camera.pos = camera.lookAt + glm::vec3(rotatedPos);
 }
-
-void Game::updatePlayer(
-    float deltaTime,
-    InputManagerPtr input)
-{
-    // Fetch keys relevant for player movement
-    using Key = eeng::InputManager::Key;
-    bool W = input->IsKeyPressed(Key::W);
-    bool A = input->IsKeyPressed(Key::A);
-    bool S = input->IsKeyPressed(Key::S);
-    bool D = input->IsKeyPressed(Key::D);
-
-    // Compute vectors in the local space of the player
-    player.fwd = glm::vec3(glm_aux::R(camera.yaw, glm_aux::vec3_010) * glm::vec4(0.0f, 0.0f, -1.0f, 0.0f));
-    player.right = glm::cross(player.fwd, glm_aux::vec3_010);
-
-    // Compute the total movement as a 3D vector
-    auto movement =
-        player.fwd * player.velocity * deltaTime * ((W ? 1.0f : 0.0f) + (S ? -1.0f : 0.0f)) +
-        player.right * player.velocity * deltaTime * ((A ? -1.0f : 0.0f) + (D ? 1.0f : 0.0f));
-
-    // Update player position and forward view ray
-    player.pos += movement;
-    player.viewRay = glm_aux::Ray{ player.pos + glm::vec3(0.0f, 2.0f, 0.0f), player.fwd };
-
-    // Update camera to track the player
-    camera.lookAt += movement;
-    camera.pos += movement;
-}
-
-void MovementSystem(std::shared_ptr<Transform> transform, std::shared_ptr<LinearVelocity> linearVelocity) {
-    // Update the position of the transform based on the linear velocity
-	transform->position += linearVelocity->velocity;
-}
-void PlayerControllerSystem(std::shared_ptr<Transform> transform, std::shared_ptr<PlayerController> playerController) {
-    transform->position += playerController->direction;
-}
-void RenderSystem(eeng::ForwardRendererPtr forwardRenderer, const Transform& transform, const Mesh& mesh) {
-    glm::mat4 modelMatrix = glm_aux::TRS(
-        transform.position,
-        transform.rotation.y, { 0, 1, 0 },
-        transform.scale);
-
-    forwardRenderer->renderMesh(mesh.mesh, modelMatrix);
-}
-void NpcControllerSystem(std::shared_ptr<Transform> transform, std::shared_ptr<NpcController> npcController) {
-
-}
-void PointLightSystem(std::shared_ptr<Transform> transform, std::shared_ptr<PointLight> pointLight) {
-
-}
-void CameraSystem(std::shared_ptr<Transform> transforms, std::vector<std::shared_ptr<Camera>> cameras){
-
-}
-

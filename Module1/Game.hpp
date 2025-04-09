@@ -8,6 +8,9 @@
 #include "ForwardRenderer.hpp"
 #include "ShapeRenderer.hpp"
 
+#include "Systems.hpp"
+#include "Components.hpp"
+
 /// @brief A Game may hold, update and render 3D geometry and GUI elements
 class Game : public eeng::GameBase
 {
@@ -50,6 +53,11 @@ private:
     // Entity registry - to use in labs
     std::shared_ptr<entt::registry> entity_registry;
 
+    Systems systems;
+
+    CameraComponent camera;
+    PointLight pointlight;
+
     // Matrices for view, projection and viewport
     struct Matrices
     {
@@ -59,45 +67,8 @@ private:
         glm::ivec2 windowSize;
     } matrices;
 
-    // Basic third-person camera
-    struct Camera
-    {
-        glm::vec3 lookAt = glm_aux::vec3_000;   // Point of interest
-        glm::vec3 up = glm_aux::vec3_010;       // Local up-vector
-        float distance = 15.0f;                 // Distance to point-of-interest
-        float sensitivity = 0.005f;             // Mouse sensitivity
-        const float nearPlane = 1.0f;           // Rendering near plane
-        const float farPlane = 500.0f;          // Rendering far plane
-
-        // Position and view angles (computed when camera is updated)
-        float yaw = 0.0f;                       // Horizontal angle (radians)
-        float pitch = -glm::pi<float>() / 8;    // Vertical angle (radians)
-        glm::vec3 pos;                          // Camera position
-
-        // Previous mouse position
-        glm::ivec2 mouse_xy_prev{ -1, -1 };
-    } camera;
-
-    // Light properties
-    struct PointLight
-    {
-        glm::vec3 pos;
-        glm::vec3 color{ 1.0f, 1.0f, 0.8f };
-    } pointlight;
-
-    // (Placeholder) Player data
-    struct Player
-    {
-        glm::vec3 pos = glm_aux::vec3_000;
-        float velocity{ 6.0f };
-
-        // Local vectors & view ray (computed when camera/player is updated)
-        glm::vec3 fwd, right;
-        glm_aux::Ray viewRay;
-    } player;
-
     // Game meshes
-    std::shared_ptr<eeng::RenderableMesh> grassMesh, horseMesh, characterMesh;
+    std::shared_ptr<eeng::RenderableMesh> grassMesh, horseMesh, characterMesh, foxMesh, playerMesh;
 
     // Game entity transformations
     glm::mat4 characterWorldMatrix1, characterWorldMatrix2, characterWorldMatrix3;
@@ -118,11 +89,7 @@ private:
     void updateCamera(
         InputManagerPtr input);
 
-    /// @brief Placeholder system for updating the 'player' based on inputs
-    /// @param deltaTime 
-    void updatePlayer(
-        float deltaTime,
-        InputManagerPtr input);
+    float gameTime = 0.0f;
 };
 
 #endif
