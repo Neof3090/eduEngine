@@ -54,8 +54,6 @@ private:
     std::shared_ptr<entt::registry> entity_registry;
 
     Systems systems;
-
-    CameraComponent camera;
     PointLight pointlight;
 
     // Matrices for view, projection and viewport
@@ -88,6 +86,8 @@ private:
     /// @param input Input from mouse, keyboard and controllers
     void updateCamera(
         InputManagerPtr input);
+
+    void LoadMeshes();
 
     float gameTime = 0.0f;
 };

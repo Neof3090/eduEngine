@@ -12,15 +12,15 @@
 
 struct Systems {
 
-	void MovementSystem(Transform& transforms, LinearVelocity& linearVelocities, float& deltaTime);
+	void MovementSystem(entt::registry& reg, float deltaTime);
 
-	void PlayerControllerSystem(Transform& transform, PlayerController& playerController, LinearVelocity& linearVelocity, InputManagerPtr& input, CameraComponent& camera);
+	void PlayerControllerSystem(entt::registry& reg, InputManagerPtr& input);
 
-	void RenderSystem(eeng::ForwardRendererPtr& forwardRenderer, const Transform& transform, const MeshComponent& mesh);
+	void RenderSystem(entt::registry& reg, eeng::ForwardRendererPtr forwardRenderer, float time);
 
-	void NpcControllerSystem(Transform& transform, LinearVelocity& linearVelocity, NpcController& npcCtrl);
+	void NpcControllerSystem(entt::registry& reg);
 
-	void CameraSystem(CameraComponent& camera, InputManagerPtr& input);
+	void CameraSystem(entt::registry& reg);
 
-	void PointLightSystem(Transform& transforms, PointLight& pointLights);
+	void PointLightSystem(entt::registry& reg);
 };
