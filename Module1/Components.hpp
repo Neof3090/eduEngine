@@ -16,9 +16,9 @@ struct LinearVelocity {
 
 struct MeshComponent {
 	std::shared_ptr<eeng::RenderableMesh> mesh;
-	eeng::AABB aabb; // (Axis-aligned bounding box)
 	int animIndex;
 	float animSpeed;
+	eeng::AABB aabb; // (Axis-aligned bounding box)
 };
 
 struct PlayerController {

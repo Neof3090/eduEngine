@@ -68,10 +68,6 @@ private:
     // Game meshes
     std::shared_ptr<eeng::RenderableMesh> grassMesh, horseMesh, characterMesh, foxMesh, playerMesh;
 
-    // Game entity transformations
-    glm::mat4 characterWorldMatrix1, characterWorldMatrix2, characterWorldMatrix3;
-    glm::mat4 grassWorldMatrix, horseWorldMatrix;
-
     // Game entity AABBs (for collision detection or visualization)
     eeng::AABB character_aabb1, character_aabb2, character_aabb3, horse_aabb, grass_aabb;
 

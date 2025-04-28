@@ -91,7 +91,11 @@ bool Game::init()
     entity_registry->emplace<CameraComponent>(cameraEntity, CameraComponent{ });
 
     auto playerEntity = entity_registry->create();
-    entity_registry->emplace<MeshComponent>(playerEntity, MeshComponent{ playerMesh });
+    entity_registry->emplace<MeshComponent>(playerEntity, MeshComponent{ 
+        playerMesh,
+        2, // animation index
+        1.0f // animation speed
+        });
     entity_registry->emplace<LinearVelocity>(playerEntity, LinearVelocity{ {0, 0, 0} });
     entity_registry->emplace<Transform>(playerEntity, Transform{
 		{ 0.0f, 0.0f, 0.0f },      // position
@@ -106,31 +110,44 @@ bool Game::init()
         cameraEntity // camera entity
 	});
 
-
     auto characterEntity2 = entity_registry->create();
-    entity_registry->emplace<MeshComponent>(characterEntity2, MeshComponent{ characterMesh });
+    entity_registry->emplace<MeshComponent>(characterEntity2, MeshComponent{ 
+        characterMesh,
+        1, // animation index
+        1.0f // animation speed
+        });
     entity_registry->emplace<Transform>(characterEntity2, Transform{
         { -3.0f, 0.0f, 0.0f },      // position
         { 0.0f, 0.0f, 0.0f },       // rotation
         { 0.03f, 0.03f, 0.03f }     // scale
     });
     auto characterEntity3 = entity_registry->create();
-    entity_registry->emplace<MeshComponent>(characterEntity3, MeshComponent{ characterMesh });
+    entity_registry->emplace<MeshComponent>(characterEntity3, MeshComponent{ 
+        characterMesh,
+        2,
+        1.0f
+        });
     entity_registry->emplace<Transform>(characterEntity3, Transform{
 		{ 3.0f, 0.0f, 0.0f },      // position
 		{ 0.0f, 0.0f, 0.0f },       // rotation
         { 0.03f, 0.03f, 0.03f }     // scale
 	});
 
-    grassWorldMatrix = glm_aux::TRS(
-        { 0.0f, 0.0f, 0.0f },
-        0.0f, { 0, 1, 0 },
-        { 100.0f, 100.0f, 100.0f });
+    auto grassEntity = entity_registry->create();
+    entity_registry->emplace<MeshComponent>(grassEntity, MeshComponent{ grassMesh });
+    entity_registry->emplace<Transform>(grassEntity, Transform{
+		{ 0.0f, 0.0f, 0.0f },      // position
+		{ 0.0f, 0.0f, 0.0f },       // rotation
+		{ 100.0f, 100.0f, 100.0f }  // scale
+	});
 
-    horseWorldMatrix = glm_aux::TRS(
+    auto horseEntity = entity_registry->create();
+    entity_registry->emplace<MeshComponent>(horseEntity, MeshComponent{ horseMesh });
+    entity_registry->emplace<Transform>(horseEntity, Transform{
         { 30.0f, 0.0f, -35.0f },
-        35.0f, { 0, 1, 0 },
-        { 0.01f, 0.01f, 0.01f });
+        { 0, 35.0f, 0 },
+        { 0.01f, 0.01f, 0.01f }
+    });
 
     return true;
 }
@@ -155,16 +172,6 @@ void Game::update(
     pointlight.pos = glm::vec3(
         glm_aux::R(time * 0.1f, { 0.0f, 1.0f, 0.0f }) *
         glm::vec4(100.0f, 100.0f, 100.0f, 1.0f));
-
-    characterWorldMatrix2 = glm_aux::TRS(
-        { -3, 0, 0 },
-        time * glm::radians(50.0f), { 0, 1, 0 },
-        { 0.03f, 0.03f, 0.03f });
-
-    characterWorldMatrix3 = glm_aux::TRS(
-        { 3, 0, 0 },
-        time * glm::radians(50.0f), { 0, 1, 0 },
-        { 0.03f, 0.03f, 0.03f });
 
     // Intersect player view ray with AABBs of other objects 
     /* auto rayView = entity_registry->view<PlayerController>();
@@ -227,30 +234,6 @@ void Game::render(
     // Rendering entities
     systems.RenderSystem(*entity_registry, forwardRenderer, time);
 
-    // Grass
-    forwardRenderer->renderMesh(grassMesh, grassWorldMatrix);
-    grass_aabb = grassMesh->m_model_aabb.post_transform(grassWorldMatrix);
-
-    // Horse
-    horseMesh->animate(3, time);
-    forwardRenderer->renderMesh(horseMesh, horseWorldMatrix);
-    horse_aabb = horseMesh->m_model_aabb.post_transform(horseWorldMatrix);
-
-    // Character, instance 1
-    /*characterMesh->animate(characterAnimIndex, time * characterAnimSpeed);
-    forwardRenderer->renderMesh(characterMesh, characterWorldMatrix1);
-    character_aabb1 = characterMesh->m_model_aabb.post_transform(characterWorldMatrix1);*/
-
-    // Character, instance 2
-    characterMesh->animate(1, time * characterAnimSpeed);
-    forwardRenderer->renderMesh(characterMesh, characterWorldMatrix2);
-    character_aabb2 = characterMesh->m_model_aabb.post_transform(characterWorldMatrix2);
-
-    // Character, instance 3
-    characterMesh->animate(2, time * characterAnimSpeed);
-    forwardRenderer->renderMesh(characterMesh, characterWorldMatrix3);
-    character_aabb3 = characterMesh->m_model_aabb.post_transform(characterWorldMatrix3);
-
     // End rendering pass
     drawcallCount = forwardRenderer->endPass();
 
@@ -272,25 +255,18 @@ void Game::render(
         shapeRenderer->pop_states<ShapeRendering::Color4u>();
 	}*/
 
-    // Draw object bases
-    {
-        shapeRenderer->push_basis_basic(characterWorldMatrix1, 1.0f);
-        shapeRenderer->push_basis_basic(characterWorldMatrix2, 1.0f);
-        shapeRenderer->push_basis_basic(characterWorldMatrix3, 1.0f);
-        shapeRenderer->push_basis_basic(grassWorldMatrix, 1.0f);
-        shapeRenderer->push_basis_basic(horseWorldMatrix, 1.0f);
-    }
 
-    // Draw AABBs
-    {
-        shapeRenderer->push_states(ShapeRendering::Color4u{ 0xFFE61A80 });
-        shapeRenderer->push_AABB(character_aabb1.min, character_aabb1.max);
-        shapeRenderer->push_AABB(character_aabb2.min, character_aabb2.max);
-        shapeRenderer->push_AABB(character_aabb3.min, character_aabb3.max);
-        shapeRenderer->push_AABB(horse_aabb.min, horse_aabb.max);
-        shapeRenderer->push_AABB(grass_aabb.min, grass_aabb.max);
-        shapeRenderer->pop_states<ShapeRendering::Color4u>();
-    }
+    //// Draw object bases
+    //{
+    //    shapeRenderer->push_basis_basic(horseWorldMatrix, 1.0f);
+    //}
+
+    //// Draw AABBs
+    //{
+    //    shapeRenderer->push_states(ShapeRendering::Color4u{ 0xFFE61A80 });
+    //    shapeRenderer->push_AABB(grass_aabb.min, grass_aabb.max);
+    //    shapeRenderer->pop_states<ShapeRendering::Color4u>();
+    //}
 
 #if 0
     // Demo draw other shapes
@@ -347,33 +323,33 @@ void Game::renderUI()
         }
 
         // In-world position label
-        const auto VP_P_V = matrices.VP * matrices.P * matrices.V;
-        auto world_pos = glm::vec3(horseWorldMatrix[3]);
-        glm::ivec2 window_coords;
-        if (glm_aux::window_coords_from_world_pos(world_pos, VP_P_V, window_coords))
-        {
-            ImGui::SetNextWindowPos(
-                ImVec2{ float(window_coords.x), float(matrices.windowSize.y - window_coords.y) },
-                ImGuiCond_Always,
-                ImVec2{ 0.0f, 0.0f });
-            ImGui::PushStyleColor(ImGuiCol_WindowBg, 0x80000000);
-            ImGui::PushStyleColor(ImGuiCol_Text, 0xffffffff);
+        //const auto VP_P_V = matrices.VP * matrices.P * matrices.V;
+        //auto world_pos = glm::vec3(horseWorldMatrix[3]);
+        //glm::ivec2 window_coords;
+        //if (glm_aux::window_coords_from_world_pos(world_pos, VP_P_V, window_coords))
+        //{
+        //    ImGui::SetNextWindowPos(
+        //        ImVec2{ float(window_coords.x), float(matrices.windowSize.y - window_coords.y) },
+        //        ImGuiCond_Always,
+        //        ImVec2{ 0.0f, 0.0f });
+        //    ImGui::PushStyleColor(ImGuiCol_WindowBg, 0x80000000);
+        //    ImGui::PushStyleColor(ImGuiCol_Text, 0xffffffff);
 
-            ImGuiWindowFlags flags =
-                ImGuiWindowFlags_NoDecoration |
-                ImGuiWindowFlags_NoInputs |
-                // ImGuiWindowFlags_NoBackground |
-                ImGuiWindowFlags_AlwaysAutoResize;
+        //    ImGuiWindowFlags flags =
+        //        ImGuiWindowFlags_NoDecoration |
+        //        ImGuiWindowFlags_NoInputs |
+        //        // ImGuiWindowFlags_NoBackground |
+        //        ImGuiWindowFlags_AlwaysAutoResize;
 
-            if (ImGui::Begin("window_name", nullptr, flags))
-            {
-                ImGui::Text("In-world GUI element");
-                ImGui::Text("Window pos (%i, %i)", window_coords.x, window_coords.x);
-                ImGui::Text("World pos (%1.1f, %1.1f, %1.1f)", world_pos.x, world_pos.y, world_pos.z);
-                ImGui::End();
-            }
-            ImGui::PopStyleColor(2);
-        }
+        //    if (ImGui::Begin("window_name", nullptr, flags))
+        //    {
+        //        ImGui::Text("In-world GUI element");
+        //        ImGui::Text("Window pos (%i, %i)", window_coords.x, window_coords.x);
+        //        ImGui::Text("World pos (%1.1f, %1.1f, %1.1f)", world_pos.x, world_pos.y, world_pos.z);
+        //        ImGui::End();
+        //    }
+        //    ImGui::PopStyleColor(2);
+        //}
     }
 
     ImGui::SliderFloat("Animation speed", &characterAnimSpeed, 0.1f, 5.0f);
