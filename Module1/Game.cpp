@@ -294,32 +294,44 @@ void Game::renderUI()
     {
     }
 
+        float* characterAnimSpeed;
     if (characterMesh)
     {
         // Combo (drop-down) for animation clip
-        int curAnimIndex = characterAnimIndex;
-        std::string label = (curAnimIndex == -1 ? "Bind pose" : characterMesh->getAnimationName(curAnimIndex));
-        if (ImGui::BeginCombo("Character animation##animclip", label.c_str()))
-        {
-            // Bind pose item
-            const bool isSelected = (curAnimIndex == -1);
-            if (ImGui::Selectable("Bind pose", isSelected))
-                curAnimIndex = -1;
-            if (isSelected)
-                ImGui::SetItemDefaultFocus();
+        auto view = entity_registry->view<MeshComponent>();
+        for (auto entity : view) {
+            auto& mesh = view.get<MeshComponent>(entity);
+            if (mesh.mesh == characterMesh)
+			{
+                characterAnimSpeed = &mesh.animSpeed;
+				int curAnimIndex = mesh.animIndex;
 
-            // Clip items
-            for (int i = 0; i < characterMesh->getNbrAnimations(); i++)
-            {
-                const bool isSelected = (curAnimIndex == i);
-                const auto label = characterMesh->getAnimationName(i) + "##" + std::to_string(i);
-                if (ImGui::Selectable(label.c_str(), isSelected))
-                    curAnimIndex = i;
-                if (isSelected)
-                    ImGui::SetItemDefaultFocus();
-            }
-            ImGui::EndCombo();
-            characterAnimIndex = curAnimIndex;
+                std::string label = (curAnimIndex == -1 ? "Bind pose" : characterMesh->getAnimationName(curAnimIndex));
+                if (ImGui::BeginCombo("Character animation##animclip", label.c_str()))
+                {
+                    // Bind pose item
+                    const bool isSelected = (curAnimIndex == -1);
+                    if (ImGui::Selectable("Bind pose", isSelected))
+                        curAnimIndex = -1;
+                    if (isSelected)
+                        ImGui::SetItemDefaultFocus();
+
+                    // Clip items
+                    for (int i = 0; i < characterMesh->getNbrAnimations(); i++)
+                    {
+                        const bool isSelected = (curAnimIndex == i);
+                        const auto label = characterMesh->getAnimationName(i) + "##" + std::to_string(i);
+                        if (ImGui::Selectable(label.c_str(), isSelected))
+                            curAnimIndex = i;
+                        if (isSelected)
+                            ImGui::SetItemDefaultFocus();
+                    }
+                    ImGui::EndCombo();
+
+                    mesh.animIndex = curAnimIndex;
+                }
+				break;
+			}
         }
 
         // In-world position label
@@ -352,7 +364,7 @@ void Game::renderUI()
         //}
     }
 
-    ImGui::SliderFloat("Animation speed", &characterAnimSpeed, 0.1f, 5.0f);
+    ImGui::SliderFloat("Animation speed", characterAnimSpeed, 0.1f, 5.0f);
 
     ImGui::End(); // end info window
 
@@ -365,7 +377,6 @@ void Game::renderUI()
         ImGui::SliderFloat("Camera distance", &cam.distance, 1.0f, 100.0f);
         break;
     }
-
 
     ImGui::Text("Player misc:");
     auto playerView = entity_registry->view<Transform, PlayerController>();

@@ -68,24 +68,13 @@ private:
     // Game meshes
     std::shared_ptr<eeng::RenderableMesh> grassMesh, horseMesh, characterMesh, foxMesh, playerMesh;
 
-    // Game entity AABBs (for collision detection or visualization)
-    eeng::AABB character_aabb1, character_aabb2, character_aabb3, horse_aabb, grass_aabb;
-
-    // Placeholder animation state
-    int characterAnimIndex = -1;
-    float characterAnimSpeed = 1.0f;
-
     // Stats
     int drawcallCount = 0;
-
-    /// @brief Placeholder system for updating the camera position based on inputs
-    /// @param input Input from mouse, keyboard and controllers
-    void updateCamera(
-        InputManagerPtr input);
 
     void LoadMeshes();
 
     float gameTime = 0.0f;
+
 };
 
 #endif
