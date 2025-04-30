@@ -75,6 +75,7 @@ private:
 
     float gameTime = 0.0f;
 
+    bool showBones = false;
 };
 
 #endif

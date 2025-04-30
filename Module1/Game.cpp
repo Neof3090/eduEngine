@@ -158,7 +158,7 @@ void Game::update(
     InputManagerPtr input)
 {
     // Update the player controller
-    systems.PlayerControllerSystem(*entity_registry, input);
+    systems.PlayerControllerSystem(*entity_registry, input, deltaTime);
 
     // Update Camera
 	systems.CameraSystem(*entity_registry);
@@ -195,6 +195,8 @@ void Game::update(
     //        glm_aux::to_string(ray.origin).c_str(),
     //        glm_aux::to_string(ray.dir).c_str());
     //}
+
+
 }
 
 void Game::render(
@@ -232,7 +234,7 @@ void Game::render(
     forwardRenderer->beginPass(matrices.P, matrices.V, pointlight.pos, pointlight.color, cameraPos);
 
     // Rendering entities
-    systems.RenderSystem(*entity_registry, forwardRenderer, time);
+    systems.RenderSystem(*entity_registry, forwardRenderer, shapeRenderer, time);
 
     // End rendering pass
     drawcallCount = forwardRenderer->endPass();
