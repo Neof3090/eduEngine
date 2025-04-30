@@ -54,16 +54,8 @@ private:
     std::shared_ptr<entt::registry> entity_registry;
 
     Systems systems;
-    PointLight pointlight;
 
-    // Matrices for view, projection and viewport
-    struct Matrices
-    {
-        glm::mat4 V;
-        glm::mat4 P;
-        glm::mat4 VP;
-        glm::ivec2 windowSize;
-    } matrices;
+   
 
     // Game meshes
     std::shared_ptr<eeng::RenderableMesh> grassMesh, horseMesh, characterMesh, foxMesh, playerMesh;

@@ -54,23 +54,9 @@ void Systems::PlayerControllerSystem(entt::registry& reg, InputManagerPtr& input
             bool A = input->IsKeyPressed(Key::A);
             bool S = input->IsKeyPressed(Key::S);
             bool D = input->IsKeyPressed(Key::D);
+            bool SPACE = input->IsKeyPressed(Key::Space);
 
             localMovement = glm::vec3((A ? -1.0f : 0.0f) + (D ? 1.0f : 0.0f), 0, (W ? 1.0f : 0.0f) + (S ? -1.0f : 0.0f));
-
-            // Update misc debug controls
-            if (keyTimer <= 0.0f) {
-                bool G = input->IsKeyPressed(Key::G);
-                if (G)
-                {
-                    showBones = !showBones;
-                }
-
-                keyTimer = keyDelay;
-            }
-            else {
-                keyTimer -= deltaTime;
-            }
-            
         }
 
         // Normalize the velocity to ensure consistent speed
@@ -118,8 +104,45 @@ void Systems::PlayerControllerSystem(entt::registry& reg, InputManagerPtr& input
     }
 }
 
-void Systems::RenderSystem(entt::registry& reg, eeng::ForwardRendererPtr forwardRenderer, ShapeRendererPtr shapeRenderer, float time) {
+int Systems::RenderSystem(entt::registry& reg, int windowWidth, int windowHeight, eeng::ForwardRendererPtr forwardRenderer, ShapeRendererPtr shapeRenderer, float time)
+{
+    // --- CAMERA SELECTION ---
+    auto camView = reg.view<Transform, CameraComponent>();
+    if (camView.begin() == camView.end()) {
+        return 0; 
+    }
 
+    glm::vec3 cameraPos = glm::vec3(0.0f);
+
+    for (auto entity : camView) {
+        const auto& cam = camView.get<CameraComponent>(entity);
+        const auto& camTfm = camView.get<Transform>(entity);
+
+        cameraPos = camTfm.position;
+        float aspect = float(windowWidth) / windowHeight;
+        matrices.P = glm::perspective(glm::radians(60.0f), aspect, cam.nearPlane, cam.farPlane);
+        matrices.V = glm::lookAt(cameraPos, cam.lookAt, cam.up);
+        break;
+    }
+
+
+    // --- LIGHT SELECTION ---
+    auto lightView = reg.view<PointLight>();
+    glm::vec3 lightPos = glm::vec3(0.0f);
+    glm::vec3 lightColor = glm::vec3(1.0f);
+
+    if (!lightView.empty()) {
+        entt::entity pointlightEntity = lightView.front();
+        auto& pointlight = reg.get<PointLight>(pointlightEntity);
+        lightPos = pointlight.pos;
+        lightColor = pointlight.color;
+    }
+
+    // --- BEGIN FORWARD PASS ---
+    matrices.VP = glm_aux::create_viewport_matrix(0.0f, 0.0f, windowWidth, windowHeight, 0.0f, 1.0f);
+    forwardRenderer->beginPass(matrices.P, matrices.V, lightPos, lightColor, cameraPos);
+
+    // --- RENDERING MESHES ---
     auto view = reg.view<Transform, MeshComponent>();
     for (auto entity : view) {
 		auto& transform = view.get<Transform>(entity);
@@ -127,39 +150,92 @@ void Systems::RenderSystem(entt::registry& reg, eeng::ForwardRendererPtr forward
 
         glm::mat4 modelToWorldMatrix = GetWorldMatrix(transform);
 
-        meshComp.mesh->animate(meshComp.animIndex, time * meshComp.animSpeed);
+        if (meshComp.animIndex >= 0 && meshComp.animIndex < meshComp.mesh->getNbrAnimations()) 
+        {
+            meshComp.mesh->animate(meshComp.animIndex, time * meshComp.animSpeed);
+        }
 
         forwardRenderer->renderMesh(meshComp.mesh, modelToWorldMatrix);
 
         meshComp.aabb = meshComp.mesh->m_model_aabb.post_transform(modelToWorldMatrix);
 
-        float axisLen = 25.0f;
-
-        if (showBones) {
-            for (int i = 0; i < meshComp.mesh->boneMatrices.size(); ++i) {
+        meshComp.isSkinned = !meshComp.mesh->m_bones.empty();
+        if (debug.showBones &&
+            meshComp.isSkinned &&
+            meshComp.mesh->boneMatrices.size() >= meshComp.mesh->m_bones.size() &&
+            !meshComp.mesh->m_bones.empty())
+        {
+            float axisLen = transform.scale.y * 100.0f;
+            
+            size_t boneCount = std::min(meshComp.mesh->boneMatrices.size(), meshComp.mesh->m_bones.size());
+            for (size_t i = 0; i < boneCount; ++i) {
                 auto IBinverse = glm::inverse(meshComp.mesh->m_bones[i].inversebind_tfm);
                 glm::mat4 global = GetWorldMatrix(transform) * meshComp.mesh->boneMatrices[i] * IBinverse;
                 glm::vec3 pos = glm::vec3(global[3]);
 
                 glm::vec3 right = glm::vec3(global[0]); // X
-                glm::vec3 up = glm::vec3(global[1]); // Y
-                glm::vec3 fwd = glm::vec3(global[2]); // Z
+                glm::vec3 up = glm::vec3(global[1]);    // Y
+                glm::vec3 fwd = glm::vec3(global[2]);   // Z
 
                 shapeRenderer->push_states(ShapeRendering::Color4u::Red);
                 shapeRenderer->push_line(pos, pos + axisLen * right);
+                shapeRenderer->pop_states<ShapeRendering::Color4u>();
 
                 shapeRenderer->push_states(ShapeRendering::Color4u::Green);
                 shapeRenderer->push_line(pos, pos + axisLen * up);
+                shapeRenderer->pop_states<ShapeRendering::Color4u>();
 
                 shapeRenderer->push_states(ShapeRendering::Color4u::Blue);
                 shapeRenderer->push_line(pos, pos + axisLen * fwd);
-
-                shapeRenderer->pop_states<ShapeRendering::Color4u>();
-                shapeRenderer->pop_states<ShapeRendering::Color4u>();
                 shapeRenderer->pop_states<ShapeRendering::Color4u>();
             }
         }
+
 	}
+
+    // --- END FORWARD PASS ---
+    int drawcalls = forwardRenderer->endPass();
+
+    if (debug.showObjectBases) {
+        auto view = reg.view<Transform>();
+        for (auto entity : view) {
+            auto& tfm = view.get<Transform>(entity);
+            glm::mat4 model = GetWorldMatrix(tfm);
+            shapeRenderer->push_basis_basic(model, 1.0f);
+        }
+    }
+
+    if (debug.showAABBs) {
+        auto aabbView = reg.view<Transform, MeshComponent>();
+        for (auto entity : aabbView) {
+            auto& meshComp = aabbView.get<MeshComponent>(entity);
+
+            shapeRenderer->push_states(ShapeRendering::Color4u{ 0xFFE61A80 });
+            shapeRenderer->push_AABB(meshComp.aabb.min, meshComp.aabb.max);
+            shapeRenderer->pop_states<ShapeRendering::Color4u>();
+        }
+    }
+
+    if (debug.showViewRays) {
+        auto playerView = reg.view<Transform, PlayerController>();
+        for (auto entity : playerView) {
+            auto& transform = playerView.get<Transform>(entity);
+            auto& controller = playerView.get<PlayerController>(entity);
+            const auto& ray = controller.viewRay;
+
+            // Forward view ray
+            glm::vec3 end = ray.origin + ray.dir * 100.0f;
+            shapeRenderer->push_states(ShapeRendering::Color4u{ 0xffffffff });
+            shapeRenderer->push_line(ray.origin, end);
+            shapeRenderer->pop_states<ShapeRendering::Color4u>();
+        }
+    }
+    
+    // --- SHAPE DEBUG FLUSH ---
+    shapeRenderer->render(matrices.P * matrices.V);
+    shapeRenderer->post_render();
+
+    return drawcalls;
 }
 
 void Systems::NpcControllerSystem(entt::registry& reg) {

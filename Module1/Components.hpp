@@ -19,6 +19,8 @@ struct MeshComponent {
 	int animIndex;
 	float animSpeed;
 	eeng::AABB aabb; // (Axis-aligned bounding box)
+
+	bool isSkinned = false;
 };
 
 struct PlayerController {
@@ -26,6 +28,9 @@ struct PlayerController {
 	glm::vec3 forward, right;
 	glm_aux::Ray viewRay;
 	entt::entity cameraEntity;
+
+	//
+	float jumpTimer, jumpDelay = 0.5f; // Delay between jumps
 
 	// Previous mouse position
 	glm::ivec2 mouse_xy_prev{ -1, -1 };

@@ -391,7 +391,7 @@ DirectX_DXGUID_LIBRARY:FILEPATH=C:/Program Files (x86)/Windows Kits/10/Lib/10.0.
 DirectX_INCLUDE_DIR:STRING=C:/Program Files (x86)/Windows Kits/10/Include/10.0.22621.0/shared/
 
 //x
-DirectX_LIBRARY:STRING=C:/Program Files (x86)/Windows Kits/10/Lib/10.0.22621.0/um/x86/d3d9.lib
+DirectX_LIBRARY:STRING=C:/Program Files (x86)/Windows Kits/10/Lib/10.0.22621.0/um/x64/d3d9.lib
 
 //Enable building with documentation.
 ENTT_BUILD_DOCS:BOOL=OFF

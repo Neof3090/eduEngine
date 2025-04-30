@@ -72,19 +72,8 @@ bool Game::init()
     // Do some entt stuff
     entity_registry = std::make_shared<entt::registry>();
 
-    auto foxEntity = entity_registry->create();
-    entity_registry->emplace<MeshComponent>(foxEntity, MeshComponent{ foxMesh });
-    entity_registry->emplace<LinearVelocity>(foxEntity, LinearVelocity{ {0, 0, 0} });
-    entity_registry->emplace<Transform>(foxEntity, Transform{
-        { 10.0f, 0.0f, 0.0f },      // position
-        { 0.0f, 0.0f, 0.0f },       // rotation
-        { 0.01f, 0.01f, 0.01f }     // scale
-    });
-    entity_registry->emplace<NpcController>(foxEntity, NpcController{ 
-        { { 0, 0, 0 }, { 5, 0, 0 }, { 5, 0, 5 }, { 0, 0, 5 } }, // patrol points
-        0, // current point
-        2.0f // speed
-    });
+    auto pointlightEntity = entity_registry->create();
+    entity_registry->emplace<PointLight>(pointlightEntity, PointLight{});
 
     auto cameraEntity = entity_registry->create();
     entity_registry->emplace<Transform>(cameraEntity, Transform{ });
@@ -109,6 +98,20 @@ bool Game::init()
 		glm_aux::Ray{ glm::vec3(0.0f, 2.0f, 0.0f), glm::vec3(0.0f, 0.0f, -1.0f) }, // view ray
         cameraEntity // camera entity
 	});
+
+    auto foxEntity = entity_registry->create();
+    entity_registry->emplace<MeshComponent>(foxEntity, MeshComponent{ foxMesh });
+    entity_registry->emplace<LinearVelocity>(foxEntity, LinearVelocity{ {0, 0, 0} });
+    entity_registry->emplace<Transform>(foxEntity, Transform{
+        { 10.0f, 0.0f, 0.0f },      // position
+        { 0.0f, 0.0f, 0.0f },       // rotation
+        { 0.01f, 0.01f, 0.01f }     // scale
+    });
+    entity_registry->emplace<NpcController>(foxEntity, NpcController{ 
+        { { 0, 0, 0 }, { 5, 0, 0 }, { 5, 0, 5 }, { 0, 0, 5 } }, // patrol points
+        0, // current point
+        2.0f // speed
+    });
 
     auto characterEntity2 = entity_registry->create();
     entity_registry->emplace<MeshComponent>(characterEntity2, MeshComponent{ 
@@ -157,6 +160,8 @@ void Game::update(
     float deltaTime,
     InputManagerPtr input)
 {
+    gameTime = time;
+
     // Update the player controller
     systems.PlayerControllerSystem(*entity_registry, input, deltaTime);
 
@@ -168,10 +173,6 @@ void Game::update(
 
     // Update movement for entities
     systems.MovementSystem(*entity_registry, deltaTime);
-
-    pointlight.pos = glm::vec3(
-        glm_aux::R(time * 0.1f, { 0.0f, 1.0f, 0.0f }) *
-        glm::vec4(100.0f, 100.0f, 100.0f, 1.0f));
 
     // Intersect player view ray with AABBs of other objects 
     /* auto rayView = entity_registry->view<PlayerController>();
@@ -204,84 +205,10 @@ void Game::render(
     int windowWidth,
     int windowHeight)
 {
-    gameTime = time;
     renderUI();
 
-    matrices.windowSize = glm::ivec2(windowWidth, windowHeight);
-    
-    glm::vec3 cameraPos = glm::vec3(0.0f); // Set up the viewport position
-
-    auto camView = entity_registry->view<Transform, CameraComponent>();
-    for (auto entity : camView) {
-        const auto& cam = camView.get<CameraComponent>(entity);
-        const auto& camTfm = camView.get<Transform>(entity);
-        
-        cameraPos = camTfm.position;
-
-        // Projection matrix
-        const float aspectRatio = float(windowWidth) / windowHeight;
-        matrices.P = glm::perspective(glm::radians(60.0f), aspectRatio, cam.nearPlane, cam.farPlane);
-   
-         // View matrix
-        matrices.V = glm::lookAt(cameraPos, cam.lookAt, cam.up);
-
-        break; // only use the first camera
-    }
-
-    matrices.VP = glm_aux::create_viewport_matrix(0.0f, 0.0f, windowWidth, windowHeight, 0.0f, 1.0f);
-
-    // Begin rendering pass
-    forwardRenderer->beginPass(matrices.P, matrices.V, pointlight.pos, pointlight.color, cameraPos);
-
-    // Rendering entities
-    systems.RenderSystem(*entity_registry, forwardRenderer, shapeRenderer, time);
-
-    // End rendering pass
-    drawcallCount = forwardRenderer->endPass();
-
-    // Draw player view ray
-    /*auto rayView = entity_registry->view<PlayerController>();
-    for (auto entity : rayView) {
-		auto& player = rayView.get<PlayerController>(entity);
-
-        if (player.viewRay)
-        {
-            shapeRenderer->push_states(ShapeRendering::Color4u{ 0xff00ff00 });
-            shapeRenderer->push_line(player.viewRay.origin, player.viewRay.point_of_contact());
-        }
-        else
-        {
-            shapeRenderer->push_states(ShapeRendering::Color4u{ 0xffffffff });
-            shapeRenderer->push_line(player.viewRay.origin, player.viewRay.origin + player.viewRay.dir * 100.0f);
-        }
-        shapeRenderer->pop_states<ShapeRendering::Color4u>();
-	}*/
-
-
-    //// Draw object bases
-    //{
-    //    shapeRenderer->push_basis_basic(horseWorldMatrix, 1.0f);
-    //}
-
-    //// Draw AABBs
-    //{
-    //    shapeRenderer->push_states(ShapeRendering::Color4u{ 0xFFE61A80 });
-    //    shapeRenderer->push_AABB(grass_aabb.min, grass_aabb.max);
-    //    shapeRenderer->pop_states<ShapeRendering::Color4u>();
-    //}
-
-#if 0
-    // Demo draw other shapes
-    {
-        shapeRenderer->push_states(glm_aux::T(glm::vec3(0.0f, 0.0f, -5.0f)));
-        ShapeRendering::DemoDraw(shapeRenderer);
-        shapeRenderer->pop_states<glm::mat4>();
-    }
-#endif
-
-    // Draw shape batches
-    shapeRenderer->render(matrices.P * matrices.V);
-    shapeRenderer->post_render();
+    int drawcalls = systems.RenderSystem(*entity_registry, windowWidth, windowHeight, forwardRenderer, shapeRenderer, time);
+    drawcallCount = drawcalls;
 }
 
 void Game::renderUI()
@@ -290,13 +217,16 @@ void Game::renderUI()
 
     ImGui::Text("Drawcall count %i", drawcallCount);
 
-    if (ImGui::ColorEdit3("Light color",
-        glm::value_ptr(pointlight.color),
-        ImGuiColorEditFlags_NoInputs))
-    {
+    auto lightView = entity_registry->view<PointLight>();
+    if (!lightView.empty()) {
+        auto lightEntity = lightView.front();
+        auto& pointlight = entity_registry->get<PointLight>(lightEntity);
+
+        ImGui::ColorEdit3("Light color", glm::value_ptr(pointlight.color), ImGuiColorEditFlags_NoInputs);
     }
 
-        float* characterAnimSpeed;
+    float* characterAnimSpeed = nullptr;
+
     if (characterMesh)
     {
         // Combo (drop-down) for animation clip
@@ -366,9 +296,19 @@ void Game::renderUI()
         //}
     }
 
-    ImGui::SliderFloat("Animation speed", characterAnimSpeed, 0.1f, 5.0f);
+    if (characterAnimSpeed) {
+        ImGui::SliderFloat("Animation speed", characterAnimSpeed, 0.1f, 5.0f);
+    }
 
     ImGui::End(); // end info window
+
+    // Debug window
+    ImGui::Begin("Debug");
+    ImGui::Checkbox("Show Bones", &systems.debug.showBones);
+    ImGui::Checkbox("Show AABBs", &systems.debug.showAABBs);
+    ImGui::Checkbox("Show View Rays", &systems.debug.showViewRays);
+    ImGui::Checkbox("Show Object Bases", &systems.debug.showObjectBases);
+    ImGui::End(); // end debug window
 
     ImGui::Begin("Misc");
 
