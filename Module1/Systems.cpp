@@ -25,7 +25,7 @@ void Systems::MovementSystem(entt::registry& reg, float deltaTime) {
     }
 }
 
-void Systems::PlayerControllerSystem(entt::registry& reg, InputManagerPtr& input) {
+void Systems::PlayerControllerSystem(entt::registry& reg, InputManagerPtr& input, float deltaTime) {
 
     auto view = reg.view<Transform, LinearVelocity, PlayerController>();
     for (auto entity : view) {
@@ -56,6 +56,21 @@ void Systems::PlayerControllerSystem(entt::registry& reg, InputManagerPtr& input
             bool D = input->IsKeyPressed(Key::D);
 
             localMovement = glm::vec3((A ? -1.0f : 0.0f) + (D ? 1.0f : 0.0f), 0, (W ? 1.0f : 0.0f) + (S ? -1.0f : 0.0f));
+
+            // Update misc debug controls
+            if (keyTimer <= 0.0f) {
+                bool G = input->IsKeyPressed(Key::G);
+                if (G)
+                {
+                    showBones = !showBones;
+                }
+
+                keyTimer = keyDelay;
+            }
+            else {
+                keyTimer -= deltaTime;
+            }
+            
         }
 
         // Normalize the velocity to ensure consistent speed
@@ -99,11 +114,11 @@ void Systems::PlayerControllerSystem(entt::registry& reg, InputManagerPtr& input
         float yOffset = 2.0f;
         camera.lookAt = transform.position + glm::vec3(0.0f, yOffset, 0.0f);
 
-        // Update 
+        
     }
 }
 
-void Systems::RenderSystem(entt::registry& reg, eeng::ForwardRendererPtr forwardRenderer, float time) {
+void Systems::RenderSystem(entt::registry& reg, eeng::ForwardRendererPtr forwardRenderer, ShapeRendererPtr shapeRenderer, float time) {
 
     auto view = reg.view<Transform, MeshComponent>();
     for (auto entity : view) {
@@ -118,13 +133,12 @@ void Systems::RenderSystem(entt::registry& reg, eeng::ForwardRendererPtr forward
 
         meshComp.aabb = meshComp.mesh->m_model_aabb.post_transform(modelToWorldMatrix);
 
-
         float axisLen = 25.0f;
 
-        if (gizmo_bones) {
-            for (int i = 0; i < characterMesh->boneMatrices.size(); ++i) {
-                auto IBinverse = glm::inverse(characterMesh->m_bones[i].inversebind_tfm);
-                glm::mat4 global = meh * characterMesh->boneMatrices[i] * IBinverse;
+        if (showBones) {
+            for (int i = 0; i < meshComp.mesh->boneMatrices.size(); ++i) {
+                auto IBinverse = glm::inverse(meshComp.mesh->m_bones[i].inversebind_tfm);
+                glm::mat4 global = GetWorldMatrix(transform) * meshComp.mesh->boneMatrices[i] * IBinverse;
                 glm::vec3 pos = glm::vec3(global[3]);
 
                 glm::vec3 right = glm::vec3(global[0]); // X
