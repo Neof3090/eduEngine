@@ -13,6 +13,7 @@ void Game::LoadMeshes()
     playerMesh->load("assets/ExoRed/exo_red.fbx");
     playerMesh->load("assets/ExoRed/idle (2).fbx", true);
     playerMesh->load("assets/ExoRed/walking.fbx", true);
+    playerMesh->load("assets/ExoRed/running.fbx", true);
     // Remove root motion
     playerMesh->removeTranslationKeys("mixamorig:Hips");
 
@@ -84,7 +85,7 @@ bool Game::init()
         playerMesh
         });
     entity_registry->emplace<AnimationComponent>(playerEntity, AnimationComponent{
-        2, // animation index
+        1, // animation index
         1.0f // animation speed
         });
     entity_registry->emplace<LinearVelocity>(playerEntity, LinearVelocity{ {0, 0, 0} });
@@ -94,7 +95,7 @@ bool Game::init()
         { 0.03f, 0.03f, 0.03f }     // scale
 	});
     entity_registry->emplace<PlayerController>(playerEntity, PlayerController{
-		6.0f,                           // speed
+		6.0f, 12.0f,                    // speeds (walk, sprint)
 		glm::vec3(0.0f, 0.0f, -1.0f),   // forward
 		glm::vec3(1.0f, 0.0f, 0.0f),    // right
 		glm_aux::Ray{ glm::vec3(0.0f, 2.0f, 0.0f), glm::vec3(0.0f, 0.0f, -1.0f) }, // view ray
@@ -164,6 +165,8 @@ void Game::update(
     // Update the player controller
     systems.PlayerControllerSystem(*entity_registry, input, deltaTime);
 
+    systems.PlayerAnimationSystem(*entity_registry, input, deltaTime);
+
     // Update Camera
 	systems.CameraSystem(*entity_registry);
 
@@ -173,6 +176,7 @@ void Game::update(
     // Update movement for entities
     systems.MovementSystem(*entity_registry, deltaTime);
 
+    systems.AnimationSystem(*entity_registry, deltaTime);
 }
 
 void Game::render(

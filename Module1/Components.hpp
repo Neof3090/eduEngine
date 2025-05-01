@@ -22,14 +22,21 @@ struct MeshComponent {
 };
 
 struct AnimationComponent {
-	int index = 0;				// Start index of animation
+	int index = 0; // Start index of animation
 	float speed = 1.0f;			// global playback speed
-	//float blendTimer = 1.0f;    // [0-1]
-	//float blendDuration = 0.2f; // seconds to blend between states
+
+	float playTime;
+
+	int nextIndex = index; // Animation to play
+	float blendTime1, blendTime2; // time to blend between animations
+	float blendFrac;    // 0-1 blend factor
+	float blendSpeed = 1.0f; // Speed of blending
+
+	enum class State { Idle, Walk, Run, Jump, Attack }  state;
 };
 
 struct PlayerController {
-	float speed = 2;
+	float speed = 2, runSpeed = 4;
 	glm::vec3 forward, right;
 	glm_aux::Ray viewRay;
 	entt::entity cameraEntity;

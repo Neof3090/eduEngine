@@ -9,12 +9,13 @@
 #include <ForwardRenderer.hpp>
 #include <ShapeRenderer.hpp>
 #include <InputManager.hpp>
+#include <RenderableMesh.hpp>
 
 struct RenderDebug {
 	bool showBones = false;
-	bool showAABBs = true;
-	bool showViewRays = true;
-	bool showObjectBases = true;
+	bool showAABBs = false;
+	bool showViewRays = false;
+	bool showObjectBases = false;
 };
 
 struct Systems {
@@ -33,7 +34,11 @@ struct Systems {
 
 	void PlayerControllerSystem(entt::registry& reg, InputManagerPtr& input, float deltaTime);
 
+	void PlayerAnimationSystem(entt::registry& reg,InputManagerPtr& input, float deltaTime);
+
 	int RenderSystem(entt::registry& reg, int windowWidth, int windowHeight, eeng::ForwardRendererPtr forwardRenderer, ShapeRendererPtr shapeRenderer, float time);
+
+	void AnimationSystem(entt::registry& reg, float deltaTime);
 
 	void NpcControllerSystem(entt::registry& reg);
 

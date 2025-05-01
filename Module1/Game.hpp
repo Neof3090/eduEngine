@@ -55,8 +55,6 @@ private:
 
     Systems systems;
 
-   
-
     // Game meshes
     std::shared_ptr<eeng::RenderableMesh> grassMesh, horseMesh, characterMesh, foxMesh, playerMesh;
 

@@ -54,7 +54,13 @@ void Systems::PlayerControllerSystem(entt::registry& reg, InputManagerPtr& input
             bool A = input->IsKeyPressed(Key::A);
             bool S = input->IsKeyPressed(Key::S);
             bool D = input->IsKeyPressed(Key::D);
+            bool LShift = input->IsKeyPressed(Key::LeftShift);
             bool SPACE = input->IsKeyPressed(Key::Space);
+
+            // Set the speed based on the key pressed
+            if (LShift) {
+				speed = playerController.runSpeed;
+			}
 
             localMovement = glm::vec3((A ? -1.0f : 0.0f) + (D ? 1.0f : 0.0f), 0, (W ? 1.0f : 0.0f) + (S ? -1.0f : 0.0f));
         }
@@ -130,6 +136,54 @@ void Systems::PlayerControllerSystem(entt::registry& reg, InputManagerPtr& input
     }
 }
 
+void Systems::PlayerAnimationSystem(entt::registry& reg, InputManagerPtr& input, float deltaTime) {
+    auto view = reg.view<PlayerController, LinearVelocity, AnimationComponent>();
+    for (auto entity : view) {
+        auto& playerController = view.get<PlayerController>(entity);
+        auto& lv = view.get<LinearVelocity>(entity);
+        auto& ac = view.get<AnimationComponent>(entity);
+
+        auto xzVel = glm::length(glm::vec2(lv.velocity.x, lv.velocity.z));
+
+        float runThreshold = playerController.runSpeed-0.5;
+
+        // simple FSM example
+        switch (ac.state) {
+            case AnimationComponent::State::Idle:
+                if (xzVel >= runThreshold) {
+                    ac.state = AnimationComponent::State::Run;
+                    ac.nextIndex = 3; // Sprint animation
+                }
+                else if (xzVel > 0.1f) {
+					ac.state = AnimationComponent::State::Walk;
+					ac.nextIndex = 2; // Walk animation
+				}
+				break;
+            break;
+            case AnimationComponent::State::Walk:
+                if (xzVel < 0.1f) {
+                    ac.state = AnimationComponent::State::Idle;
+                    ac.nextIndex = 1;
+                }
+                else if (xzVel >= runThreshold) {
+                    ac.state = AnimationComponent::State::Run;
+                    ac.nextIndex = 3;
+                }
+            break;
+            case AnimationComponent::State::Run:
+                if (xzVel < 0.1f) {
+					ac.state = AnimationComponent::State::Idle;
+					ac.nextIndex = 1;
+				}
+                else if (xzVel < runThreshold) {
+                	ac.state = AnimationComponent::State::Walk;
+                    ac.nextIndex = 2;
+                } 
+            break;
+        }
+    }
+}
+
 int Systems::RenderSystem(entt::registry& reg, int windowWidth, int windowHeight, eeng::ForwardRendererPtr forwardRenderer, ShapeRendererPtr shapeRenderer, float time)
 {
     // --- CAMERA SELECTION ---
@@ -167,17 +221,9 @@ int Systems::RenderSystem(entt::registry& reg, int windowWidth, int windowHeight
     matrices.VP = glm_aux::create_viewport_matrix(0.0f, 0.0f, windowWidth, windowHeight, 0.0f, 1.0f);
     forwardRenderer->beginPass(matrices.P, matrices.V, lightPos, lightColor, cameraPos);
 
+    
+
     // --- RENDERING MESHES ---
-    auto animView = reg.view<MeshComponent, AnimationComponent>();
-    for (auto entity : animView) {
-        auto& meshComp = animView.get<MeshComponent>(entity);
-        auto& animComp = animView.get<AnimationComponent>(entity);
-
-        if (animComp.index >= 0 && animComp.index < meshComp.mesh->getNbrAnimations()) {
-            meshComp.mesh->animate(animComp.index, time * animComp.speed);
-        }
-    }
-
     auto view = reg.view<Transform, MeshComponent>();
     for (auto entity : view) {
         auto& transform = view.get<Transform>(entity);
@@ -223,6 +269,8 @@ int Systems::RenderSystem(entt::registry& reg, int windowWidth, int windowHeight
 
 	}
 
+
+
     // --- END FORWARD PASS ---
     int drawcalls = forwardRenderer->endPass();
 
@@ -267,6 +315,49 @@ int Systems::RenderSystem(entt::registry& reg, int windowWidth, int windowHeight
     shapeRenderer->post_render();
 
     return drawcalls;
+}
+
+void Systems::AnimationSystem(entt::registry& reg, float dt) {
+    auto animView = reg.view<MeshComponent, AnimationComponent>();
+    for (auto entity : animView) {
+        auto& mc = animView.get<MeshComponent>(entity);
+        auto& ac = animView.get<AnimationComponent>(entity);
+
+        // If we're mid-blend between two clips
+        if (ac.index != ac.nextIndex) {
+            
+            ac.blendTime1 += dt * ac.speed;
+            ac.blendTime2 += dt * ac.speed;
+
+            // advance the blend fraction
+            ac.blendFrac = std::min(1.0f, ac.blendFrac + dt * ac.blendSpeed);
+
+            mc.mesh->animateBlend(
+                ac.index, ac.nextIndex,
+                ac.blendTime1, ac.blendTime2,
+                ac.blendFrac,
+                eeng::AnmationTimeFormat::RealTime,
+                eeng::AnmationTimeFormat::RealTime
+            );
+
+            // once its done blending, set the next index to the current one
+            if (ac.blendFrac >= 1.0f) {
+                ac.playTime = ac.blendTime2;
+
+                ac.index = ac.nextIndex;
+                ac.blendFrac = 0.0f;        
+                ac.blendTime1 = ac.blendTime2 = 0.0f;
+            }
+        }
+        else {
+            // Not blending: just play the current animation
+            ac.playTime += dt * ac.speed;
+            mc.mesh->animate(
+                ac.index,
+                ac.playTime
+            );
+        }
+    }
 }
 
 void Systems::NpcControllerSystem(entt::registry& reg) {
