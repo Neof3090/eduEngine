@@ -16,11 +16,16 @@ struct LinearVelocity {
 
 struct MeshComponent {
 	std::shared_ptr<eeng::RenderableMesh> mesh;
-	int animIndex;
-	float animSpeed;
-	eeng::AABB aabb; // (Axis-aligned bounding box)
 
+	eeng::AABB aabb; // (Axis-aligned bounding box)
 	bool isSkinned = false;
+};
+
+struct AnimationComponent {
+	int index = 0;				// Start index of animation
+	float speed = 1.0f;			// global playback speed
+	//float blendTimer = 1.0f;    // [0-1]
+	//float blendDuration = 0.2f; // seconds to blend between states
 };
 
 struct PlayerController {

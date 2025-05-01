@@ -86,21 +86,47 @@ void Systems::PlayerControllerSystem(entt::registry& reg, InputManagerPtr& input
         playerController.forward = glm::vec3(glm_aux::R(transform.rotation.y, glm_aux::vec3_010) * glm::vec4(0.0f, 0.0f, -1.0f, 0.0f));
         playerController.right = glm::cross(playerController.forward, glm_aux::vec3_010);
 
+        // Invert the forward and right vectors to match the camera's view direction
+        playerController.forward = -playerController.forward;
+        playerController.right = -playerController.right;
+
         // Compute the total movement and set linearVelocity
         glm::vec3 worldMovement =
-            -playerController.forward * localMovement.z +
-            -playerController.right * localMovement.x;
+            playerController.forward * localMovement.z +
+            playerController.right * localMovement.x;
 
         linearVelocity.velocity = worldMovement * speed;
-
-        // Update player forward view ray
-        playerController.viewRay = glm_aux::Ray{ transform.position + glm::vec3(0.0f, 2.0f, 0.0f), playerController.forward };
 
         // Update camera position
         float yOffset = 2.0f;
         camera.lookAt = transform.position + glm::vec3(0.0f, yOffset, 0.0f);
 
-        
+        // Update player forward view ray
+        playerController.viewRay = glm_aux::Ray{ transform.position + glm::vec3(0.0f, 2.0f, 0.0f), playerController.forward };
+
+        // Intersect player view ray with AABBs of other objects 
+        /* auto rayView = entity_registry->view<PlayerController>();
+        for (auto entity : rayView) {
+            auto& player = rayView.get<PlayerController>(entity);
+
+            glm_aux::intersect_ray_AABB(player.viewRay, character_aabb2.min, character_aabb2.max);
+            glm_aux::intersect_ray_AABB(player.viewRay, character_aabb3.min, character_aabb3.max);
+            glm_aux::intersect_ray_AABB(player.viewRay, horse_aabb.min, horse_aabb.max);
+        }*/
+
+        // We can also compute a ray from the current mouse position,
+        // to use for object picking and such ...
+        //if (input->GetMouseState().rightButton)
+        //{
+        //    glm::ivec2 windowPos(camera.mouse_xy_prev.x, matrices.windowSize.y - camera.mouse_xy_prev.y);
+        //    auto ray = glm_aux::world_ray_from_window_coords(windowPos, matrices.V, matrices.P, matrices.VP);
+        //    // Intersect with e.g. AABBs ...
+
+        //    eeng::Log("Picking ray origin = %s, dir = %s",
+        //        glm_aux::to_string(ray.origin).c_str(),
+        //        glm_aux::to_string(ray.dir).c_str());
+        //}
+
     }
 }
 
@@ -125,7 +151,6 @@ int Systems::RenderSystem(entt::registry& reg, int windowWidth, int windowHeight
         break;
     }
 
-
     // --- LIGHT SELECTION ---
     auto lightView = reg.view<PointLight>();
     glm::vec3 lightPos = glm::vec3(0.0f);
@@ -143,17 +168,22 @@ int Systems::RenderSystem(entt::registry& reg, int windowWidth, int windowHeight
     forwardRenderer->beginPass(matrices.P, matrices.V, lightPos, lightColor, cameraPos);
 
     // --- RENDERING MESHES ---
+    auto animView = reg.view<MeshComponent, AnimationComponent>();
+    for (auto entity : animView) {
+        auto& meshComp = animView.get<MeshComponent>(entity);
+        auto& animComp = animView.get<AnimationComponent>(entity);
+
+        if (animComp.index >= 0 && animComp.index < meshComp.mesh->getNbrAnimations()) {
+            meshComp.mesh->animate(animComp.index, time * animComp.speed);
+        }
+    }
+
     auto view = reg.view<Transform, MeshComponent>();
     for (auto entity : view) {
-		auto& transform = view.get<Transform>(entity);
-		auto& meshComp = view.get<MeshComponent>(entity);
+        auto& transform = view.get<Transform>(entity);
+        auto& meshComp = view.get<MeshComponent>(entity);
 
         glm::mat4 modelToWorldMatrix = GetWorldMatrix(transform);
-
-        if (meshComp.animIndex >= 0 && meshComp.animIndex < meshComp.mesh->getNbrAnimations()) 
-        {
-            meshComp.mesh->animate(meshComp.animIndex, time * meshComp.animSpeed);
-        }
 
         forwardRenderer->renderMesh(meshComp.mesh, modelToWorldMatrix);
 
@@ -232,6 +262,7 @@ int Systems::RenderSystem(entt::registry& reg, int windowWidth, int windowHeight
     }
     
     // --- SHAPE DEBUG FLUSH ---
+    if (debug.showAABBs || debug.showBones || debug.showObjectBases ||debug.showViewRays)
     shapeRenderer->render(matrices.P * matrices.V);
     shapeRenderer->post_render();
 

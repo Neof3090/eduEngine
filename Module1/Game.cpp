@@ -73,7 +73,7 @@ bool Game::init()
     entity_registry = std::make_shared<entt::registry>();
 
     auto pointlightEntity = entity_registry->create();
-    entity_registry->emplace<PointLight>(pointlightEntity, PointLight{});
+    entity_registry->emplace<PointLight>(pointlightEntity, PointLight{ {0,10,0} });
 
     auto cameraEntity = entity_registry->create();
     entity_registry->emplace<Transform>(cameraEntity, Transform{ });
@@ -81,7 +81,9 @@ bool Game::init()
 
     auto playerEntity = entity_registry->create();
     entity_registry->emplace<MeshComponent>(playerEntity, MeshComponent{ 
-        playerMesh,
+        playerMesh
+        });
+    entity_registry->emplace<AnimationComponent>(playerEntity, AnimationComponent{
         2, // animation index
         1.0f // animation speed
         });
@@ -99,6 +101,10 @@ bool Game::init()
         cameraEntity // camera entity
 	});
 
+    // Set the camera to look at the player
+    auto& camera = entity_registry->get<CameraComponent>(cameraEntity);
+    camera.target = playerEntity;
+
     auto foxEntity = entity_registry->create();
     entity_registry->emplace<MeshComponent>(foxEntity, MeshComponent{ foxMesh });
     entity_registry->emplace<LinearVelocity>(foxEntity, LinearVelocity{ {0, 0, 0} });
@@ -113,28 +119,17 @@ bool Game::init()
         2.0f // speed
     });
 
-    auto characterEntity2 = entity_registry->create();
-    entity_registry->emplace<MeshComponent>(characterEntity2, MeshComponent{ 
-        characterMesh,
-        1, // animation index
+    auto characterEntity = entity_registry->create();
+    entity_registry->emplace<MeshComponent>(characterEntity, MeshComponent{ characterMesh });
+    entity_registry->emplace<AnimationComponent>(characterEntity, AnimationComponent{ 
+        2, // animation index
         1.0f // animation speed
         });
-    entity_registry->emplace<Transform>(characterEntity2, Transform{
+    entity_registry->emplace<Transform>(characterEntity, Transform{
         { -3.0f, 0.0f, 0.0f },      // position
         { 0.0f, 0.0f, 0.0f },       // rotation
         { 0.03f, 0.03f, 0.03f }     // scale
     });
-    auto characterEntity3 = entity_registry->create();
-    entity_registry->emplace<MeshComponent>(characterEntity3, MeshComponent{ 
-        characterMesh,
-        2,
-        1.0f
-        });
-    entity_registry->emplace<Transform>(characterEntity3, Transform{
-		{ 3.0f, 0.0f, 0.0f },      // position
-		{ 0.0f, 0.0f, 0.0f },       // rotation
-        { 0.03f, 0.03f, 0.03f }     // scale
-	});
 
     auto grassEntity = entity_registry->create();
     entity_registry->emplace<MeshComponent>(grassEntity, MeshComponent{ grassMesh });
@@ -146,6 +141,10 @@ bool Game::init()
 
     auto horseEntity = entity_registry->create();
     entity_registry->emplace<MeshComponent>(horseEntity, MeshComponent{ horseMesh });
+    entity_registry->emplace<AnimationComponent>(horseEntity, AnimationComponent{
+		0, // animation index
+		1.0f, // animation speed
+	});
     entity_registry->emplace<Transform>(horseEntity, Transform{
         { 30.0f, 0.0f, -35.0f },
         { 0, 35.0f, 0 },
@@ -174,30 +173,6 @@ void Game::update(
     // Update movement for entities
     systems.MovementSystem(*entity_registry, deltaTime);
 
-    // Intersect player view ray with AABBs of other objects 
-    /* auto rayView = entity_registry->view<PlayerController>();
-    for (auto entity : rayView) {
-        auto& player = rayView.get<PlayerController>(entity);
-
-        glm_aux::intersect_ray_AABB(player.viewRay, character_aabb2.min, character_aabb2.max);
-        glm_aux::intersect_ray_AABB(player.viewRay, character_aabb3.min, character_aabb3.max);
-        glm_aux::intersect_ray_AABB(player.viewRay, horse_aabb.min, horse_aabb.max);
-    }*/
-
-    // We can also compute a ray from the current mouse position,
-    // to use for object picking and such ...
-    //if (input->GetMouseState().rightButton)
-    //{
-    //    glm::ivec2 windowPos(camera.mouse_xy_prev.x, matrices.windowSize.y - camera.mouse_xy_prev.y);
-    //    auto ray = glm_aux::world_ray_from_window_coords(windowPos, matrices.V, matrices.P, matrices.VP);
-    //    // Intersect with e.g. AABBs ...
-
-    //    eeng::Log("Picking ray origin = %s, dir = %s",
-    //        glm_aux::to_string(ray.origin).c_str(),
-    //        glm_aux::to_string(ray.dir).c_str());
-    //}
-
-
 }
 
 void Game::render(
@@ -207,8 +182,8 @@ void Game::render(
 {
     renderUI();
 
-    int drawcalls = systems.RenderSystem(*entity_registry, windowWidth, windowHeight, forwardRenderer, shapeRenderer, time);
-    drawcallCount = drawcalls;
+    // Render the scene
+    drawcallCount = systems.RenderSystem(*entity_registry, windowWidth, windowHeight, forwardRenderer, shapeRenderer, time);
 }
 
 void Game::renderUI()
@@ -227,16 +202,17 @@ void Game::renderUI()
 
     float* characterAnimSpeed = nullptr;
 
-    if (characterMesh)
+    if (playerMesh)
     {
         // Combo (drop-down) for animation clip
-        auto view = entity_registry->view<MeshComponent>();
+        auto view = entity_registry->view<MeshComponent, AnimationComponent>();
         for (auto entity : view) {
             auto& mesh = view.get<MeshComponent>(entity);
+            auto& animation = view.get<AnimationComponent>(entity);
             if (mesh.mesh == characterMesh)
 			{
-                characterAnimSpeed = &mesh.animSpeed;
-				int curAnimIndex = mesh.animIndex;
+                characterAnimSpeed = &animation.speed;
+				int curAnimIndex = animation.index;
 
                 std::string label = (curAnimIndex == -1 ? "Bind pose" : characterMesh->getAnimationName(curAnimIndex));
                 if (ImGui::BeginCombo("Character animation##animclip", label.c_str()))
@@ -260,7 +236,7 @@ void Game::renderUI()
                     }
                     ImGui::EndCombo();
 
-                    mesh.animIndex = curAnimIndex;
+                    animation.index = curAnimIndex;
                 }
 				break;
 			}
