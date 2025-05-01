@@ -24,15 +24,17 @@ struct MeshComponent {
 struct AnimationComponent {
 	int index = 0; // Start index of animation
 	float speed = 1.0f;			// global playback speed
+	float speed2 = 1.0f;		// speed for second animation
 
+	bool manualBlending = false; 
 	float playTime;
 
 	int nextIndex = index; // Animation to play
 	float blendTime1, blendTime2; // time to blend between animations
 	float blendFrac;    // 0-1 blend factor
-	float blendSpeed = 1.0f; // Speed of blending
+	float blendSpeed = 2.0f; // Speed of blending
 
-	enum class State { Idle, Walk, Run, Jump, Attack }  state;
+	enum class State { Idle, Walk, Run, Jump, Fall }  state;
 };
 
 struct PlayerController {
@@ -41,8 +43,11 @@ struct PlayerController {
 	glm_aux::Ray viewRay;
 	entt::entity cameraEntity;
 
-	//
-	float jumpTimer, jumpDelay = 0.5f; // Delay between jumps
+	// Simple Jump controller
+	float jumpTimer, jumpDelay = 2.0f; // Delay between jumps
+	float jumpHeight = 5.0f; // Jump height
+	bool isGrounded = true; // Is the player jumping
+	float jumpVelocity; // Jump velocity
 
 	// Previous mouse position
 	glm::ivec2 mouse_xy_prev{ -1, -1 };

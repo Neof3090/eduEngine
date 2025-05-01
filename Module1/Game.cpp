@@ -14,6 +14,8 @@ void Game::LoadMeshes()
     playerMesh->load("assets/ExoRed/idle (2).fbx", true);
     playerMesh->load("assets/ExoRed/walking.fbx", true);
     playerMesh->load("assets/ExoRed/running.fbx", true);
+    playerMesh->load("assets/ExoRed/jumping up.fbx", true);
+    //playerMesh->load("assets/ExoRed/falling idle.fbx", true);
     // Remove root motion
     playerMesh->removeTranslationKeys("mixamorig:Hips");
 
@@ -190,8 +192,23 @@ void Game::render(
     drawcallCount = systems.RenderSystem(*entity_registry, windowWidth, windowHeight, forwardRenderer, shapeRenderer, time);
 }
 
+
+const char* AnimationStateToString(AnimationComponent::State s) {
+    switch (s) {
+    case AnimationComponent::State::Idle:  return "Idle";
+    case AnimationComponent::State::Walk:  return "Walk";
+    case AnimationComponent::State::Run:   return "Run";
+    case AnimationComponent::State::Jump:  return "Jump";
+    case AnimationComponent::State::Fall:  return "Fall";
+    default:                               return "Unknown";
+    }
+}
+
 void Game::renderUI()
 {
+    // Fetching entities
+    auto playerEntity = entity_registry->view<PlayerController>().front();
+
     ImGui::Begin("Game Info");
 
     ImGui::Text("Drawcall count %i", drawcallCount);
@@ -284,6 +301,19 @@ void Game::renderUI()
 
     // Debug window
     ImGui::Begin("Debug");
+    ImGui::Text("Player animation info:");
+    
+    auto& pAnimation = entity_registry->get<AnimationComponent>(playerEntity);
+
+    ImGui::Text("Current animation state: %s", AnimationStateToString(pAnimation.state));
+
+    ImGui::Checkbox("Toggle manual blending", &pAnimation.manualBlending);
+    if (pAnimation.manualBlending) {
+        ImGui::Text("Blending between");
+        ImGui::SliderFloat("Blend Factor", &pAnimation.blendFrac, 0.0f, 1.0f);
+    }
+
+    ImGui::Text("Debug rendering options:");
     ImGui::Checkbox("Show Bones", &systems.debug.showBones);
     ImGui::Checkbox("Show AABBs", &systems.debug.showAABBs);
     ImGui::Checkbox("Show View Rays", &systems.debug.showViewRays);

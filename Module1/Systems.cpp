@@ -30,12 +30,12 @@ void Systems::PlayerControllerSystem(entt::registry& reg, InputManagerPtr& input
     auto view = reg.view<Transform, LinearVelocity, PlayerController>();
     for (auto entity : view) {
         auto& transform = view.get<Transform>(entity);
-        auto& linearVelocity = view.get<LinearVelocity>(entity);
-        auto& playerController = view.get<PlayerController>(entity);
-        auto& camera = reg.get<CameraComponent>(playerController.cameraEntity);
+        auto& lv = view.get<LinearVelocity>(entity);
+        auto& pc = view.get<PlayerController>(entity);
+        auto& camera = reg.get<CameraComponent>(pc.cameraEntity);
 
         // Update the player controller
-        float speed = playerController.speed;
+        float speed = pc.speed;
         glm::vec3 localMovement = glm::vec3(0.0f, 0.0f, 0.0f);
 
         // Check if any controller is connected
@@ -57,11 +57,46 @@ void Systems::PlayerControllerSystem(entt::registry& reg, InputManagerPtr& input
             bool LShift = input->IsKeyPressed(Key::LeftShift);
             bool SPACE = input->IsKeyPressed(Key::Space);
 
+            // Jump logic
+            if (pc.isGrounded) {
+                // zero vertical velocity when on the ground
+                lv.velocity.y = 0.0f;
+
+                // start jump
+                if (SPACE) {
+                    pc.isGrounded = false;
+                    pc.jumpTimer = 0.0f;
+
+                    float halfDur = pc.jumpDelay * 0.5f;
+                    pc.jumpVelocity = pc.jumpHeight / halfDur;
+
+                    // immediately launch upward:
+                    lv.velocity.y = pc.jumpVelocity;
+                }
+            }
+            else {
+                // in mid-air
+                pc.jumpTimer += deltaTime;
+                float T = pc.jumpDelay;
+                float t = glm::min(pc.jumpTimer, T);
+                float peakV = pc.jumpHeight * glm::pi<float>() / T;
+
+                // Cheeky cosine function to simulate a jump arc
+                lv.velocity.y = peakV * glm::cos(glm::pi<float>() * (t / T));
+
+                if (pc.jumpTimer >= T) {
+                    // landed
+                    pc.isGrounded = true;
+                    lv.velocity.y = 0.0f;
+                }
+            }
+
             // Set the speed based on the key pressed
             if (LShift) {
-				speed = playerController.runSpeed;
+				speed = pc.runSpeed;
 			}
 
+            // Movement logic
             localMovement = glm::vec3((A ? -1.0f : 0.0f) + (D ? 1.0f : 0.0f), 0, (W ? 1.0f : 0.0f) + (S ? -1.0f : 0.0f));
         }
 
@@ -76,10 +111,10 @@ void Systems::PlayerControllerSystem(entt::registry& reg, InputManagerPtr& input
         glm::ivec2 mouse_xy{ mouse.x, mouse.y };
         glm::ivec2 mouse_xy_diff{ 0, 0 };
 
-        if (mouse.leftButton && playerController.mouse_xy_prev.x >= 0)
-            mouse_xy_diff = playerController.mouse_xy_prev - mouse_xy;
+        if (mouse.leftButton && pc.mouse_xy_prev.x >= 0)
+            mouse_xy_diff = pc.mouse_xy_prev - mouse_xy;
 
-        playerController.mouse_xy_prev = mouse_xy;
+        pc.mouse_xy_prev = mouse_xy;
 
         camera.yaw += mouse_xy_diff.x * camera.sensitivity;
         camera.pitch += mouse_xy_diff.y * camera.sensitivity;
@@ -89,26 +124,29 @@ void Systems::PlayerControllerSystem(entt::registry& reg, InputManagerPtr& input
         transform.rotation.y = camera.yaw + glm::pi<float>();
 
         // Compute vectors in the local space of the player
-        playerController.forward = glm::vec3(glm_aux::R(transform.rotation.y, glm_aux::vec3_010) * glm::vec4(0.0f, 0.0f, -1.0f, 0.0f));
-        playerController.right = glm::cross(playerController.forward, glm_aux::vec3_010);
+        pc.forward = glm::vec3(glm_aux::R(transform.rotation.y, glm_aux::vec3_010) * glm::vec4(0.0f, 0.0f, -1.0f, 0.0f));
+        pc.right = glm::cross(pc.forward, glm_aux::vec3_010);
 
         // Invert the forward and right vectors to match the camera's view direction
-        playerController.forward = -playerController.forward;
-        playerController.right = -playerController.right;
+        pc.forward = -pc.forward;
+        pc.right = -pc.right;
 
         // Compute the total movement and set linearVelocity
         glm::vec3 worldMovement =
-            playerController.forward * localMovement.z +
-            playerController.right * localMovement.x;
+            pc.forward * localMovement.z +
+            pc.right * localMovement.x;
 
-        linearVelocity.velocity = worldMovement * speed;
+        glm::vec3 horizontalVel = worldMovement * speed;
+        // preserve vertical velocity
+        lv.velocity.x = horizontalVel.x;
+        lv.velocity.z = horizontalVel.z;
 
         // Update camera position
         float yOffset = 2.0f;
         camera.lookAt = transform.position + glm::vec3(0.0f, yOffset, 0.0f);
 
         // Update player forward view ray
-        playerController.viewRay = glm_aux::Ray{ transform.position + glm::vec3(0.0f, 2.0f, 0.0f), playerController.forward };
+        pc.viewRay = glm_aux::Ray{ transform.position + glm::vec3(0.0f, 2.0f, 0.0f), pc.forward };
 
         // Intersect player view ray with AABBs of other objects 
         /* auto rayView = entity_registry->view<PlayerController>();
@@ -139,46 +177,65 @@ void Systems::PlayerControllerSystem(entt::registry& reg, InputManagerPtr& input
 void Systems::PlayerAnimationSystem(entt::registry& reg, InputManagerPtr& input, float deltaTime) {
     auto view = reg.view<PlayerController, LinearVelocity, AnimationComponent>();
     for (auto entity : view) {
-        auto& playerController = view.get<PlayerController>(entity);
+        auto& pc = view.get<PlayerController>(entity);
         auto& lv = view.get<LinearVelocity>(entity);
         auto& ac = view.get<AnimationComponent>(entity);
 
-        auto xzVel = glm::length(glm::vec2(lv.velocity.x, lv.velocity.z));
+        if (ac.manualBlending) {
+            ac.index = 1; // Idle animation
+            ac.nextIndex = 3; // Sprint animation
+            continue;
+        }
 
-        float runThreshold = playerController.runSpeed-0.5;
+        auto xzVel = glm::length(glm::vec2(lv.velocity.x, lv.velocity.z));
+        float yVel = lv.velocity.y;
+        float runThreshold = pc.runSpeed-0.5;
+
+        AnimationComponent::State prevState = ac.state;
+        if (!pc.isGrounded) {
+            ac.state = AnimationComponent::State::Jump;
+        }
+        else if (xzVel >= runThreshold) {
+            ac.state = AnimationComponent::State::Run;
+        }
+        else if (xzVel > 0.1f) {
+            ac.state = AnimationComponent::State::Walk;
+		}
+		else {
+			ac.state = AnimationComponent::State::Idle;
+		}
+
+        if(ac.state != prevState)
+		{
+			ac.speed = 1.0f;
+			ac.speed2 = 1.0f;
+		}
+
 
         // simple FSM example
         switch (ac.state) {
             case AnimationComponent::State::Idle:
-                if (xzVel >= runThreshold) {
-                    ac.state = AnimationComponent::State::Run;
-                    ac.nextIndex = 3; // Sprint animation
-                }
-                else if (xzVel > 0.1f) {
-					ac.state = AnimationComponent::State::Walk;
-					ac.nextIndex = 2; // Walk animation
-				}
-				break;
+                ac.nextIndex = 1; // Idle animation
+
+                ac.speed = 1.0f; // Animation speed
             break;
             case AnimationComponent::State::Walk:
-                if (xzVel < 0.1f) {
-                    ac.state = AnimationComponent::State::Idle;
-                    ac.nextIndex = 1;
-                }
-                else if (xzVel >= runThreshold) {
-                    ac.state = AnimationComponent::State::Run;
-                    ac.nextIndex = 3;
-                }
+				ac.nextIndex = 2; // Walk animation
+
+                ac.speed = 1.0f; // Animation speed
             break;
             case AnimationComponent::State::Run:
-                if (xzVel < 0.1f) {
-					ac.state = AnimationComponent::State::Idle;
-					ac.nextIndex = 1;
-				}
-                else if (xzVel < runThreshold) {
-                	ac.state = AnimationComponent::State::Walk;
-                    ac.nextIndex = 2;
-                } 
+                ac.nextIndex = 3; // Sprint animation
+                
+                ac.speed = 1.0f; // Animation speed
+            break;
+            case AnimationComponent::State::Jump:
+				ac.nextIndex = 4; // Jump animation
+
+                // Makeshift fix for jump animation <<<<<TODO: FIX THIS
+                float clipLen = 0.1f;
+                ac.blendTime2 = 0.0f; // Reset blend time
+                ac.speed2 = clipLen / pc.jumpDelay; 
             break;
         }
     }
@@ -327,23 +384,23 @@ void Systems::AnimationSystem(entt::registry& reg, float dt) {
         if (ac.index != ac.nextIndex) {
             
             ac.blendTime1 += dt * ac.speed;
-            ac.blendTime2 += dt * ac.speed;
+            ac.blendTime2 += dt * ac.speed2;
 
             // advance the blend fraction
-            ac.blendFrac = std::min(1.0f, ac.blendFrac + dt * ac.blendSpeed);
+            if(!ac.manualBlending) 
+                ac.blendFrac = std::min(1.0f, ac.blendFrac + dt * ac.blendSpeed);
 
             mc.mesh->animateBlend(
                 ac.index, ac.nextIndex,
                 ac.blendTime1, ac.blendTime2,
-                ac.blendFrac,
-                eeng::AnmationTimeFormat::RealTime,
-                eeng::AnmationTimeFormat::RealTime
+                ac.blendFrac
             );
 
             // once its done blending, set the next index to the current one
-            if (ac.blendFrac >= 1.0f) {
+            if (ac.blendFrac >= 1.0f && !ac.manualBlending) {
                 ac.playTime = ac.blendTime2;
 
+                ac.speed = ac.speed2;
                 ac.index = ac.nextIndex;
                 ac.blendFrac = 0.0f;        
                 ac.blendTime1 = ac.blendTime2 = 0.0f;

@@ -6,6 +6,7 @@
 
 #include <glmcommon.hpp>
 
+#include <algorithm>
 #include <ForwardRenderer.hpp>
 #include <ShapeRenderer.hpp>
 #include <InputManager.hpp>
