@@ -1,6 +1,6 @@
 # sdl pkg-config source file
 
-prefix=C:/Users/neofe/Source/Repos/Neof3090/eduEngine/out/install/x64-Debug
+prefix=C:/Users/ap3090/Source/Repos/Neof3090/eduEngine/out/install/x64-Debug
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

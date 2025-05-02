@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/contrib/zlib
+# Install script for directory: C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/contrib/zlib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,13 +34,13 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/contrib/zlib/Debug/zlibstaticd.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/contrib/zlib/Debug/zlibstaticd.lib")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/contrib/zlib/Release/zlibstatic.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/contrib/zlib/Release/zlibstatic.lib")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/contrib/zlib/MinSizeRel/zlibstatic.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/contrib/zlib/MinSizeRel/zlibstatic.lib")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/contrib/zlib/RelWithDebInfo/zlibstatic.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/contrib/zlib/RelWithDebInfo/zlibstatic.lib")
   endif()
 endif()
 

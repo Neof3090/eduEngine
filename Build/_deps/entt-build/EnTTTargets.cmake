@@ -55,7 +55,7 @@ add_library(EnTT::EnTT INTERFACE IMPORTED)
 
 set_target_properties(EnTT::EnTT PROPERTIES
   INTERFACE_COMPILE_FEATURES "cxx_std_17"
-  INTERFACE_INCLUDE_DIRECTORIES "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/entt-src/src"
+  INTERFACE_INCLUDE_DIRECTORIES "C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/entt-src/src"
 )
 
 # This file does not depend on other imported targets which have

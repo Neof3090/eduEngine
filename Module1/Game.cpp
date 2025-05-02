@@ -110,6 +110,10 @@ bool Game::init()
 
     auto foxEntity = entity_registry->create();
     entity_registry->emplace<MeshComponent>(foxEntity, MeshComponent{ foxMesh });
+    entity_registry->emplace<AnimationComponent>(foxEntity, AnimationComponent{
+		1, // animation index
+		1.0f // animation speed
+		});
     entity_registry->emplace<LinearVelocity>(foxEntity, LinearVelocity{ {0, 0, 0} });
     entity_registry->emplace<Transform>(foxEntity, Transform{
         { 10.0f, 0.0f, 0.0f },      // position
@@ -145,7 +149,7 @@ bool Game::init()
     auto horseEntity = entity_registry->create();
     entity_registry->emplace<MeshComponent>(horseEntity, MeshComponent{ horseMesh });
     entity_registry->emplace<AnimationComponent>(horseEntity, AnimationComponent{
-		0, // animation index
+		2, // animation index
 		1.0f, // animation speed
 	});
     entity_registry->emplace<Transform>(horseEntity, Transform{
@@ -308,10 +312,10 @@ void Game::renderUI()
     ImGui::Text("Current animation state: %s", AnimationStateToString(pAnimation.state));
 
     ImGui::Checkbox("Toggle manual blending", &pAnimation.manualBlending);
-    if (pAnimation.manualBlending) {
+    /*if (pAnimation.manualBlending) {*/
         ImGui::Text("Blending between");
         ImGui::SliderFloat("Blend Factor", &pAnimation.blendFrac, 0.0f, 1.0f);
-    }
+    //}
 
     ImGui::Text("Debug rendering options:");
     ImGui::Checkbox("Show Bones", &systems.debug.showBones);

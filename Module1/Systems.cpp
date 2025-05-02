@@ -189,7 +189,7 @@ void Systems::PlayerAnimationSystem(entt::registry& reg, InputManagerPtr& input,
 
         auto xzVel = glm::length(glm::vec2(lv.velocity.x, lv.velocity.z));
         float yVel = lv.velocity.y;
-        float runThreshold = pc.runSpeed-0.5;
+        float runThreshold = pc.runSpeed-0.1;
 
         AnimationComponent::State prevState = ac.state;
         if (!pc.isGrounded) {
@@ -203,12 +203,6 @@ void Systems::PlayerAnimationSystem(entt::registry& reg, InputManagerPtr& input,
 		}
 		else {
 			ac.state = AnimationComponent::State::Idle;
-		}
-
-        if(ac.state != prevState)
-		{
-			ac.speed = 1.0f;
-			ac.speed2 = 1.0f;
 		}
 
 
@@ -380,39 +374,41 @@ void Systems::AnimationSystem(entt::registry& reg, float dt) {
         auto& mc = animView.get<MeshComponent>(entity);
         auto& ac = animView.get<AnimationComponent>(entity);
 
+        ac.blendTime1 += dt * ac.speed;
+
         // If we're mid-blend between two clips
         if (ac.index != ac.nextIndex) {
-            
-            ac.blendTime1 += dt * ac.speed;
-            ac.blendTime2 += dt * ac.speed2;
+            /*
+            ac.blendTime2 += dt * ac.speed;*/
 
             // advance the blend fraction
-            if(!ac.manualBlending) 
+            if(/*ac.index != ac.nextIndex && */!ac.manualBlending)
                 ac.blendFrac = std::min(1.0f, ac.blendFrac + dt * ac.blendSpeed);
 
             mc.mesh->animateBlend(
                 ac.index, ac.nextIndex,
-                ac.blendTime1, ac.blendTime2,
+                ac.blendTime1, ac.blendTime1,
                 ac.blendFrac
             );
 
             // once its done blending, set the next index to the current one
             if (ac.blendFrac >= 1.0f && !ac.manualBlending) {
-                ac.playTime = ac.blendTime2;
+                //ac.playTime = ac.blendTime2;
 
-                ac.speed = ac.speed2;
+                //ac.speed = ac.speed2;
                 ac.index = ac.nextIndex;
                 ac.blendFrac = 0.0f;        
-                ac.blendTime1 = ac.blendTime2 = 0.0f;
+                //ac.blendTime1 = ac.blendTime2 = 0.0f;
             }
         }
         else {
             // Not blending: just play the current animation
-            ac.playTime += dt * ac.speed;
+           /* ac.blendTime1 += dt * ac.speed;*/
             mc.mesh->animate(
                 ac.index,
-                ac.playTime
+                ac.blendTime1
             );
+            //ac.blendTime1 = ac.playTime;
         }
     }
 }

@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/neofe/source/repos/Neof3090/eduEngine
+# Install script for directory: C:/Users/ap3090/source/repos/Neof3090/eduEngine
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/neofe/Source/Repos/Neof3090/eduEngine/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/ap3090/Source/Repos/Neof3090/eduEngine/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,10 +34,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-build/cmake_install.cmake")
-  include("C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/assimp-build/cmake_install.cmake")
-  include("C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/glm-build/cmake_install.cmake")
-  include("C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/entt-build/cmake_install.cmake")
+  include("C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-build/cmake_install.cmake")
+  include("C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/assimp-build/cmake_install.cmake")
+  include("C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/glm-build/cmake_install.cmake")
+  include("C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/entt-build/cmake_install.cmake")
 
 endif()
 
@@ -49,5 +49,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

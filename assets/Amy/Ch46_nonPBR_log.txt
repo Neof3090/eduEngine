@@ -310,4 +310,3 @@ Loading animation 'mixamo.com', dur in ticks 31, tps 30, nbr channels 52
 	Loading channel mixamorig:Spine1, nbr pos keys  28, nbr scale keys  28, nbr rot keys  28
 	Loading channel mixamorig:Spine2, nbr pos keys  28, nbr scale keys  28, nbr rot keys  28
 Animations in total 3
-Done appending animations.

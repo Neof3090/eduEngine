@@ -1,5 +1,5 @@
-prefix=C:/Users/neofe/Source/Repos/Neof3090/eduEngine/out/install/x64-Debug
-exec_prefix=C:/Users/neofe/Source/Repos/Neof3090/eduEngine/out/install/x64-Debug
+prefix=C:/Users/ap3090/Source/Repos/Neof3090/eduEngine/out/install/x64-Debug
+exec_prefix=C:/Users/ap3090/Source/Repos/Neof3090/eduEngine/out/install/x64-Debug
 libdir=
 sharedlibdir=
 includedir=

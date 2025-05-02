@@ -32,7 +32,7 @@ struct AnimationComponent {
 	int nextIndex = index; // Animation to play
 	float blendTime1, blendTime2; // time to blend between animations
 	float blendFrac;    // 0-1 blend factor
-	float blendSpeed = 2.0f; // Speed of blending
+	float blendSpeed = 1.0f; // Speed of blending
 
 	enum class State { Idle, Walk, Run, Jump, Fall }  state;
 };
@@ -45,7 +45,7 @@ struct PlayerController {
 
 	// Simple Jump controller
 	float jumpTimer, jumpDelay = 2.0f; // Delay between jumps
-	float jumpHeight = 5.0f; // Jump height
+	float jumpHeight = 20.0f; // Jump height
 	bool isGrounded = true; // Is the player jumping
 	float jumpVelocity; // Jump velocity
 

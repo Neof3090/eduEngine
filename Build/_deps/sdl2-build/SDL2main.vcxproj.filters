@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\src\main\windows\SDL_windows_main.c">
+    <ClCompile Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\src\main\windows\SDL_windows_main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{56135D44-5458-3032-BEBB-49E9D936ED23}</UniqueIdentifier>
+      <UniqueIdentifier>{530F5F18-F478-3E4B-A425-44EDBB7E27CE}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

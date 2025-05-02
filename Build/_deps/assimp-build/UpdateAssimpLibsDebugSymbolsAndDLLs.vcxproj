@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{EB90BBD3-5CF9-37C0-BB5F-EB658C4D6FAF}</ProjectGuid>
+    <ProjectGuid>{B509ACD7-DF79-3989-AEE4-A06ADC2C8058}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -66,7 +66,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\neofe\source\repos\Neof3090\eduEngine\src;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\ap3090\source\repos\Neof3090\eduEngine\src;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -76,7 +76,7 @@
     <PostBuildEvent>
       <Message>							</Message>
       <Command>setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Release/assimp--mt.dll C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/bin64/assimp--mt.dll
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Release/assimp--mt.dll C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/bin64/assimp--mt.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -85,7 +85,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Release/assimp--mt.exp C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mt.exp
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Release/assimp--mt.exp C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mt.exp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -94,7 +94,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Release/assimp--mt.lib C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mt.lib
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Release/assimp--mt.lib C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mt.lib
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -103,7 +103,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.dll C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/bin64/assimp--mtd.dll
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.dll C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/bin64/assimp--mtd.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -112,7 +112,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.exp C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.exp
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.exp C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.exp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -121,7 +121,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.ilk C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.ilk
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.ilk C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.ilk
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -130,7 +130,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.lib C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.lib
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.lib C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.lib
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -139,7 +139,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.pdb C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.pdb
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.pdb C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.pdb
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -151,7 +151,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\neofe\source\repos\Neof3090\eduEngine\src;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\ap3090\source\repos\Neof3090\eduEngine\src;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -161,7 +161,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message>							</Message>
       <Command>setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Release/assimp--mt.dll C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/bin64/assimp--mt.dll
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Release/assimp--mt.dll C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/bin64/assimp--mt.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -170,7 +170,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Release/assimp--mt.exp C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mt.exp
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Release/assimp--mt.exp C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mt.exp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -179,7 +179,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Release/assimp--mt.lib C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mt.lib
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Release/assimp--mt.lib C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mt.lib
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -188,7 +188,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.dll C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/bin64/assimp--mtd.dll
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.dll C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/bin64/assimp--mtd.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -197,7 +197,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.exp C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.exp
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.exp C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.exp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -206,7 +206,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.ilk C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.ilk
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.ilk C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.ilk
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -215,7 +215,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.lib C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.lib
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.lib C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.lib
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -224,7 +224,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.pdb C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.pdb
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.pdb C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.pdb
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -236,7 +236,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\neofe\source\repos\Neof3090\eduEngine\src;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\ap3090\source\repos\Neof3090\eduEngine\src;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -246,7 +246,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message>							</Message>
       <Command>setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Release/assimp--mt.dll C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/bin64/assimp--mt.dll
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Release/assimp--mt.dll C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/bin64/assimp--mt.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -255,7 +255,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Release/assimp--mt.exp C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mt.exp
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Release/assimp--mt.exp C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mt.exp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -264,7 +264,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Release/assimp--mt.lib C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mt.lib
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Release/assimp--mt.lib C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mt.lib
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -273,7 +273,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.dll C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/bin64/assimp--mtd.dll
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.dll C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/bin64/assimp--mtd.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -282,7 +282,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.exp C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.exp
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.exp C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.exp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -291,7 +291,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.ilk C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.ilk
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.ilk C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.ilk
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -300,7 +300,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.lib C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.lib
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.lib C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.lib
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -309,7 +309,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.pdb C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.pdb
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.pdb C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.pdb
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -321,7 +321,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\neofe\source\repos\Neof3090\eduEngine\src;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\ap3090\source\repos\Neof3090\eduEngine\src;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -331,7 +331,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message>							</Message>
       <Command>setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Release/assimp--mt.dll C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/bin64/assimp--mt.dll
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Release/assimp--mt.dll C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/bin64/assimp--mt.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -340,7 +340,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Release/assimp--mt.exp C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mt.exp
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Release/assimp--mt.exp C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mt.exp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -349,7 +349,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Release/assimp--mt.lib C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mt.lib
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Release/assimp--mt.lib C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mt.lib
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -358,7 +358,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.dll C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/bin64/assimp--mtd.dll
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.dll C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/bin64/assimp--mtd.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -367,7 +367,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.exp C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.exp
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.exp C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.exp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -376,7 +376,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.ilk C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.ilk
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.ilk C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.ilk
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -385,7 +385,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.lib C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.lib
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.lib C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.lib
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -394,7 +394,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.pdb C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.pdb
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E copy C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/code/Debug/assimp--mtd.pdb C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/lib64/assimp--mtd.pdb
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -405,11 +405,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/neofe/source/repos/Neof3090/eduEngine -BC:/Users/neofe/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/ap3090/source/repos/Neof3090/eduEngine -BC:/Users/ap3090/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -417,12 +417,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseArguments.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\CMakeFiles\3.28.3-msvc11\CMakeCCompiler.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimp-config-version.cmake.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimp-config.cmake.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimp.pc.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimpTargets-debug.cmake.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimpTargets-release.cmake.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimpTargets.cmake.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\FindDirectX.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\FindPkgMacros.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\PrecompiledHeader.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake\HunterGate.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include\assimp\config.h.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\revision.h.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseArguments.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\CMakeFiles\3.28.3-msvc11\CMakeCCompiler.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimp-config-version.cmake.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimp-config.cmake.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimp.pc.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimpTargets-debug.cmake.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimpTargets-release.cmake.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimpTargets.cmake.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\FindDirectX.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\FindPkgMacros.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\PrecompiledHeader.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake\HunterGate.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include\assimp\config.h.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\revision.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/neofe/source/repos/Neof3090/eduEngine -BC:/Users/neofe/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/ap3090/source/repos/Neof3090/eduEngine -BC:/Users/ap3090/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -430,12 +430,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseArguments.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\CMakeFiles\3.28.3-msvc11\CMakeCCompiler.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimp-config-version.cmake.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimp-config.cmake.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimp.pc.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimpTargets-debug.cmake.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimpTargets-release.cmake.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimpTargets.cmake.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\FindDirectX.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\FindPkgMacros.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\PrecompiledHeader.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake\HunterGate.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include\assimp\config.h.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\revision.h.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseArguments.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\CMakeFiles\3.28.3-msvc11\CMakeCCompiler.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimp-config-version.cmake.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimp-config.cmake.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimp.pc.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimpTargets-debug.cmake.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimpTargets-release.cmake.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimpTargets.cmake.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\FindDirectX.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\FindPkgMacros.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\PrecompiledHeader.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake\HunterGate.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include\assimp\config.h.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\revision.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/neofe/source/repos/Neof3090/eduEngine -BC:/Users/neofe/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/ap3090/source/repos/Neof3090/eduEngine -BC:/Users/ap3090/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -443,12 +443,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseArguments.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\CMakeFiles\3.28.3-msvc11\CMakeCCompiler.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimp-config-version.cmake.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimp-config.cmake.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimp.pc.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimpTargets-debug.cmake.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimpTargets-release.cmake.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimpTargets.cmake.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\FindDirectX.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\FindPkgMacros.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\PrecompiledHeader.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake\HunterGate.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include\assimp\config.h.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\revision.h.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseArguments.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\CMakeFiles\3.28.3-msvc11\CMakeCCompiler.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimp-config-version.cmake.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimp-config.cmake.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimp.pc.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimpTargets-debug.cmake.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimpTargets-release.cmake.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimpTargets.cmake.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\FindDirectX.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\FindPkgMacros.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\PrecompiledHeader.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake\HunterGate.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include\assimp\config.h.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\revision.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/neofe/source/repos/Neof3090/eduEngine -BC:/Users/neofe/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/ap3090/source/repos/Neof3090/eduEngine -BC:/Users/ap3090/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -456,16 +456,16 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseArguments.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\CMakeFiles\3.28.3-msvc11\CMakeCCompiler.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimp-config-version.cmake.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimp-config.cmake.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimp.pc.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimpTargets-debug.cmake.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimpTargets-release.cmake.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimpTargets.cmake.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\FindDirectX.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\FindPkgMacros.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\PrecompiledHeader.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake\HunterGate.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include\assimp\config.h.in;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\revision.h.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseArguments.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\CMakeFiles\3.28.3-msvc11\CMakeCCompiler.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimp-config-version.cmake.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimp-config.cmake.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimp.pc.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimpTargets-debug.cmake.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimpTargets-release.cmake.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\assimpTargets.cmake.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\FindDirectX.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\FindPkgMacros.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake-modules\PrecompiledHeader.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\cmake\HunterGate.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include\assimp\config.h.in;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\revision.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\ZERO_CHECK.vcxproj">
-      <Project>{18513923-AEC0-39E3-9546-788120D3758A}</Project>
+    <ProjectReference Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\ZERO_CHECK.vcxproj">
+      <Project>{71EC3342-8E55-3B84-BDD3-7CA63C32B82D}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

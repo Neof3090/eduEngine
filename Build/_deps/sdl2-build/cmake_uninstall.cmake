@@ -1,13 +1,13 @@
-if (NOT EXISTS "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: \"C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/install_manifest.txt\"")
-endif(NOT EXISTS "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/install_manifest.txt")
+if (NOT EXISTS "C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: \"C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/install_manifest.txt\"")
+endif(NOT EXISTS "C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/install_manifest.txt")
 
-file(READ "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/install_manifest.txt" files)
+file(READ "C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 foreach (file ${files})
     message(STATUS "Uninstalling \"$ENV{DESTDIR}${file}\"")
     execute_process(
-        COMMAND C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe -E remove "$ENV{DESTDIR}${file}"
+        COMMAND C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe -E remove "$ENV{DESTDIR}${file}"
         OUTPUT_VARIABLE rm_out
         RESULT_VARIABLE rm_retval
     )

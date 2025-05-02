@@ -25,7 +25,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{B6335505-0D9C-3B8B-AA51-C80EC0254F64}</ProjectGuid>
+    <ProjectGuid>{8F0B8A81-8CC4-3A4C-A2C0-5C6742A38188}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -69,7 +69,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\neofe\source\repos\Neof3090\eduEngine\src;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\ap3090\source\repos\Neof3090\eduEngine\src;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;C:\Users\ap3090\source\repos\Neof3090\eduEngine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -79,7 +79,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\neofe\source\repos\Neof3090\eduEngine\src;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\ap3090\source\repos\Neof3090\eduEngine\src;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;C:\Users\ap3090\source\repos\Neof3090\eduEngine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -89,7 +89,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\neofe\source\repos\Neof3090\eduEngine\src;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\ap3090\source\repos\Neof3090\eduEngine\src;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;C:\Users\ap3090\source\repos\Neof3090\eduEngine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -99,7 +99,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\neofe\source\repos\Neof3090\eduEngine\src;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\ap3090\source\repos\Neof3090\eduEngine\src;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;C:\Users\ap3090\source\repos\Neof3090\eduEngine;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -108,11 +108,11 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/contrib/zlib/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/contrib/zlib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/neofe/source/repos/Neof3090/eduEngine -BC:/Users/neofe/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/contrib/zlib/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/ap3090/source/repos/Neof3090/eduEngine -BC:/Users/ap3090/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/contrib/zlib/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -120,12 +120,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib\zconf.h.cmakein;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib\zlib.pc.cmakein;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib\zconf.h.cmakein;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib\zlib.pc.cmakein;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/contrib/zlib/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/contrib/zlib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/neofe/source/repos/Neof3090/eduEngine -BC:/Users/neofe/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/contrib/zlib/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/ap3090/source/repos/Neof3090/eduEngine -BC:/Users/ap3090/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/contrib/zlib/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -133,12 +133,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib\zconf.h.cmakein;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib\zlib.pc.cmakein;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib\zconf.h.cmakein;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib\zlib.pc.cmakein;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/contrib/zlib/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/contrib/zlib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/neofe/source/repos/Neof3090/eduEngine -BC:/Users/neofe/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/contrib/zlib/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/ap3090/source/repos/Neof3090/eduEngine -BC:/Users/ap3090/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/contrib/zlib/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -146,12 +146,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib\zconf.h.cmakein;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib\zlib.pc.cmakein;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib\zconf.h.cmakein;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib\zlib.pc.cmakein;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/contrib/zlib/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/contrib/zlib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/neofe/source/repos/Neof3090/eduEngine -BC:/Users/neofe/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/contrib/zlib/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/ap3090/source/repos/Neof3090/eduEngine -BC:/Users/ap3090/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/contrib/zlib/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -159,26 +159,26 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib\zconf.h.cmakein;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib\zlib.pc.cmakein;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckCSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib\zconf.h.cmakein;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib\zlib.pc.cmakein;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\ZERO_CHECK.vcxproj">
-      <Project>{18513923-AEC0-39E3-9546-788120D3758A}</Project>
+    <ProjectReference Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\ZERO_CHECK.vcxproj">
+      <Project>{71EC3342-8E55-3B84-BDD3-7CA63C32B82D}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib\zlib.vcxproj">
-      <Project>{CA10243B-EA6C-3641-9BAC-9FC9FE4393AA}</Project>
+    <ProjectReference Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib\zlib.vcxproj">
+      <Project>{B7D85310-3C00-3728-9FB1-6A1E9D94FCBD}</Project>
       <Name>zlib</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib\zlibstatic.vcxproj">
-      <Project>{BFA7FC95-516E-3D08-9EAB-C0B706E1D277}</Project>
+    <ProjectReference Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib\zlibstatic.vcxproj">
+      <Project>{B34C589E-024A-3DD3-8F8E-D42DAA2177D2}</Project>
       <Name>zlibstatic</Name>
     </ProjectReference>
   </ItemGroup>

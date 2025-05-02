@@ -1384,4 +1384,3 @@ Loading animation 'mixamo.com', dur in ticks 7, tps 30, nbr channels 42
 	Loading channel mixamorig:Spine1_$AssimpFbx$_Rotation, nbr pos keys  1, nbr scale keys  1, nbr rot keys  7
 	Loading channel mixamorig:Spine2_$AssimpFbx$_Rotation, nbr pos keys  1, nbr scale keys  1, nbr rot keys  7
 Animations in total 5
-Done appending animations.
