@@ -4,20 +4,20 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
       - "CMakeLists.txt:6 (project)"
     message: |
-      The system is: Windows - 10.0.22631 - AMD64
+      The system is: Windows - 10.0.26100 - AMD64
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:6 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64/cl.exe 
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64/cl.exe 
       Build flags: 
       Id flags:  
       
@@ -38,33 +38,36 @@ events:
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
       
+      The CXX compiler identification could not be found in:
+        C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/3.28.3-msvc11/CompilerIdCXX/CMakeCXXCompilerId.exe
+      
       The CXX compiler identification is MSVC, found in:
-        C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/3.28.3-msvc11/CompilerIdCXX/CMakeCXXCompilerId.exe
+        C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/3.28.3-msvc11/CompilerIdCXX/CMakeCXXCompilerId.obj
       
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1182 (message)"
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:247 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1182 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:247 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:6 (project)"
     message: |
       Detecting CXX compiler /showIncludes prefix:
         main.c
-        Note: including file: C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\ShowIncludes\\foo.h
+        Note: including file: C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\ShowIncludes\\foo.h
         
       Found prefix "Note: including file: "
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:6 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-4shovx"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-4shovx"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-0gdzby"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-0gdzby"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -73,23 +76,23 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-4shovx'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-0gdzby'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_ef09c
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_ef09c.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_ef09c.dir\\ /FS -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_ef09c.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_ef09c.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_ef09c.exe /implib:cmTC_ef09c.lib /pdb:cmTC_ef09c.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_c528c
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP   /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_c528c.dir\\CMakeCXXCompilerABI.cpp.obj /FdCMakeFiles\\cmTC_c528c.dir\\ /FS -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c528c.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c528c.dir\\CMakeCXXCompilerABI.cpp.obj  /out:cmTC_c528c.exe /implib:cmTC_c528c.lib /pdb:cmTC_c528c.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:9 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64/cl.exe 
+      Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64/cl.exe 
       Build flags: 
       Id flags:  
       
@@ -111,32 +114,32 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
       
       The C compiler identification is MSVC, found in:
-        C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/3.28.3-msvc11/CompilerIdC/CMakeCCompilerId.exe
+        C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/3.28.3-msvc11/CompilerIdC/CMakeCCompilerId.exe
       
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1182 (message)"
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:247 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1182 (message)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:247 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:9 (project)"
     message: |
       Detecting C compiler /showIncludes prefix:
         main.c
-        Note: including file: C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\ShowIncludes\\foo.h
+        Note: including file: C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\ShowIncludes\\foo.h
         
       Found prefix "Note: including file: "
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:9 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ubo49g"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ubo49g"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-nfo9qn"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-nfo9qn"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -144,790 +147,790 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ubo49g'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-nfo9qn'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_6a693
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_6a693.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_6a693.dir\\ /FS -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_6a693.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_6a693.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_6a693.exe /implib:cmTC_6a693.lib /pdb:cmTC_6a693.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_dd9af
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_dd9af.dir\\CMakeCCompilerABI.c.obj /FdCMakeFiles\\cmTC_dd9af.dir\\ /FS -c "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_dd9af.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_dd9af.dir\\CMakeCCompilerABI.c.obj  /out:cmTC_dd9af.exe /implib:cmTC_dd9af.lib /pdb:cmTC_dd9af.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:82 (check_symbol_exists)"
     checks:
       - "Looking for __GLIBC__"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-5dbsph"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-5dbsph"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-j20k1l"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-j20k1l"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
     buildResult:
       variable: "LIBC_IS_GLIBC"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-5dbsph'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-j20k1l'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_4401b
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_4401b.dir\\CheckSymbolExists.c.obj /FdCMakeFiles\\cmTC_4401b.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-5dbsph\\CheckSymbolExists.c
-        FAILED: CMakeFiles/cmTC_4401b.dir/CheckSymbolExists.c.obj 
-        C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_4401b.dir\\CheckSymbolExists.c.obj /FdCMakeFiles\\cmTC_4401b.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-5dbsph\\CheckSymbolExists.c
-        C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-5dbsph\\CheckSymbolExists.c(8): error C2065: '__GLIBC__': undeclared identifier
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_bee49
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_bee49.dir\\CheckSymbolExists.c.obj /FdCMakeFiles\\cmTC_bee49.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-j20k1l\\CheckSymbolExists.c
+        FAILED: CMakeFiles/cmTC_bee49.dir/CheckSymbolExists.c.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_bee49.dir\\CheckSymbolExists.c.obj /FdCMakeFiles\\cmTC_bee49.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-j20k1l\\CheckSymbolExists.c
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-j20k1l\\CheckSymbolExists.c(8): error C2065: '__GLIBC__': undeclared identifier
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
       - "out/build/x64-Debug/_deps/sdl2-src/cmake/CheckCPUArchitecture.cmake:17 (check_c_source_compiles)"
       - "out/build/x64-Debug/_deps/sdl2-src/cmake/CheckCPUArchitecture.cmake:28 (_internal_check_cpu_architecture)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:139 (check_cpu_architecture)"
     checks:
       - "Performing Test CHECK_CPU_ARCHITECTURE_X86"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ebfpa0"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ebfpa0"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-1t7pgf"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-1t7pgf"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
     buildResult:
       variable: "CHECK_CPU_ARCHITECTURE_X86"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ebfpa0'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-1t7pgf'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_09e2c
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_X86  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_09e2c.dir\\src.c.obj /FdCMakeFiles\\cmTC_09e2c.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ebfpa0\\src.c
-        FAILED: CMakeFiles/cmTC_09e2c.dir/src.c.obj 
-        C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_X86  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_09e2c.dir\\src.c.obj /FdCMakeFiles\\cmTC_09e2c.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ebfpa0\\src.c
-        C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ebfpa0\\src.c(6): error C2065: 'choke': undeclared identifier
-        C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ebfpa0\\src.c(8): error C2143: syntax error: missing ';' before '}'
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_3c92b
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_X86  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_3c92b.dir\\src.c.obj /FdCMakeFiles\\cmTC_3c92b.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-1t7pgf\\src.c
+        FAILED: CMakeFiles/cmTC_3c92b.dir/src.c.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_X86  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_3c92b.dir\\src.c.obj /FdCMakeFiles\\cmTC_3c92b.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-1t7pgf\\src.c
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-1t7pgf\\src.c(6): error C2065: 'choke': undeclared identifier
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-1t7pgf\\src.c(8): error C2143: syntax error: missing ';' before '}'
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
       - "out/build/x64-Debug/_deps/sdl2-src/cmake/CheckCPUArchitecture.cmake:17 (check_c_source_compiles)"
       - "out/build/x64-Debug/_deps/sdl2-src/cmake/CheckCPUArchitecture.cmake:30 (_internal_check_cpu_architecture)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:140 (check_cpu_architecture)"
     checks:
       - "Performing Test CHECK_CPU_ARCHITECTURE_X64"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-9ljjma"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-9ljjma"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-nebn9z"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-nebn9z"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
     buildResult:
       variable: "CHECK_CPU_ARCHITECTURE_X64"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-9ljjma'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-nebn9z'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_a0998
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_X64  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_a0998.dir\\src.c.obj /FdCMakeFiles\\cmTC_a0998.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-9ljjma\\src.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_a0998.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a0998.dir\\src.c.obj  /out:cmTC_a0998.exe /implib:cmTC_a0998.lib /pdb:cmTC_a0998.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_2ce95
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_X64  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_2ce95.dir\\src.c.obj /FdCMakeFiles\\cmTC_2ce95.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-nebn9z\\src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_2ce95.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_2ce95.dir\\src.c.obj  /out:cmTC_2ce95.exe /implib:cmTC_2ce95.lib /pdb:cmTC_2ce95.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
       - "out/build/x64-Debug/_deps/sdl2-src/cmake/CheckCPUArchitecture.cmake:17 (check_c_source_compiles)"
       - "out/build/x64-Debug/_deps/sdl2-src/cmake/CheckCPUArchitecture.cmake:32 (_internal_check_cpu_architecture)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:141 (check_cpu_architecture)"
     checks:
       - "Performing Test CHECK_CPU_ARCHITECTURE_ARM32"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-k5rzeb"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-k5rzeb"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-lz8771"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-lz8771"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
     buildResult:
       variable: "CHECK_CPU_ARCHITECTURE_ARM32"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-k5rzeb'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-lz8771'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_c0078
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_ARM32  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_c0078.dir\\src.c.obj /FdCMakeFiles\\cmTC_c0078.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-k5rzeb\\src.c
-        FAILED: CMakeFiles/cmTC_c0078.dir/src.c.obj 
-        C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_ARM32  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_c0078.dir\\src.c.obj /FdCMakeFiles\\cmTC_c0078.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-k5rzeb\\src.c
-        C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-k5rzeb\\src.c(6): error C2065: 'choke': undeclared identifier
-        C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-k5rzeb\\src.c(8): error C2143: syntax error: missing ';' before '}'
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_d8b60
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_ARM32  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_d8b60.dir\\src.c.obj /FdCMakeFiles\\cmTC_d8b60.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-lz8771\\src.c
+        FAILED: CMakeFiles/cmTC_d8b60.dir/src.c.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_ARM32  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_d8b60.dir\\src.c.obj /FdCMakeFiles\\cmTC_d8b60.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-lz8771\\src.c
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-lz8771\\src.c(6): error C2065: 'choke': undeclared identifier
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-lz8771\\src.c(8): error C2143: syntax error: missing ';' before '}'
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
       - "out/build/x64-Debug/_deps/sdl2-src/cmake/CheckCPUArchitecture.cmake:17 (check_c_source_compiles)"
       - "out/build/x64-Debug/_deps/sdl2-src/cmake/CheckCPUArchitecture.cmake:34 (_internal_check_cpu_architecture)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:142 (check_cpu_architecture)"
     checks:
       - "Performing Test CHECK_CPU_ARCHITECTURE_ARM64"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-mstxsx"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-mstxsx"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-80k4tv"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-80k4tv"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
     buildResult:
       variable: "CHECK_CPU_ARCHITECTURE_ARM64"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-mstxsx'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-80k4tv'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_b3128
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_ARM64  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_b3128.dir\\src.c.obj /FdCMakeFiles\\cmTC_b3128.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-mstxsx\\src.c
-        FAILED: CMakeFiles/cmTC_b3128.dir/src.c.obj 
-        C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_ARM64  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_b3128.dir\\src.c.obj /FdCMakeFiles\\cmTC_b3128.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-mstxsx\\src.c
-        C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-mstxsx\\src.c(6): error C2065: 'choke': undeclared identifier
-        C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-mstxsx\\src.c(8): error C2143: syntax error: missing ';' before '}'
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_5a09a
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_ARM64  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_5a09a.dir\\src.c.obj /FdCMakeFiles\\cmTC_5a09a.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-80k4tv\\src.c
+        FAILED: CMakeFiles/cmTC_5a09a.dir/src.c.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_ARM64  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_5a09a.dir\\src.c.obj /FdCMakeFiles\\cmTC_5a09a.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-80k4tv\\src.c
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-80k4tv\\src.c(6): error C2065: 'choke': undeclared identifier
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-80k4tv\\src.c(8): error C2143: syntax error: missing ';' before '}'
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
       - "out/build/x64-Debug/_deps/sdl2-src/cmake/CheckCPUArchitecture.cmake:17 (check_c_source_compiles)"
       - "out/build/x64-Debug/_deps/sdl2-src/cmake/CheckCPUArchitecture.cmake:36 (_internal_check_cpu_architecture)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:143 (check_cpu_architecture)"
     checks:
       - "Performing Test CHECK_CPU_ARCHITECTURE_LOONGARCH64"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-k6rf59"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-k6rf59"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-0e33s2"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-0e33s2"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
     buildResult:
       variable: "CHECK_CPU_ARCHITECTURE_LOONGARCH64"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-k6rf59'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-0e33s2'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_abee9
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_LOONGARCH64  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_abee9.dir\\src.c.obj /FdCMakeFiles\\cmTC_abee9.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-k6rf59\\src.c
-        FAILED: CMakeFiles/cmTC_abee9.dir/src.c.obj 
-        C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_LOONGARCH64  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_abee9.dir\\src.c.obj /FdCMakeFiles\\cmTC_abee9.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-k6rf59\\src.c
-        C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-k6rf59\\src.c(6): error C2065: 'choke': undeclared identifier
-        C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-k6rf59\\src.c(8): error C2143: syntax error: missing ';' before '}'
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_70651
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_LOONGARCH64  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_70651.dir\\src.c.obj /FdCMakeFiles\\cmTC_70651.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-0e33s2\\src.c
+        FAILED: CMakeFiles/cmTC_70651.dir/src.c.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DCHECK_CPU_ARCHITECTURE_LOONGARCH64  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_70651.dir\\src.c.obj /FdCMakeFiles\\cmTC_70651.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-0e33s2\\src.c
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-0e33s2\\src.c(6): error C2065: 'choke': undeclared identifier
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-0e33s2\\src.c(8): error C2143: syntax error: missing ';' before '}'
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:1019 (check_include_file)"
     checks:
       - "Looking for immintrin.h"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-hgvwfg"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-hgvwfg"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-raf9om"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-raf9om"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
     buildResult:
       variable: "HAVE_IMMINTRIN_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-hgvwfg'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-raf9om'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_2191f
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_2191f.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_2191f.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-hgvwfg\\CheckIncludeFile.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_2191f.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_2191f.dir\\CheckIncludeFile.c.obj  /out:cmTC_2191f.exe /implib:cmTC_2191f.lib /pdb:cmTC_2191f.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_fd78b
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_fd78b.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_fd78b.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-raf9om\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_fd78b.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_fd78b.dir\\CheckIncludeFile.c.obj  /out:cmTC_fd78b.exe /implib:cmTC_fd78b.lib /pdb:cmTC_fd78b.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:1182 (check_include_file)"
     checks:
       - "Looking for stdint.h"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-q8d7he"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-q8d7he"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-urfl4b"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-urfl4b"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
     buildResult:
       variable: "HAVE_STDINT_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-q8d7he'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-urfl4b'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_7aef4
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_7aef4.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_7aef4.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-q8d7he\\CheckIncludeFile.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_7aef4.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_7aef4.dir\\CheckIncludeFile.c.obj  /out:cmTC_7aef4.exe /implib:cmTC_7aef4.lib /pdb:cmTC_7aef4.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_8f5a5
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_8f5a5.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_8f5a5.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-urfl4b\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_8f5a5.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_8f5a5.dir\\CheckIncludeFile.c.obj  /out:cmTC_8f5a5.exe /implib:cmTC_8f5a5.lib /pdb:cmTC_8f5a5.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:1784 (check_c_source_compiles)"
     checks:
       - "Performing Test HAVE_WIN32_CC"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-d62i6z"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-d62i6z"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-s7l7wi"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-s7l7wi"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
     buildResult:
       variable: "HAVE_WIN32_CC"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-d62i6z'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-s7l7wi'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_9b6c5
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_WIN32_CC  /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_9b6c5.dir\\src.c.obj /FdCMakeFiles\\cmTC_9b6c5.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-d62i6z\\src.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_9b6c5.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_9b6c5.dir\\src.c.obj  /out:cmTC_9b6c5.exe /implib:cmTC_9b6c5.lib /pdb:cmTC_9b6c5.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_8bc2b
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_WIN32_CC  /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_8bc2b.dir\\src.c.obj /FdCMakeFiles\\cmTC_8bc2b.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-s7l7wi\\src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_8bc2b.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_8bc2b.dir\\src.c.obj  /out:cmTC_8bc2b.exe /implib:cmTC_8bc2b.lib /pdb:cmTC_8bc2b.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:1826 (check_include_file)"
     checks:
       - "Looking for d3d9.h"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-kieuq9"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-kieuq9"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-f9jo5m"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-f9jo5m"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
     buildResult:
       variable: "HAVE_D3D_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-kieuq9'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-f9jo5m'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_40298
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_40298.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_40298.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-kieuq9\\CheckIncludeFile.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_40298.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_40298.dir\\CheckIncludeFile.c.obj  /out:cmTC_40298.exe /implib:cmTC_40298.lib /pdb:cmTC_40298.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_c1be1
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_c1be1.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_c1be1.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-f9jo5m\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c1be1.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c1be1.dir\\CheckIncludeFile.c.obj  /out:cmTC_c1be1.exe /implib:cmTC_c1be1.lib /pdb:cmTC_c1be1.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:1827 (check_include_file)"
     checks:
       - "Looking for d3d11_1.h"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-7kqcx0"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-7kqcx0"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-qzjrng"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-qzjrng"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
     buildResult:
       variable: "HAVE_D3D11_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-7kqcx0'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-qzjrng'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_785e0
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_785e0.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_785e0.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-7kqcx0\\CheckIncludeFile.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_785e0.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_785e0.dir\\CheckIncludeFile.c.obj  /out:cmTC_785e0.exe /implib:cmTC_785e0.lib /pdb:cmTC_785e0.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_37876
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_37876.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_37876.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-qzjrng\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_37876.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_37876.dir\\CheckIncludeFile.c.obj  /out:cmTC_37876.exe /implib:cmTC_37876.lib /pdb:cmTC_37876.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:1828 (check_c_source_compiles)"
     checks:
       - "Performing Test HAVE_D3D12_H"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ltke9r"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ltke9r"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-4j6akz"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-4j6akz"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
     buildResult:
       variable: "HAVE_D3D12_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ltke9r'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-4j6akz'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_b1135
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_D3D12_H  /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_b1135.dir\\src.c.obj /FdCMakeFiles\\cmTC_b1135.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ltke9r\\src.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_b1135.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_b1135.dir\\src.c.obj  /out:cmTC_b1135.exe /implib:cmTC_b1135.lib /pdb:cmTC_b1135.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_62f4a
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_D3D12_H  /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_62f4a.dir\\src.c.obj /FdCMakeFiles\\cmTC_62f4a.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-4j6akz\\src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_62f4a.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_62f4a.dir\\src.c.obj  /out:cmTC_62f4a.exe /implib:cmTC_62f4a.lib /pdb:cmTC_62f4a.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:1836 (check_include_file)"
     checks:
       - "Looking for ddraw.h"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-psds5n"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-psds5n"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-i1xqwy"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-i1xqwy"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
     buildResult:
       variable: "HAVE_DDRAW_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-psds5n'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-i1xqwy'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_55f81
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_55f81.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_55f81.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-psds5n\\CheckIncludeFile.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_55f81.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_55f81.dir\\CheckIncludeFile.c.obj  /out:cmTC_55f81.exe /implib:cmTC_55f81.lib /pdb:cmTC_55f81.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_29041
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_29041.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_29041.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-i1xqwy\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_29041.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_29041.dir\\CheckIncludeFile.c.obj  /out:cmTC_29041.exe /implib:cmTC_29041.lib /pdb:cmTC_29041.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:1837 (check_include_file)"
     checks:
       - "Looking for dsound.h"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-vd9d04"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-vd9d04"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-n3zc7j"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-n3zc7j"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
     buildResult:
       variable: "HAVE_DSOUND_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-vd9d04'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-n3zc7j'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_ab791
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_ab791.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_ab791.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-vd9d04\\CheckIncludeFile.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_ab791.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_ab791.dir\\CheckIncludeFile.c.obj  /out:cmTC_ab791.exe /implib:cmTC_ab791.lib /pdb:cmTC_ab791.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_a1d4a
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_a1d4a.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_a1d4a.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-n3zc7j\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_a1d4a.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a1d4a.dir\\CheckIncludeFile.c.obj  /out:cmTC_a1d4a.exe /implib:cmTC_a1d4a.lib /pdb:cmTC_a1d4a.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:1838 (check_include_file)"
     checks:
       - "Looking for dinput.h"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-e0n462"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-e0n462"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-rjdmuf"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-rjdmuf"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
     buildResult:
       variable: "HAVE_DINPUT_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-e0n462'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-rjdmuf'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_3af07
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_3af07.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_3af07.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-e0n462\\CheckIncludeFile.c
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_cd15b
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_cd15b.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_cd15b.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-rjdmuf\\CheckIncludeFile.c
         C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.22621.0\\um\\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_3af07.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_3af07.dir\\CheckIncludeFile.c.obj  /out:cmTC_3af07.exe /implib:cmTC_3af07.lib /pdb:cmTC_3af07.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_cd15b.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_cd15b.dir\\CheckIncludeFile.c.obj  /out:cmTC_cd15b.exe /implib:cmTC_cd15b.lib /pdb:cmTC_cd15b.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:1842 (check_include_file)"
     checks:
       - "Looking for dxgi.h"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-i33xkm"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-i33xkm"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-3f5rkv"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-3f5rkv"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
     buildResult:
       variable: "HAVE_DXGI_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-i33xkm'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-3f5rkv'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_6dee5
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_6dee5.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_6dee5.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-i33xkm\\CheckIncludeFile.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_6dee5.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_6dee5.dir\\CheckIncludeFile.c.obj  /out:cmTC_6dee5.exe /implib:cmTC_6dee5.lib /pdb:cmTC_6dee5.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_003a4
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_003a4.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_003a4.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-3f5rkv\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_003a4.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_003a4.dir\\CheckIncludeFile.c.obj  /out:cmTC_003a4.exe /implib:cmTC_003a4.lib /pdb:cmTC_003a4.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:1856 (check_c_source_compiles)"
     checks:
       - "Performing Test HAVE_XINPUT_H"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-55ryz2"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-55ryz2"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-76kllz"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-76kllz"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
     buildResult:
       variable: "HAVE_XINPUT_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-55ryz2'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-76kllz'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_ffe51
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_XINPUT_H  /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_ffe51.dir\\src.c.obj /FdCMakeFiles\\cmTC_ffe51.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-55ryz2\\src.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_ffe51.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_ffe51.dir\\src.c.obj  /out:cmTC_ffe51.exe /implib:cmTC_ffe51.lib /pdb:cmTC_ffe51.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_1b82c
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_XINPUT_H  /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_1b82c.dir\\src.c.obj /FdCMakeFiles\\cmTC_1b82c.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-76kllz\\src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_1b82c.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_1b82c.dir\\src.c.obj  /out:cmTC_1b82c.exe /implib:cmTC_1b82c.lib /pdb:cmTC_1b82c.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:1860 (check_c_source_compiles)"
     checks:
       - "Performing Test HAVE_WINDOWS_GAMING_INPUT_H"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-b77zn4"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-b77zn4"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-uwb4r5"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-uwb4r5"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
     buildResult:
       variable: "HAVE_WINDOWS_GAMING_INPUT_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-b77zn4'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-uwb4r5'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_773e2
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_WINDOWS_GAMING_INPUT_H  /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_773e2.dir\\src.c.obj /FdCMakeFiles\\cmTC_773e2.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-b77zn4\\src.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_773e2.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_773e2.dir\\src.c.obj  /out:cmTC_773e2.exe /implib:cmTC_773e2.lib /pdb:cmTC_773e2.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_57c70
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_WINDOWS_GAMING_INPUT_H  /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_57c70.dir\\src.c.obj /FdCMakeFiles\\cmTC_57c70.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-uwb4r5\\src.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_57c70.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_57c70.dir\\src.c.obj  /out:cmTC_57c70.exe /implib:cmTC_57c70.lib /pdb:cmTC_57c70.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:1868 (check_include_file)"
     checks:
       - "Looking for tpcshrd.h"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-gq9uee"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-gq9uee"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-zejj1a"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-zejj1a"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
     buildResult:
       variable: "HAVE_TPCSHRD_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-gq9uee'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-zejj1a'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_4feb5
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_4feb5.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_4feb5.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-gq9uee\\CheckIncludeFile.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_4feb5.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_4feb5.dir\\CheckIncludeFile.c.obj  /out:cmTC_4feb5.exe /implib:cmTC_4feb5.lib /pdb:cmTC_4feb5.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_e99a2
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_e99a2.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_e99a2.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-zejj1a\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_e99a2.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_e99a2.dir\\CheckIncludeFile.c.obj  /out:cmTC_e99a2.exe /implib:cmTC_e99a2.lib /pdb:cmTC_e99a2.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:1869 (check_include_file)"
     checks:
       - "Looking for roapi.h"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-kt44jk"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-kt44jk"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ups8i8"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ups8i8"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
     buildResult:
       variable: "HAVE_ROAPI_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-kt44jk'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ups8i8'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_25b64
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_25b64.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_25b64.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-kt44jk\\CheckIncludeFile.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_25b64.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_25b64.dir\\CheckIncludeFile.c.obj  /out:cmTC_25b64.exe /implib:cmTC_25b64.lib /pdb:cmTC_25b64.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_8c7a6
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_8c7a6.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_8c7a6.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ups8i8\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_8c7a6.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_8c7a6.dir\\CheckIncludeFile.c.obj  /out:cmTC_8c7a6.exe /implib:cmTC_8c7a6.lib /pdb:cmTC_8c7a6.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:1870 (check_include_file)"
     checks:
       - "Looking for mmdeviceapi.h"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-uxz02d"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-uxz02d"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-6celym"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-6celym"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
     buildResult:
       variable: "HAVE_MMDEVICEAPI_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-uxz02d'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-6celym'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_1fdde
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_1fdde.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_1fdde.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-uxz02d\\CheckIncludeFile.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_1fdde.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_1fdde.dir\\CheckIncludeFile.c.obj  /out:cmTC_1fdde.exe /implib:cmTC_1fdde.lib /pdb:cmTC_1fdde.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_bef04
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_bef04.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_bef04.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-6celym\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_bef04.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_bef04.dir\\CheckIncludeFile.c.obj  /out:cmTC_bef04.exe /implib:cmTC_bef04.lib /pdb:cmTC_bef04.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:1871 (check_include_file)"
     checks:
       - "Looking for audioclient.h"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-2a6y9c"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-2a6y9c"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-9pbn2y"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-9pbn2y"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
     buildResult:
       variable: "HAVE_AUDIOCLIENT_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-2a6y9c'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-9pbn2y'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_87d3e
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_87d3e.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_87d3e.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-2a6y9c\\CheckIncludeFile.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_87d3e.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_87d3e.dir\\CheckIncludeFile.c.obj  /out:cmTC_87d3e.exe /implib:cmTC_87d3e.lib /pdb:cmTC_87d3e.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_b0420
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_b0420.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_b0420.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-9pbn2y\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_b0420.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_b0420.dir\\CheckIncludeFile.c.obj  /out:cmTC_b0420.exe /implib:cmTC_b0420.lib /pdb:cmTC_b0420.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:1872 (check_include_file)"
     checks:
       - "Looking for sensorsapi.h"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-law6hr"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-law6hr"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-wf3ddb"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-wf3ddb"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
     buildResult:
       variable: "HAVE_SENSORSAPI_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-law6hr'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-wf3ddb'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_75d11
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_75d11.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_75d11.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-law6hr\\CheckIncludeFile.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_75d11.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_75d11.dir\\CheckIncludeFile.c.obj  /out:cmTC_75d11.exe /implib:cmTC_75d11.lib /pdb:cmTC_75d11.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_193f8
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_193f8.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_193f8.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-wf3ddb\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_193f8.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_193f8.dir\\CheckIncludeFile.c.obj  /out:cmTC_193f8.exe /implib:cmTC_193f8.lib /pdb:cmTC_193f8.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "out/build/x64-Debug/_deps/sdl2-src/CMakeLists.txt:1873 (check_include_file)"
     checks:
       - "Looking for shellscalingapi.h"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-nx6me3"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-nx6me3"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-yxtpvt"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-yxtpvt"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/sdl2-src/cmake"
     buildResult:
       variable: "HAVE_SHELLSCALINGAPI_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-nx6me3'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-yxtpvt'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_f7d99
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_f7d99.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_f7d99.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-nx6me3\\CheckIncludeFile.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_f7d99.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_f7d99.dir\\CheckIncludeFile.c.obj  /out:cmTC_f7d99.exe /implib:cmTC_f7d99.lib /pdb:cmTC_f7d99.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_f891d
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  -D_GNU_SOURCE=1 /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_f891d.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_f891d.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-yxtpvt\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_f891d.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_f891d.dir\\CheckIncludeFile.c.obj  /out:cmTC_f891d.exe /implib:cmTC_f891d.lib /pdb:cmTC_f891d.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "out/build/x64-Debug/_deps/assimp-src/contrib/zlib/CMakeLists.txt:35 (check_include_file)"
     checks:
       - "Looking for sys/types.h"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-v6zrvt"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-v6zrvt"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ji8aod"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ji8aod"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/assimp-src/cmake-modules"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/assimp-src/cmake-modules"
     buildResult:
       variable: "HAVE_SYS_TYPES_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-v6zrvt'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ji8aod'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_aa9d4
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_aa9d4.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_aa9d4.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-v6zrvt\\CheckIncludeFile.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_aa9d4.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_aa9d4.dir\\CheckIncludeFile.c.obj  /out:cmTC_aa9d4.exe /implib:cmTC_aa9d4.lib /pdb:cmTC_aa9d4.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_bd7fa
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_bd7fa.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_bd7fa.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ji8aod\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_bd7fa.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_bd7fa.dir\\CheckIncludeFile.c.obj  /out:cmTC_bd7fa.exe /implib:cmTC_bd7fa.lib /pdb:cmTC_bd7fa.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "out/build/x64-Debug/_deps/assimp-src/contrib/zlib/CMakeLists.txt:37 (check_include_file)"
     checks:
       - "Looking for stddef.h"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-bwsapj"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-bwsapj"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-f0qe4e"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-f0qe4e"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/assimp-src/cmake-modules"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/assimp-src/cmake-modules"
     buildResult:
       variable: "HAVE_STDDEF_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-bwsapj'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-f0qe4e'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_6800c
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_6800c.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_6800c.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-bwsapj\\CheckIncludeFile.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_6800c.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_6800c.dir\\CheckIncludeFile.c.obj  /out:cmTC_6800c.exe /implib:cmTC_6800c.lib /pdb:cmTC_6800c.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_c0773
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_c0773.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_c0773.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-f0qe4e\\CheckIncludeFile.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_c0773.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_c0773.dir\\CheckIncludeFile.c.obj  /out:cmTC_c0773.exe /implib:cmTC_c0773.lib /pdb:cmTC_c0773.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
         
       exitCode: 0
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
       - "out/build/x64-Debug/_deps/assimp-src/contrib/zlib/CMakeLists.txt:55 (check_type_size)"
     checks:
       - "Check size of off64_t"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-bm19ks"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-bm19ks"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-2a41pq"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-2a41pq"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/assimp-src/cmake-modules"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/assimp-src/cmake-modules"
     buildResult:
       variable: "HAVE_OFF64_T"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-bm19ks'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-2a41pq'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_d57f4
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_STDDEF_H -DHAVE_STDINT_H -DHAVE_SYS_TYPES_H -D_LARGEFILE64_SOURCE=1  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_d57f4.dir\\OFF64_T.c.obj /FdCMakeFiles\\cmTC_d57f4.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-bm19ks\\OFF64_T.c
-        FAILED: CMakeFiles/cmTC_d57f4.dir/OFF64_T.c.obj 
-        C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_STDDEF_H -DHAVE_STDINT_H -DHAVE_SYS_TYPES_H -D_LARGEFILE64_SOURCE=1  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_d57f4.dir\\OFF64_T.c.obj /FdCMakeFiles\\cmTC_d57f4.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-bm19ks\\OFF64_T.c
-        C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-bm19ks\\OFF64_T.c(29): error C2065: 'off64_t': undeclared identifier
-        C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-bm19ks\\OFF64_T.c(30): error C2065: 'off64_t': undeclared identifier
-        C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-bm19ks\\OFF64_T.c(31): error C2065: 'off64_t': undeclared identifier
-        C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-bm19ks\\OFF64_T.c(32): error C2065: 'off64_t': undeclared identifier
-        C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-bm19ks\\OFF64_T.c(33): error C2065: 'off64_t': undeclared identifier
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_69ee4
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_STDDEF_H -DHAVE_STDINT_H -DHAVE_SYS_TYPES_H -D_LARGEFILE64_SOURCE=1  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_69ee4.dir\\OFF64_T.c.obj /FdCMakeFiles\\cmTC_69ee4.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-2a41pq\\OFF64_T.c
+        FAILED: CMakeFiles/cmTC_69ee4.dir/OFF64_T.c.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo -DHAVE_STDDEF_H -DHAVE_STDINT_H -DHAVE_SYS_TYPES_H -D_LARGEFILE64_SOURCE=1  /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_69ee4.dir\\OFF64_T.c.obj /FdCMakeFiles\\cmTC_69ee4.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-2a41pq\\OFF64_T.c
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-2a41pq\\OFF64_T.c(29): error C2065: 'off64_t': undeclared identifier
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-2a41pq\\OFF64_T.c(30): error C2065: 'off64_t': undeclared identifier
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-2a41pq\\OFF64_T.c(31): error C2065: 'off64_t': undeclared identifier
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-2a41pq\\OFF64_T.c(32): error C2065: 'off64_t': undeclared identifier
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-2a41pq\\OFF64_T.c(33): error C2065: 'off64_t': undeclared identifier
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
       - "out/build/x64-Debug/_deps/assimp-src/contrib/zlib/CMakeLists.txt:64 (check_function_exists)"
     checks:
       - "Looking for fseeko"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-phwojf"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-phwojf"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ab9zgv"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ab9zgv"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/assimp-src/cmake-modules"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/assimp-src/cmake-modules"
     buildResult:
       variable: "HAVE_FSEEKO"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-phwojf'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-ab9zgv'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_6ee68
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3 -DCHECK_FUNCTION_EXISTS=fseeko /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_6ee68.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_6ee68.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-phwojf\\CheckFunctionExists.c
-        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_6ee68.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_6ee68.dir\\CheckFunctionExists.c.obj  /out:cmTC_6ee68.exe /implib:cmTC_6ee68.lib /pdb:cmTC_6ee68.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        FAILED: cmTC_6ee68.exe 
-        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_6ee68.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_6ee68.dir\\CheckFunctionExists.c.obj  /out:cmTC_6ee68.exe /implib:cmTC_6ee68.lib /pdb:cmTC_6ee68.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
-        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_6ee68.dir\\CheckFunctionExists.c.obj /out:cmTC_6ee68.exe /implib:cmTC_6ee68.lib /pdb:cmTC_6ee68.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_6ee68.dir/intermediate.manifest CMakeFiles\\cmTC_6ee68.dir/manifest.res" failed (exit code 1120) with the following output:
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_93b81
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3 -DCHECK_FUNCTION_EXISTS=fseeko /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_93b81.dir\\CheckFunctionExists.c.obj /FdCMakeFiles\\cmTC_93b81.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-ab9zgv\\CheckFunctionExists.c
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_93b81.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_93b81.dir\\CheckFunctionExists.c.obj  /out:cmTC_93b81.exe /implib:cmTC_93b81.lib /pdb:cmTC_93b81.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_93b81.exe 
+        C:\\WINDOWS\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_93b81.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_93b81.dir\\CheckFunctionExists.c.obj  /out:cmTC_93b81.exe /implib:cmTC_93b81.lib /pdb:cmTC_93b81.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        LINK Pass 1: command "C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_93b81.dir\\CheckFunctionExists.c.obj /out:cmTC_93b81.exe /implib:cmTC_93b81.lib /pdb:cmTC_93b81.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_93b81.dir/intermediate.manifest CMakeFiles\\cmTC_93b81.dir/manifest.res" failed (exit code 1120) with the following output:
         CheckFunctionExists.c.obj : error LNK2019: unresolved external symbol fseeko referenced in function main\x0d
-        cmTC_6ee68.exe : fatal error LNK1120: 1 unresolved externals\x0d
+        cmTC_93b81.exe : fatal error LNK1120: 1 unresolved externals\x0d
         ninja: build stopped: subcommand failed.
         
       exitCode: 1
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
       - "out/build/x64-Debug/_deps/assimp-src/contrib/zlib/CMakeLists.txt:72 (check_include_file)"
     checks:
       - "Looking for unistd.h"
     directories:
-      source: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-17c9cu"
-      binary: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-17c9cu"
+      source: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-pbcqv6"
+      binary: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-pbcqv6"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/assimp-src/cmake-modules"
+      CMAKE_MODULE_PATH: "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/assimp-src/cmake-modules"
     buildResult:
       variable: "Z_HAVE_UNISTD_H"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-17c9cu'
+        Change Dir: 'C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/CMakeFiles/CMakeScratch/TryCompile-pbcqv6'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_1d595
-        [1/2] C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_1d595.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_1d595.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-17c9cu\\CheckIncludeFile.c
-        FAILED: CMakeFiles/cmTC_1d595.dir/CheckIncludeFile.c.obj 
-        C:\\PROGRA~1\\MICROS~3\\2022\\ENTERP~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_1d595.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_1d595.dir\\ /FS -c C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-17c9cu\\CheckIncludeFile.c
-        C:\\Users\\ap3090\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-17c9cu\\CheckIncludeFile.c(1): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v cmTC_e6566
+        [1/2] C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_e6566.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_e6566.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-pbcqv6\\CheckIncludeFile.c
+        FAILED: CMakeFiles/cmTC_e6566.dir/CheckIncludeFile.c.obj 
+        C:\\PROGRA~1\\MICROS~4\\2022\\COMMUN~1\\VC\\Tools\\MSVC\\1440~1.338\\bin\\Hostx64\\x64\\cl.exe  /nologo   /DWIN32 /D_WINDOWS /W3  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_e6566.dir\\CheckIncludeFile.c.obj /FdCMakeFiles\\cmTC_e6566.dir\\ /FS -c C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-pbcqv6\\CheckIncludeFile.c
+        C:\\Users\\neofe\\source\\repos\\Neof3090\\eduEngine\\out\\build\\x64-Debug\\CMakeFiles\\CMakeScratch\\TryCompile-pbcqv6\\CheckIncludeFile.c(1): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
         ninja: build stopped: subcommand failed.
         
       exitCode: 1

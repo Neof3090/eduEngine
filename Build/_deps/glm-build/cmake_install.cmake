@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/glm-src
+# Install script for directory: C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/glm-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/glm-build/glm/cmake_install.cmake")
+  include("C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/glm-build/glm/cmake_install.cmake")
 
 endif()
 

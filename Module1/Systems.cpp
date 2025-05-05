@@ -205,32 +205,36 @@ void Systems::PlayerAnimationSystem(entt::registry& reg, InputManagerPtr& input,
 			ac.state = AnimationComponent::State::Idle;
 		}
 
+        int desiredIndex; 
 
         // simple FSM example
         switch (ac.state) {
-            case AnimationComponent::State::Idle:
-                ac.nextIndex = 1; // Idle animation
+        case AnimationComponent::State::Idle:
+            desiredIndex = 1; // Idle animation
+            
+            // Example: set looping animation options
+            break;
+        case AnimationComponent::State::Walk:
+            desiredIndex = 2; // Walk animation
+            break;
+        case AnimationComponent::State::Run:
+            desiredIndex = 3; // Sprint animation
+            break;
+        case AnimationComponent::State::Jump:
+            desiredIndex = 4; // Jump animation
+            break;
+        default:
+            desiredIndex = 0; // Default to T-pose
+	    break;
+        }
 
-                ac.speed = 1.0f; // Animation speed
-            break;
-            case AnimationComponent::State::Walk:
-				ac.nextIndex = 2; // Walk animation
-
-                ac.speed = 1.0f; // Animation speed
-            break;
-            case AnimationComponent::State::Run:
-                ac.nextIndex = 3; // Sprint animation
-                
-                ac.speed = 1.0f; // Animation speed
-            break;
-            case AnimationComponent::State::Jump:
-				ac.nextIndex = 4; // Jump animation
-
-                // Makeshift fix for jump animation <<<<<TODO: FIX THIS
-                float clipLen = 0.1f;
-                ac.blendTime2 = 0.0f; // Reset blend time
-                ac.speed2 = clipLen / pc.jumpDelay; 
-            break;
+        if (ac.queue.empty()) 
+        {
+            ac.queue.push(desiredIndex);
+        } 
+        else if (desiredIndex != ac.nextIndex && ac.queue.back() != desiredIndex && ac.queue.size() < 1) 
+        {
+            ac.queue.push(desiredIndex);
         }
     }
 }
@@ -272,8 +276,6 @@ int Systems::RenderSystem(entt::registry& reg, int windowWidth, int windowHeight
     matrices.VP = glm_aux::create_viewport_matrix(0.0f, 0.0f, windowWidth, windowHeight, 0.0f, 1.0f);
     forwardRenderer->beginPass(matrices.P, matrices.V, lightPos, lightColor, cameraPos);
 
-    
-
     // --- RENDERING MESHES ---
     auto view = reg.view<Transform, MeshComponent>();
     for (auto entity : view) {
@@ -292,7 +294,7 @@ int Systems::RenderSystem(entt::registry& reg, int windowWidth, int windowHeight
             meshComp.mesh->boneMatrices.size() >= meshComp.mesh->m_bones.size() &&
             !meshComp.mesh->m_bones.empty())
         {
-            float axisLen = transform.scale.y * 100.0f;
+            float axisLen = 0.5f / transform.scale.y;
             
             size_t boneCount = std::min(meshComp.mesh->boneMatrices.size(), meshComp.mesh->m_bones.size());
             for (size_t i = 0; i < boneCount; ++i) {
@@ -374,41 +376,53 @@ void Systems::AnimationSystem(entt::registry& reg, float dt) {
         auto& mc = animView.get<MeshComponent>(entity);
         auto& ac = animView.get<AnimationComponent>(entity);
 
-        ac.blendTime1 += dt * ac.speed;
+        // advance both playheads
+        ac.timeCur += dt * ac.speed;
+        ac.timeNext += dt * ac.speed;
 
-        // If we're mid-blend between two clips
-        if (ac.index != ac.nextIndex) {
-            /*
-            ac.blendTime2 += dt * ac.speed;*/
-
-            // advance the blend fraction
-            if(/*ac.index != ac.nextIndex && */!ac.manualBlending)
-                ac.blendFrac = std::min(1.0f, ac.blendFrac + dt * ac.blendSpeed);
+        // Manual blending
+        if (ac.manualBlending) {
 
             mc.mesh->animateBlend(
                 ac.index, ac.nextIndex,
-                ac.blendTime1, ac.blendTime1,
-                ac.blendFrac
+                ac.timeCur, ac.timeNext,
+                ac.blendFrac,
+                eeng::AnmationTimeFormat::NormalizedTime,
+                eeng::AnmationTimeFormat::NormalizedTime
+            );
+            continue;
+        }
+
+        // Check if we need to dequeue the next animation
+        if (ac.index == ac.nextIndex && !ac.queue.empty()) {
+            ac.nextIndex = ac.queue.front();
+            ac.queue.pop();
+            ac.timeNext = 0.0f;
+            ac.blendFrac = 0.0f;
+        }
+
+        // Are we cross-fading?
+        if (ac.index != ac.nextIndex) {
+
+            ac.blendFrac = glm::min(1.0f, ac.blendFrac + dt / ac.blendDur);
+
+            mc.mesh->animateBlend(
+                ac.index, ac.nextIndex,
+                ac.timeCur, ac.timeNext,
+                ac.blendFrac,
+                eeng::AnmationTimeFormat::RealTime,
+                eeng::AnmationTimeFormat::RealTime
             );
 
-            // once its done blending, set the next index to the current one
-            if (ac.blendFrac >= 1.0f && !ac.manualBlending) {
-                //ac.playTime = ac.blendTime2;
-
-                //ac.speed = ac.speed2;
+            // Once done, commit the new clip and dequeue any next one
+            if (ac.blendFrac >= 1.0f) {
                 ac.index = ac.nextIndex;
-                ac.blendFrac = 0.0f;        
-                //ac.blendTime1 = ac.blendTime2 = 0.0f;
+                ac.timeCur = ac.timeNext;
             }
         }
         else {
-            // Not blending: just play the current animation
-           /* ac.blendTime1 += dt * ac.speed;*/
-            mc.mesh->animate(
-                ac.index,
-                ac.blendTime1
-            );
-            //ac.blendTime1 = ac.playTime;
+            // No queued animations, just play the current one
+            mc.mesh->animate(ac.index, ac.timeCur);
         }
     }
 }

@@ -10,7 +10,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{41EE9502-A83F-3F5B-8AB4-238410BFAE90}</ProjectGuid>
+    <ProjectGuid>{216DE63A-A61B-31BB-976A-597FC0F4B1CE}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -45,13 +45,13 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\ad738de1c90c2f7b1e00df7a3068d797\assimp-populate-mkdir.rule">
+    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\4227377a95c937c6dba2bfeebbc4c798\assimp-populate-mkdir.rule">
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for 'assimp-populate'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/assimp-populate-prefix/tmp/assimp-populate-mkdirs.cmake
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/assimp-populate-prefix/tmp/assimp-populate-mkdirs.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/assimp-populate-prefix/src/assimp-populate-stamp/Debug/assimp-populate-mkdir
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/assimp-populate-prefix/src/assimp-populate-stamp/Debug/assimp-populate-mkdir
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -60,21 +60,21 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-mkdir</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-mkdir</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\ad738de1c90c2f7b1e00df7a3068d797\assimp-populate-download.rule">
+    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\4227377a95c937c6dba2bfeebbc4c798\assimp-populate-download.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing download step (git clone) for 'assimp-populate'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cd C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps
+cd C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/assimp-populate-prefix/tmp/assimp-populate-gitclone.cmake
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/assimp-populate-prefix/tmp/assimp-populate-gitclone.cmake
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/assimp-populate-prefix/src/assimp-populate-stamp/Debug/assimp-populate-download
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/assimp-populate-prefix/src/assimp-populate-stamp/Debug/assimp-populate-download
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -82,20 +82,20 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\assimp-populate-gitinfo.txt;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-download</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\assimp-populate-gitinfo.txt;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-download</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\ad738de1c90c2f7b1e00df7a3068d797\assimp-populate-update.rule">
+    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\4227377a95c937c6dba2bfeebbc4c798\assimp-populate-update.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing update step for 'assimp-populate'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cd C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src
+cd C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -Dcan_fetch=YES -P C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/assimp-populate-prefix/tmp/assimp-populate-gitupdate.cmake
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -Dcan_fetch=YES -P C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/assimp-populate-prefix/tmp/assimp-populate-gitupdate.cmake
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -103,19 +103,19 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\tmp\assimp-populate-gitupdate.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\assimp-populate-update-info.txt;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-download;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-update</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\tmp\assimp-populate-gitupdate.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\assimp-populate-update-info.txt;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-update</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\ad738de1c90c2f7b1e00df7a3068d797\assimp-populate-patch.rule">
+    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\4227377a95c937c6dba2bfeebbc4c798\assimp-populate-patch.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No patch step for 'assimp-populate'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/assimp-populate-prefix/src/assimp-populate-stamp/Debug/assimp-populate-patch
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/assimp-populate-prefix/src/assimp-populate-stamp/Debug/assimp-populate-patch
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -123,24 +123,24 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\assimp-populate-patch-info.txt;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-update;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-patch</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\assimp-populate-patch-info.txt;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-patch</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\ad738de1c90c2f7b1e00df7a3068d797\assimp-populate-configure.rule">
+    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\4227377a95c937c6dba2bfeebbc4c798\assimp-populate-configure.rule">
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No configure step for 'assimp-populate'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cd C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build
+cd C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/assimp-populate-prefix/src/assimp-populate-stamp/Debug/assimp-populate-configure
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/assimp-populate-prefix/src/assimp-populate-stamp/Debug/assimp-populate-configure
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -148,23 +148,23 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\tmp\assimp-populate-cfgcmd.txt;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-patch;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-configure</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\tmp\assimp-populate-cfgcmd.txt;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-configure</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\ad738de1c90c2f7b1e00df7a3068d797\assimp-populate-build.rule">
+    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\4227377a95c937c6dba2bfeebbc4c798\assimp-populate-build.rule">
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No build step for 'assimp-populate'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cd C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build
+cd C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/assimp-populate-prefix/src/assimp-populate-stamp/Debug/assimp-populate-build
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/assimp-populate-prefix/src/assimp-populate-stamp/Debug/assimp-populate-build
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -172,23 +172,23 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-configure;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-build</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-build</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\ad738de1c90c2f7b1e00df7a3068d797\assimp-populate-install.rule">
+    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\4227377a95c937c6dba2bfeebbc4c798\assimp-populate-install.rule">
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No install step for 'assimp-populate'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cd C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build
+cd C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/assimp-populate-prefix/src/assimp-populate-stamp/Debug/assimp-populate-install
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/assimp-populate-prefix/src/assimp-populate-stamp/Debug/assimp-populate-install
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -196,23 +196,23 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-build;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-install</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-install</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\ad738de1c90c2f7b1e00df7a3068d797\assimp-populate-test.rule">
+    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\4227377a95c937c6dba2bfeebbc4c798\assimp-populate-test.rule">
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No test step for 'assimp-populate'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-cd C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build
+cd C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/assimp-populate-prefix/src/assimp-populate-stamp/Debug/assimp-populate-test
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/assimp-populate-prefix/src/assimp-populate-stamp/Debug/assimp-populate-test
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -220,21 +220,21 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-install;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-test</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-test</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\af48298d2bce1d05d66ada92e9461aa5\assimp-populate-complete.rule">
+    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\4d8e5410904a55691ae64a759f32e3ad\assimp-populate-complete.rule">
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed 'assimp-populate'</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/CMakeFiles/Debug
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/CMakeFiles/Debug
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/CMakeFiles/Debug/assimp-populate-complete
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/CMakeFiles/Debug/assimp-populate-complete
 if %errorlevel% neq 0 goto :cmEnd
-"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/assimp-populate-prefix/src/assimp-populate-stamp/Debug/assimp-populate-done
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/assimp-populate-prefix/src/assimp-populate-stamp/Debug/assimp-populate-done
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -242,14 +242,14 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-install;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-mkdir;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-download;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-update;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-patch;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-configure;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-build;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-test;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\Debug\assimp-populate-complete</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-install;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-mkdir;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-download;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-update;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-patch;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-configure;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-build;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\src\assimp-populate-stamp\Debug\assimp-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\Debug\assimp-populate-complete</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\e0f50464a3776bd86b206968426fad8b\assimp-populate.rule">
+    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\12d3fb993a581de0320b4068b19f58c2\assimp-populate.rule">
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
@@ -259,18 +259,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\Debug\assimp-populate-complete;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\assimp-populate</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\Debug\assimp-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\assimp-populate</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild -BC:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild --check-stamp-file C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild -BC:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild --check-stamp-file C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-subbuild/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -278,18 +278,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject\PatchInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject\UpdateInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject\gitclone.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject\gitupdate.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\3.28.3-msvc11\CMakeSystem.cmake;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\tmp\assimp-populate-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject\PatchInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject\UpdateInfo.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject\gitclone.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject\gitupdate.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\3.28.3-msvc11\CMakeSystem.cmake;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\assimp-populate-prefix\tmp\assimp-populate-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\assimp-populate">
+    <None Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\CMakeFiles\assimp-populate">
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\ZERO_CHECK.vcxproj">
-      <Project>{4F450D9D-2265-357A-A2F6-F7592F02287D}</Project>
+    <ProjectReference Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-subbuild\ZERO_CHECK.vcxproj">
+      <Project>{FFE4FF9D-8F6B-3B20-91A2-4C0A4A00EC62}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

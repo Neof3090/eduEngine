@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src
+# Install script for directory: C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/sdl2-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

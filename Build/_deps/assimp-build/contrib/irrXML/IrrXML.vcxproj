@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{5DA2E4C9-197D-31DC-AD40-C466966B35B9}</ProjectGuid>
+    <ProjectGuid>{128D6243-55B8-314D-BBDD-90E7E438BBCF}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -59,26 +59,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\irrXML\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\irrXML\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">IrrXML.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">IrrXMLd</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\irrXML\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\irrXML\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">IrrXML.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">IrrXML</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\irrXML\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\irrXML\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">IrrXML.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">IrrXML</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\irrXML\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\irrXML\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">IrrXML.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">IrrXML</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\ap3090\source\repos\Neof3090\eduEngine\src;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\neofe\source\repos\Neof3090\eduEngine\src;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -97,10 +97,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;EBUG:FULL;GL_SILENCE_DEPRECATION=0;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;ASSIMP_BUILD_NO_C4D_IMPORTER;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\ap3090\source\repos\Neof3090\eduEngine\src;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\neofe\source\repos\Neof3090\eduEngine\src;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\ap3090\source\repos\Neof3090\eduEngine\src;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\neofe\source\repos\Neof3090\eduEngine\src;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -113,7 +113,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\ap3090\source\repos\Neof3090\eduEngine\src;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\neofe\source\repos\Neof3090\eduEngine\src;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) -O3 /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -134,10 +134,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GL_SILENCE_DEPRECATION=0;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;ASSIMP_BUILD_NO_C4D_IMPORTER;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\ap3090\source\repos\Neof3090\eduEngine\src;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\neofe\source\repos\Neof3090\eduEngine\src;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\ap3090\source\repos\Neof3090\eduEngine\src;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\neofe\source\repos\Neof3090\eduEngine\src;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -150,7 +150,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\ap3090\source\repos\Neof3090\eduEngine\src;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\neofe\source\repos\Neof3090\eduEngine\src;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -171,10 +171,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GL_SILENCE_DEPRECATION=0;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;ASSIMP_BUILD_NO_C4D_IMPORTER;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\ap3090\source\repos\Neof3090\eduEngine\src;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\neofe\source\repos\Neof3090\eduEngine\src;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\ap3090\source\repos\Neof3090\eduEngine\src;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\neofe\source\repos\Neof3090\eduEngine\src;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -187,7 +187,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\ap3090\source\repos\Neof3090\eduEngine\src;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\neofe\source\repos\Neof3090\eduEngine\src;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -207,10 +207,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GL_SILENCE_DEPRECATION=0;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;ASSIMP_BUILD_NO_C4D_IMPORTER;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\ap3090\source\repos\Neof3090\eduEngine\src;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\neofe\source\repos\Neof3090\eduEngine\src;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\ap3090\source\repos\Neof3090\eduEngine\src;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\code;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\.;C:\Users\neofe\source\repos\Neof3090\eduEngine\src;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\sdl2-src\include;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\zlib;C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -222,11 +222,11 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\irrXML\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\irrXML\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/contrib/irrXML/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/contrib/irrXML/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/ap3090/source/repos/Neof3090/eduEngine -BC:/Users/ap3090/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/contrib/irrXML/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/neofe/source/repos/Neof3090/eduEngine -BC:/Users/neofe/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/contrib/irrXML/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -235,11 +235,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\irrXML\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\irrXML\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/contrib/irrXML/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/contrib/irrXML/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/ap3090/source/repos/Neof3090/eduEngine -BC:/Users/ap3090/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/contrib/irrXML/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/neofe/source/repos/Neof3090/eduEngine -BC:/Users/neofe/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/contrib/irrXML/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -248,11 +248,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\irrXML\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\irrXML\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/contrib/irrXML/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/contrib/irrXML/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/ap3090/source/repos/Neof3090/eduEngine -BC:/Users/ap3090/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/contrib/irrXML/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/neofe/source/repos/Neof3090/eduEngine -BC:/Users/neofe/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/contrib/irrXML/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -261,11 +261,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\irrXML\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\irrXML\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/contrib/irrXML/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-src/contrib/irrXML/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/ap3090/source/repos/Neof3090/eduEngine -BC:/Users/ap3090/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/contrib/irrXML/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/neofe/source/repos/Neof3090/eduEngine -BC:/Users/neofe/source/repos/Neof3090/eduEngine/Build --check-stamp-file C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/assimp-build/contrib/irrXML/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -274,22 +274,22 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\irrXML\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-build\contrib\irrXML\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\irrXML\CXMLReaderImpl.h" />
-    <ClInclude Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\irrXML\heapsort.h" />
-    <ClInclude Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\irrXML\irrArray.h" />
-    <ClInclude Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\irrXML\irrString.h" />
-    <ClInclude Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\irrXML\irrTypes.h" />
-    <ClCompile Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\irrXML\irrXML.cpp" />
-    <ClInclude Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\irrXML\irrXML.h" />
+    <ClInclude Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\irrXML\CXMLReaderImpl.h" />
+    <ClInclude Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\irrXML\heapsort.h" />
+    <ClInclude Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\irrXML\irrArray.h" />
+    <ClInclude Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\irrXML\irrString.h" />
+    <ClInclude Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\irrXML\irrTypes.h" />
+    <ClCompile Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\irrXML\irrXML.cpp" />
+    <ClInclude Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\_deps\assimp-src\contrib\irrXML\irrXML.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\ap3090\source\repos\Neof3090\eduEngine\Build\ZERO_CHECK.vcxproj">
-      <Project>{71EC3342-8E55-3B84-BDD3-7CA63C32B82D}</Project>
+    <ProjectReference Include="C:\Users\neofe\source\repos\Neof3090\eduEngine\Build\ZERO_CHECK.vcxproj">
+      <Project>{18513923-AEC0-39E3-9546-788120D3758A}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

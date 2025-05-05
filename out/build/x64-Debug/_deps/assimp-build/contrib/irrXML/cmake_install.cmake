@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/assimp-src/contrib/irrXML
+# Install script for directory: C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/assimp-src/contrib/irrXML
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/ap3090/Source/Repos/Neof3090/eduEngine/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/neofe/Source/Repos/Neof3090/eduEngine/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,6 +33,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/ap3090/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/assimp-build/contrib/irrXML/IrrXMLd.lib")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/neofe/source/repos/Neof3090/eduEngine/out/build/x64-Debug/_deps/assimp-build/contrib/irrXML/IrrXMLd.lib")
 endif()
 

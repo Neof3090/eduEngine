@@ -19,17 +19,17 @@ project(stb-populate NONE)
 # Pass through things we've already detected in the main project to avoid
 # paying the cost of redetecting them again in ExternalProject_Add()
 set(GIT_EXECUTABLE [==[C:/Program Files/Git/cmd/git.exe]==])
-set(GIT_VERSION_STRING [==[2.45.2.windows.1]==])
+set(GIT_VERSION_STRING [==[2.49.0.windows.1]==])
 set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
-  [==[C:/Program Files/Git/cmd/git.exe;2.45.2.windows.1]==]
+  [==[C:/Program Files/Git/cmd/git.exe;2.49.0.windows.1]==]
 )
 
 
 include(ExternalProject)
 ExternalProject_Add(stb-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/nothings/stb.git" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR"
-                    SOURCE_DIR          "C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/stb-src"
-                    BINARY_DIR          "C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/stb-build"
+                    SOURCE_DIR          "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/stb-src"
+                    BINARY_DIR          "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/stb-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

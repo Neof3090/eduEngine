@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/glew-src"
-  "C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/glew-build"
-  "C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/glew-subbuild/glew-populate-prefix"
-  "C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/glew-subbuild/glew-populate-prefix/tmp"
-  "C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp"
-  "C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/glew-subbuild/glew-populate-prefix/src"
-  "C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp"
+  "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/glew-src"
+  "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/glew-build"
+  "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/glew-subbuild/glew-populate-prefix"
+  "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/glew-subbuild/glew-populate-prefix/tmp"
+  "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp"
+  "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/glew-subbuild/glew-populate-prefix/src"
+  "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp"
 )
 
 set(configSubDirs Debug)
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "C:/Users/ap3090/source/repos/Neof3090/eduEngine/Build/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "C:/Users/neofe/source/repos/Neof3090/eduEngine/Build/_deps/glew-subbuild/glew-populate-prefix/src/glew-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()

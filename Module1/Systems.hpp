@@ -13,6 +13,11 @@
 #include <RenderableMesh.hpp>
 
 struct RenderDebug {
+	// Debug Windows
+	bool windowAnimation = false;
+	bool windowMisc = false;
+
+	// Debug rendering options
 	bool showBones = false;
 	bool showAABBs = false;
 	bool showViewRays = false;

@@ -14,8 +14,8 @@ void Game::LoadMeshes()
     playerMesh->load("assets/ExoRed/idle (2).fbx", true);
     playerMesh->load("assets/ExoRed/walking.fbx", true);
     playerMesh->load("assets/ExoRed/running.fbx", true);
-    playerMesh->load("assets/ExoRed/jumping up.fbx", true);
-    //playerMesh->load("assets/ExoRed/falling idle.fbx", true);
+    //playerMesh->load("assets/ExoRed/jumping up.fbx", true);
+    playerMesh->load("assets/ExoRed/falling idle.fbx", true);
     // Remove root motion
     playerMesh->removeTranslationKeys("mixamorig:Hips");
 
@@ -86,10 +86,7 @@ bool Game::init()
     entity_registry->emplace<MeshComponent>(playerEntity, MeshComponent{ 
         playerMesh
         });
-    entity_registry->emplace<AnimationComponent>(playerEntity, AnimationComponent{
-        1, // animation index
-        1.0f // animation speed
-        });
+    entity_registry->emplace<AnimationComponent>(playerEntity, AnimationComponent{ 1}); // animation index 
     entity_registry->emplace<LinearVelocity>(playerEntity, LinearVelocity{ {0, 0, 0} });
     entity_registry->emplace<Transform>(playerEntity, Transform{
 		{ 0.0f, 0.0f, 0.0f },      // position
@@ -110,10 +107,7 @@ bool Game::init()
 
     auto foxEntity = entity_registry->create();
     entity_registry->emplace<MeshComponent>(foxEntity, MeshComponent{ foxMesh });
-    entity_registry->emplace<AnimationComponent>(foxEntity, AnimationComponent{
-		1, // animation index
-		1.0f // animation speed
-		});
+    entity_registry->emplace<AnimationComponent>(foxEntity, AnimationComponent{ 1 }); // animation index 
     entity_registry->emplace<LinearVelocity>(foxEntity, LinearVelocity{ {0, 0, 0} });
     entity_registry->emplace<Transform>(foxEntity, Transform{
         { 10.0f, 0.0f, 0.0f },      // position
@@ -128,10 +122,7 @@ bool Game::init()
 
     auto characterEntity = entity_registry->create();
     entity_registry->emplace<MeshComponent>(characterEntity, MeshComponent{ characterMesh });
-    entity_registry->emplace<AnimationComponent>(characterEntity, AnimationComponent{ 
-        2, // animation index
-        1.0f // animation speed
-        });
+    entity_registry->emplace<AnimationComponent>(characterEntity, AnimationComponent{ 2 }); // animation index 
     entity_registry->emplace<Transform>(characterEntity, Transform{
         { -3.0f, 0.0f, 0.0f },      // position
         { 0.0f, 0.0f, 0.0f },       // rotation
@@ -148,10 +139,7 @@ bool Game::init()
 
     auto horseEntity = entity_registry->create();
     entity_registry->emplace<MeshComponent>(horseEntity, MeshComponent{ horseMesh });
-    entity_registry->emplace<AnimationComponent>(horseEntity, AnimationComponent{
-		2, // animation index
-		1.0f, // animation speed
-	});
+    entity_registry->emplace<AnimationComponent>(horseEntity, AnimationComponent{ 2 }); // animation index 
     entity_registry->emplace<Transform>(horseEntity, Transform{
         { 30.0f, 0.0f, -35.0f },
         { 0, 35.0f, 0 },
@@ -210,112 +198,11 @@ const char* AnimationStateToString(AnimationComponent::State s) {
 
 void Game::renderUI()
 {
-    // Fetching entities
-    auto playerEntity = entity_registry->view<PlayerController>().front();
-
-    ImGui::Begin("Game Info");
-
-    ImGui::Text("Drawcall count %i", drawcallCount);
-
-    auto lightView = entity_registry->view<PointLight>();
-    if (!lightView.empty()) {
-        auto lightEntity = lightView.front();
-        auto& pointlight = entity_registry->get<PointLight>(lightEntity);
-
-        ImGui::ColorEdit3("Light color", glm::value_ptr(pointlight.color), ImGuiColorEditFlags_NoInputs);
-    }
-
-    float* characterAnimSpeed = nullptr;
-
-    if (playerMesh)
-    {
-        // Combo (drop-down) for animation clip
-        auto view = entity_registry->view<MeshComponent, AnimationComponent>();
-        for (auto entity : view) {
-            auto& mesh = view.get<MeshComponent>(entity);
-            auto& animation = view.get<AnimationComponent>(entity);
-            if (mesh.mesh == characterMesh)
-			{
-                characterAnimSpeed = &animation.speed;
-				int curAnimIndex = animation.index;
-
-                std::string label = (curAnimIndex == -1 ? "Bind pose" : characterMesh->getAnimationName(curAnimIndex));
-                if (ImGui::BeginCombo("Character animation##animclip", label.c_str()))
-                {
-                    // Bind pose item
-                    const bool isSelected = (curAnimIndex == -1);
-                    if (ImGui::Selectable("Bind pose", isSelected))
-                        curAnimIndex = -1;
-                    if (isSelected)
-                        ImGui::SetItemDefaultFocus();
-
-                    // Clip items
-                    for (int i = 0; i < characterMesh->getNbrAnimations(); i++)
-                    {
-                        const bool isSelected = (curAnimIndex == i);
-                        const auto label = characterMesh->getAnimationName(i) + "##" + std::to_string(i);
-                        if (ImGui::Selectable(label.c_str(), isSelected))
-                            curAnimIndex = i;
-                        if (isSelected)
-                            ImGui::SetItemDefaultFocus();
-                    }
-                    ImGui::EndCombo();
-
-                    animation.index = curAnimIndex;
-                }
-				break;
-			}
-        }
-
-        // In-world position label
-        //const auto VP_P_V = matrices.VP * matrices.P * matrices.V;
-        //auto world_pos = glm::vec3(horseWorldMatrix[3]);
-        //glm::ivec2 window_coords;
-        //if (glm_aux::window_coords_from_world_pos(world_pos, VP_P_V, window_coords))
-        //{
-        //    ImGui::SetNextWindowPos(
-        //        ImVec2{ float(window_coords.x), float(matrices.windowSize.y - window_coords.y) },
-        //        ImGuiCond_Always,
-        //        ImVec2{ 0.0f, 0.0f });
-        //    ImGui::PushStyleColor(ImGuiCol_WindowBg, 0x80000000);
-        //    ImGui::PushStyleColor(ImGuiCol_Text, 0xffffffff);
-
-        //    ImGuiWindowFlags flags =
-        //        ImGuiWindowFlags_NoDecoration |
-        //        ImGuiWindowFlags_NoInputs |
-        //        // ImGuiWindowFlags_NoBackground |
-        //        ImGuiWindowFlags_AlwaysAutoResize;
-
-        //    if (ImGui::Begin("window_name", nullptr, flags))
-        //    {
-        //        ImGui::Text("In-world GUI element");
-        //        ImGui::Text("Window pos (%i, %i)", window_coords.x, window_coords.x);
-        //        ImGui::Text("World pos (%1.1f, %1.1f, %1.1f)", world_pos.x, world_pos.y, world_pos.z);
-        //        ImGui::End();
-        //    }
-        //    ImGui::PopStyleColor(2);
-        //}
-    }
-
-    if (characterAnimSpeed) {
-        ImGui::SliderFloat("Animation speed", characterAnimSpeed, 0.1f, 5.0f);
-    }
-
-    ImGui::End(); // end info window
-
     // Debug window
     ImGui::Begin("Debug");
-    ImGui::Text("Player animation info:");
-    
-    auto& pAnimation = entity_registry->get<AnimationComponent>(playerEntity);
-
-    ImGui::Text("Current animation state: %s", AnimationStateToString(pAnimation.state));
-
-    ImGui::Checkbox("Toggle manual blending", &pAnimation.manualBlending);
-    /*if (pAnimation.manualBlending) {*/
-        ImGui::Text("Blending between");
-        ImGui::SliderFloat("Blend Factor", &pAnimation.blendFrac, 0.0f, 1.0f);
-    //}
+    ImGui::Text("Debug windows:");
+    ImGui::Checkbox("Player animation", &systems.debug.windowAnimation);
+    ImGui::Checkbox("Misc", &systems.debug.windowMisc);
 
     ImGui::Text("Debug rendering options:");
     ImGui::Checkbox("Show Bones", &systems.debug.showBones);
@@ -324,41 +211,153 @@ void Game::renderUI()
     ImGui::Checkbox("Show Object Bases", &systems.debug.showObjectBases);
     ImGui::End(); // end debug window
 
-    ImGui::Begin("Misc");
+    if (systems.debug.windowAnimation) {
+        ImGui::Begin("Player animation info");
 
-    ImGui::Text("Camera misc:");
-    auto camView = entity_registry->view<CameraComponent>();
-    for (auto entity : camView) {
-        auto& cam = camView.get<CameraComponent>(entity);
-        ImGui::SliderFloat("Camera distance", &cam.distance, 1.0f, 100.0f);
-        break;
+        auto playerEntity = entity_registry->view<PlayerController>().front();
+        auto& pAnimation = entity_registry->get<AnimationComponent>(playerEntity);
+
+        ImGui::Text("Current animation state: %s", AnimationStateToString(pAnimation.state));
+        ImGui::Text("Current animation index: %i", pAnimation.index);
+        ImGui::Text("Next animation index: %i", pAnimation.nextIndex);
+        ImGui::Text("Animation queue size: %i", pAnimation.queue.size());
+
+        ImGui::Checkbox("Toggle manual blending", &pAnimation.manualBlending);
+        if (!pAnimation.manualBlending) {
+            ImGui::BeginDisabled();
+            ImGui::SliderFloat("Blend Factor", &pAnimation.blendFrac, 0.0f, 1.0f);
+            ImGui::EndDisabled();
+        }
+        else {
+            ImGui::SliderFloat("Blend Factor", &pAnimation.blendFrac, 0.0f, 1.0f);
+        }
+
+        ImGui::End(); // end animation info window
     }
+    if (systems.debug.windowMisc) {
+        ImGui::Begin("Misc debuging");
 
-    ImGui::Text("Player misc:");
-    auto playerView = entity_registry->view<Transform, PlayerController>();
-    for (auto entity : playerView) {
-		auto& playerController = playerView.get<PlayerController>(entity);
-		ImGui::SliderFloat("Player speed", &playerController.speed, 0.1f, 10.0f);
-        break;
-	}
+        ImGui::Text("Miscellaneous info:");
+        ImGui::Text("Game time: %1.1f", gameTime);
 
-    ImGui::Text("NPC (fox) Misc:");
-    auto npcView = entity_registry->view<Transform, NpcController>();
-    for (auto entity : npcView) {
-		auto& transform = npcView.get<Transform>(entity);
-		auto& npcController = npcView.get<NpcController>(entity);
-        ImGui::SliderFloat("NPC speed", &npcController.speed, 0.1f, 10.0f);
+        ImGui::Text("Drawcall count %i", drawcallCount);
 
-        float scale = transform.scale.x;
-        ImGui::SliderFloat("NPC scale", &scale, 0.01f, 0.05f);
-        transform.scale = { scale, scale, scale };
-        break;
-	}
+        auto lightView = entity_registry->view<PointLight>();
+        if (!lightView.empty()) {
+            auto lightEntity = lightView.front();
+            auto& pointlight = entity_registry->get<PointLight>(lightEntity);
 
-    ImGui::Text("Miscellaneous info:");
-    ImGui::Text("Game time: %1.1f", gameTime);
+            ImGui::ColorEdit3("Light color", glm::value_ptr(pointlight.color), ImGuiColorEditFlags_NoInputs);
+        }
 
-    ImGui::End(); // end misc window
+        ImGui::Text("Camera misc:");
+        auto camView = entity_registry->view<CameraComponent>();
+        for (auto entity : camView) {
+            auto& cam = camView.get<CameraComponent>(entity);
+            ImGui::SliderFloat("Camera distance", &cam.distance, 1.0f, 100.0f);
+            break;
+        }
+
+        ImGui::Text("Player misc:");
+        auto playerView = entity_registry->view<Transform, PlayerController>();
+        for (auto entity : playerView) {
+            auto& playerController = playerView.get<PlayerController>(entity);
+            ImGui::SliderFloat("Player speed", &playerController.speed, 0.1f, 10.0f);
+            break;
+        }
+
+        ImGui::Text("NPC (fox) Misc:");
+        auto npcView = entity_registry->view<Transform, NpcController>();
+        for (auto entity : npcView) {
+            auto& transform = npcView.get<Transform>(entity);
+            auto& npcController = npcView.get<NpcController>(entity);
+            ImGui::SliderFloat("NPC speed", &npcController.speed, 0.1f, 10.0f);
+
+            float scale = transform.scale.x;
+            ImGui::SliderFloat("NPC scale", &scale, 0.01f, 0.05f);
+            transform.scale = { scale, scale, scale };
+            break;
+        }
+
+        ImGui::Text("Old misc (given code):");
+        float* characterAnimSpeed = nullptr;
+
+        if (playerMesh)
+        {
+            // Combo (drop-down) for animation clip
+            auto view = entity_registry->view<MeshComponent, AnimationComponent>();
+            for (auto entity : view) {
+                auto& mesh = view.get<MeshComponent>(entity);
+                auto& animation = view.get<AnimationComponent>(entity);
+                if (mesh.mesh == characterMesh)
+                {
+                    characterAnimSpeed = &animation.speed;
+                    int curAnimIndex = animation.index;
+
+                    std::string label = (curAnimIndex == -1 ? "Bind pose" : characterMesh->getAnimationName(curAnimIndex));
+                    if (ImGui::BeginCombo("Character animation##animclip", label.c_str()))
+                    {
+                        // Bind pose item
+                        const bool isSelected = (curAnimIndex == -1);
+                        if (ImGui::Selectable("Bind pose", isSelected))
+                            curAnimIndex = -1;
+                        if (isSelected)
+                            ImGui::SetItemDefaultFocus();
+
+                        // Clip items
+                        for (int i = 0; i < characterMesh->getNbrAnimations(); i++)
+                        {
+                            const bool isSelected = (curAnimIndex == i);
+                            const auto label = characterMesh->getAnimationName(i) + "##" + std::to_string(i);
+                            if (ImGui::Selectable(label.c_str(), isSelected))
+                                curAnimIndex = i;
+                            if (isSelected)
+                                ImGui::SetItemDefaultFocus();
+                        }
+                        ImGui::EndCombo();
+
+                        animation.index = curAnimIndex;
+                    }
+                    break;
+                }
+            }
+
+            // In-world position label
+            //const auto VP_P_V = matrices.VP * matrices.P * matrices.V;
+            //auto world_pos = glm::vec3(horseWorldMatrix[3]);
+            //glm::ivec2 window_coords;
+            //if (glm_aux::window_coords_from_world_pos(world_pos, VP_P_V, window_coords))
+            //{
+            //    ImGui::SetNextWindowPos(
+            //        ImVec2{ float(window_coords.x), float(matrices.windowSize.y - window_coords.y) },
+            //        ImGuiCond_Always,
+            //        ImVec2{ 0.0f, 0.0f });
+            //    ImGui::PushStyleColor(ImGuiCol_WindowBg, 0x80000000);
+            //    ImGui::PushStyleColor(ImGuiCol_Text, 0xffffffff);
+
+            //    ImGuiWindowFlags flags =
+            //        ImGuiWindowFlags_NoDecoration |
+            //        ImGuiWindowFlags_NoInputs |
+            //        // ImGuiWindowFlags_NoBackground |
+            //        ImGuiWindowFlags_AlwaysAutoResize;
+
+            //    if (ImGui::Begin("window_name", nullptr, flags))
+            //    {
+            //        ImGui::Text("In-world GUI element");
+            //        ImGui::Text("Window pos (%i, %i)", window_coords.x, window_coords.x);
+            //        ImGui::Text("World pos (%1.1f, %1.1f, %1.1f)", world_pos.x, world_pos.y, world_pos.z);
+            //        ImGui::End();
+            //    }
+            //    ImGui::PopStyleColor(2);
+            //}
+        }
+
+        if (characterAnimSpeed) {
+            ImGui::SliderFloat("Animation speed", characterAnimSpeed, 0.1f, 5.0f);
+        }
+
+        ImGui::End(); // end misc window
+    }
 }
 
 void Game::destroy()
